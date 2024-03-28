@@ -19,7 +19,7 @@ const Experience = () => {
           
             {/* EXPERIENCE TITLE */}
             <div>
-                <h1 className=" text-6xl lg:text-8xl  text-white font-extrabold "> Experience<span className="text-blue-300 ">.</span> </h1>
+                <h1 className=" text-6xl sm:text-8xl lg:text-8xl  text-white font-extrabold "> Experience<span className="text-blue-300 ">.</span> </h1>
                 <hr className="w-full my-2 rounded-xl border-gray-700 border-2"></hr>
                </div>
               {/* EXP Content */}
@@ -56,7 +56,7 @@ const Experience = () => {
                                   <div className="my-4 text-xl">Skills:   
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2 text-sm font-semibold text-gray-700 mr-2 ml-2 mb-2">HTML</span>
                                     <span className="inline-block bg-gray-200  hover:bg-teal-300  rounded-full p-2 text-sm font-semibold text-gray-700 mr-2 mb-2">CSS</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2 text-sm font-semibold text-gray-700 mr-2 mb-2">Full-Stack Development</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2 text-xs md:text-sm font-medium text-gray-700 mr-2 mb-2">Full-Stack Development</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">CMS</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2 text-sm font-semibold text-gray-700 mr-2 mb-2">SEO</span>
                                   </div>
@@ -176,11 +176,11 @@ const Experience = () => {
                                       </ul>
                                       <div className="my-4 text-xl">Skills:   
                                     
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 ml-2 mb-2">Full-Stack Development</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-xs md:text-sm font-semibold text-gray-700 mr-2 ml-2 mb-2">Full-Stack Development</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Software QA</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Data Structure/Algorithm</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-xs md:text-sm font-semibold text-gray-700 mr-2 mb-2">Data Structure/Algorithm</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2 text-sm font-semibold text-gray-700 mr-2 mb-2">Software-Engineering</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Programming-Languages</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-xs md:text-sm font-semibold text-gray-700 mr-2 mb-2">Programming-Languages</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Problem-Solving</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Computer-Networking</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Leadership</span>
