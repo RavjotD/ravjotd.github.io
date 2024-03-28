@@ -26,14 +26,14 @@ export default function Home() {
   }, []);
 
   return (
-    <div className=" h-full w-full flex  flex-row  justify-between overflow-hidden relative ">
-      <div className="w-1/2 h-full  inset-0  pb-32 md:pb-44  ">
+    <div className=" flex  flex-row justify-between overflow-hidden  ">
+      <div className="w-1/2 h-full  inset-0 md:pb-44  ">
         <Banner titles={titles} />
       </div>
       <AnimatePresence>
         {bannerCompleted && (
           <motion.div
-          className=" w-1/2 px-3 flex justify-center pt-0  sm:pt-40 "
+          className=" w-1/2  px-3  justify-center "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 1 }}
