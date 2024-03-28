@@ -26,8 +26,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className=" flex  flex-row justify-between overflow-hidden  ">
-      <div className="w-1/2 h-full  inset-0 md:pb-44  ">
+    <div className=" flex  flex-row justify-between   ">
+      <div className="w-1/2  inset-0 ">
         <Banner titles={titles} />
       </div>
       <AnimatePresence>

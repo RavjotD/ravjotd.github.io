@@ -19,7 +19,7 @@ const Experience = () => {
           
             {/* EXPERIENCE TITLE */}
             <div>
-                <h1 className=" text-2xl sm:text-xl lg:text-8xl  text-white font-extrabold "> Experience<span className="text-blue-300 ">.</span> </h1>
+                <h1 className=" text-6xl lg:text-8xl  text-white font-extrabold "> Experience<span className="text-blue-300 ">.</span> </h1>
                 <hr className="w-full my-2 rounded-xl border-gray-700 border-2"></hr>
                </div>
               {/* EXP Content */}
@@ -54,11 +54,11 @@ const Experience = () => {
                                   </ul>
 
                                   <div className="my-4 text-xl">Skills:   
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 ml-2 mb-2">HTML</span>
-                                    <span className="inline-block bg-gray-200  hover:bg-teal-300  rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">CSS</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Full-Stack Web Development</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">CMS</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">SEO</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2 text-sm font-semibold text-gray-700 mr-2 ml-2 mb-2">HTML</span>
+                                    <span className="inline-block bg-gray-200  hover:bg-teal-300  rounded-full p-2 text-sm font-semibold text-gray-700 mr-2 mb-2">CSS</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2 text-sm font-semibold text-gray-700 mr-2 mb-2">Full-Stack Development</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">CMS</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2 text-sm font-semibold text-gray-700 mr-2 mb-2">SEO</span>
                                   </div>
                               <p className="my-2 py-3  font-medium"> January 2024-Present</p>                                                 
                           </div>                
@@ -93,14 +93,14 @@ const Experience = () => {
                                   </li>
                                 </ul>
 
-                                <div className="my-4 text-xl">Skills:   
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 ml-2 mb-2">Microsoft AD</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 ml-2 mb-2">Microsoft Azure</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Troubleshooting</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Networking Services</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Communication</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Time-Management</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">ECM</span>
+                                <div className="my-4 text-xl p-0 ">Skills:   
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 ml-2 mb-2">Microsoft AD</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 ml-2 mb-2">Microsoft Azure</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Troubleshooting</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Networking Services</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Communication</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2 text-sm font-semibold text-gray-700 mr-2 mb-2">Time-Management</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">ECM</span>
                                   </div>
                             <p className="my-2 py-3  font-medium"> December 2022-September 2023</p>
                         </div>  
@@ -137,10 +137,10 @@ const Experience = () => {
                                         </ul>
 
                                         <div className="my-4 text-xl">Skills:   
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 ml-2 mb-2">Negotiation</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Communication</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Problem-solving</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Leadership</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 ml-2 mb-2">Negotiation</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Communication</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Problem-solving</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Leadership</span>
                                   </div>
                                     <p className="my-2 py-3 font-medium">  August 2018-December 2022</p>
                                 </div> 
@@ -176,14 +176,15 @@ const Experience = () => {
                                       </ul>
                                       <div className="my-4 text-xl">Skills:   
                                     
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 ml-2 mb-2">Full-Stack Web Development</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Software QA</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Data Structure/Algorithm</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Software-Engineering Practices</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Programming-Languages</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Problem-Solving</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Computer-Networking</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Leadership</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 ml-2 mb-2">Full-Stack Development</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Software QA</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Data Structure/Algorithm</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2 text-sm font-semibold text-gray-700 mr-2 mb-2">Software-Engineering</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Programming-Languages</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Problem-Solving</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Computer-Networking</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-2  text-sm font-semibold text-gray-700 mr-2 mb-2">Leadership</span>
+
                                   </div>
                                      <p className="my-2 py-3 font-medium"> September 2019-Present</p>
                                   </div> 

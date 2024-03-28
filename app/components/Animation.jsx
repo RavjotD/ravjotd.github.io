@@ -1,8 +1,32 @@
-import React, {useEffect} from "react";
+import React, {useEffect,useState} from "react";
 import Lottie from "react-lottie";
 import animationData from "./Animation-.json"
 
 const Typing = () => {
+    const [animationSize, setAnimationSize] = useState({ width: 800, height: 800 });
+
+    useEffect(() => {
+        const handleResize = () => {
+          const screenWidth = window.innerWidth;
+          // Adjust the size based on screen width
+          if (screenWidth <= 1024) {
+            setAnimationSize({ width: 325, height: 325 });
+          } else {
+            setAnimationSize({ width: 800, height: 800 });
+          }
+        };
+    
+        // Call handleResize on initial render
+        handleResize();
+    
+        // Attach event listener for window resize
+        window.addEventListener("resize", handleResize);
+    
+        // Remove event listener on component unmount
+        return () => window.removeEventListener("resize", handleResize);
+      }, []);
+
+
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -13,8 +37,8 @@ const Typing = () => {
     };
 
     return (
-        <div className="flex justify-center">
-            <Lottie options={defaultOptions} height={700} width={700} />
+        <div className="flex justify-center px-14 ">
+      <Lottie options={defaultOptions} height={animationSize.height} width={animationSize.width} />
         </div>
     );
 };
