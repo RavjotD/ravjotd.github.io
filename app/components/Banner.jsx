@@ -26,7 +26,7 @@ const banner = {
   
   const Banner = ({ titles }) => {
     return (
-      <div className="flex flex-col justify-start items-start text-4xl md:text-8xl lg:text-9xl pt-64 md:pt-20 lg:pt-24  ">
+      <div className="flex flex-col justify-start items-start text-4xl md:text-xl lg:text-9xl pt-64 md:pt-20 lg:pt-24  ">
         {titles.map((title, index) => (
           <motion.div
             key={index}
