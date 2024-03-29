@@ -198,7 +198,7 @@ const Experience = () => {
                    </div>  
                    <div className="shadow-2xl w-100 h-100 rounded-xl hover:shadow-black">
               <button className=" font-bold p-4 border-teal-400 border-2  rounded-xl text-white hover:text-black hover:bg-teal-300">
-               <a href="/Resume.pdf" target="_blank" alt="My Resume" rel="noopener noreferrer">Download Resume </a>
+               <a href="/RD-Resume.pdf" target="_blank" alt="My Resume" rel="noopener noreferrer">Download Resume </a>
               </button>
               </div>
               
