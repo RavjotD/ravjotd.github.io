@@ -73,11 +73,11 @@ const form = useRef();
       <form 
       onSubmit={sendEmail} 
       ref={form} 
-      className="h-1/2 lg:h-full lg:w-1/2 bg-slate-700 rounded-xl text-md lg:text-4xl font-sans font-medium flex flex-col gap-8 justify-center p-24">
+      className="h-2/3 lg:h-full lg:w-1/2 bg-slate-700 rounded-xl text-md lg:text-4xl font-sans font-medium flex flex-col gap-8 justify-center p-24">
 
             <span> Dear Ravjot Duhra,</span>
             
-            <textarea rows={6} 
+            <input rows={6} 
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
              name="user_message"/>
 
