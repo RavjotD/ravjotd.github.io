@@ -15,7 +15,7 @@ const TransitionProvider = ({children}) => {
     <AnimatePresence mode="wait">
     {/* first motion div drop down */}
     <div key={pathName} 
-    className="w-screen h-full bg-gradient-to-b from-slate-700 to-gray-600">
+    className="w-screen h-screen bg-gradient-to-b from-slate-700 to-gray-600">
         <motion.div 
         className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
         animate={{height: "0vh"}}

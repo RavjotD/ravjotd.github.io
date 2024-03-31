@@ -87,7 +87,7 @@ const form = useRef();
             className="bg-transparent border-b-2 border-b-black outline-none"/>
 
             <span>Regards,</span>
-            <button className=" bg-slate-400 rounded text-sm text-gray-600 p-4">Send</button>
+            <button className=" bg-slate-400 rounded text-sm text-gray-600 p-.5 md:p-4">Send</button>
             {success && <span className="text-green-500 text-sm">Your message has been sent successfully!</span>}
             {error && <span className="text-red-500 text-sm">Something went wrong! Please try again</span>}
       </form>

@@ -13,24 +13,27 @@ export default function Home() {
   return (
   
 
-    <div className=" flex flex-col lg:flex-row px-4 mt-12 lg:mt-64">
-      <div className="w-full inset-0   ">
+
+    <motion.div
+     
+      className="h-full"
+      initial={{ y: "-200vh" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 1 }}>   
+
+    <div className=" flex flex-col lg:flex-row px-4 mt-12 lg:mt-64 ">
+      <div className="w-full   ">
         <Banner  />
       </div>
-      
+          <div
+          className=" w-full  px-3 justify-center  "
         
-          <motion.div
-          className=" w-full  px-3  justify-center  "
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
           >
             <CubeBg />
-          </motion.div>
+          </div>
        
-      
+         
     </div>
-    
+    </motion.div>
   );
 }

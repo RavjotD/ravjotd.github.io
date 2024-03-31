@@ -23,7 +23,7 @@ const Experience = () => {
                 <hr className="w-full my-2 rounded-xl border-gray-700 border-2"></hr>
                </div>
               {/* EXP Content */}
-               <div className="max-w-xl mx-auto p-8">
+               <div className="w-screen md:w-2/3 mr-10 p-8">
               <div className="flow-root">
           <ul className="-mb-8">
         {/* Line Item */}

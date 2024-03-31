@@ -10,7 +10,7 @@ const Typing = () => {
           const screenWidth = window.innerWidth;
           // Adjust the size based on screen width
           if (screenWidth <= 1024) {
-            setAnimationSize({ width: 300, height: 300 });
+            setAnimationSize({ width: 200, height: 150 });
           } else {
             setAnimationSize({ width: 800, height: 800 });
           }
