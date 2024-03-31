@@ -11,20 +11,16 @@ export default function Home() {
   // Use useEffect to detect when banner animation is completed
  
   return (
-    <motion.div className="h-full" 
-    initial={{y:"-200vh"}}
-     animate={{y:"0%"}} 
-     transition={{duration:1}}> 
+  
 
-
-    <div className=" flex flex-row justify-between  ">
-      <div className="w-full inset-0  mt-64  ">
+    <div className=" flex flex-col lg:flex-row px-4 mt-12 lg:mt-64">
+      <div className="w-full inset-0   ">
         <Banner  />
       </div>
       
         
           <motion.div
-          className=" w-full  px-3  justify-center mt-64 "
+          className=" w-full  px-3  justify-center  "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 1 }}
@@ -35,6 +31,6 @@ export default function Home() {
        
       
     </div>
-    </motion.div>
+    
   );
 }

@@ -2,29 +2,10 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
-const banner = {
-  animate: {
-    transition: {
-      delayChildren: 1.4,
-      staggerChildren: 1.1,
-    },
-  },
-  hover: {
-    transition: {
-      delayChildren: 1.4,
-      staggerChildren: 1.1,
-    },
-  },
-};
-
-const wordAnimations = {
-  initial: { opacity: 0, y: 50 },
-  animate: { opacity: 1, y: 0 },
-};
 
 const Banner = ({}) => {
   return (
-    <div className="flex flex-col font-bold justify-start items-start ">
+    <div className="w-full h-full flex flex-col font-bold justify-start items-start ">
       <div className="text-white   text-4xl md:text-7xl lg:text-8xl mb-12">    
             <TypeAnimation
               sequence={[

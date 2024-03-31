@@ -73,7 +73,7 @@ const form = useRef();
       <form 
       onSubmit={sendEmail} 
       ref={form} 
-      className="h-1/2 lg:h-full lg:w-1/2 bg-slate-700 rounded-xl text-4xl font-sans font-medium flex flex-col gap-8 justify-center p-24">
+      className="h-1/2 lg:h-full lg:w-1/2 bg-slate-700 rounded-xl text-md lg:text-4xl font-sans font-medium flex flex-col gap-8 justify-center p-24">
 
             <span> Dear Ravjot Duhra,</span>
             
@@ -87,9 +87,9 @@ const form = useRef();
             className="bg-transparent border-b-2 border-b-black outline-none"/>
 
             <span>Regards,</span>
-            <button className=" bg-slate-400 rounded font-semibold text-gray-600 p-4">Send</button>
-            {success && <span className="text-green-500 font-semibold">Your message has been sent successfully!</span>}
-            {error && <span className="text-red-500 font-semibold">Something went wrong! Please try again</span>}
+            <button className=" bg-slate-400 rounded text-sm text-gray-600 p-4">Send</button>
+            {success && <span className="text-green-500 text-sm">Your message has been sent successfully!</span>}
+            {error && <span className="text-red-500 text-sm">Something went wrong! Please try again</span>}
       </form>
 
       </div>
