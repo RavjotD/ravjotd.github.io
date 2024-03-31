@@ -5,35 +5,26 @@ import CubeBg from "./components/CubeBg";
 import Banner from "./components/Banner";
 
 
-const titles = [
-  "Hi I'm Ravjot!",
-  "UX Designer. ",
-  "Programmer. ",
-  "Gamer.",
-  "Software Engineer. ",
-  "Full-Stack Developer.",
-  
-];
-
 export default function Home() {
-  const [bannerCompleted, setBannerCompleted] = useState(false);
+ 
 
   // Use useEffect to detect when banner animation is completed
-  useEffect(() => {
-    setTimeout(() => {
-      setBannerCompleted(true);
-    }, titles.length * .7 * 1000); // Adjust timing accordingly
-  }, []);
-
+ 
   return (
-    <div className=" flex  flex-row justify-between   ">
-      <div className="w-1/2  inset-0 ">
-        <Banner titles={titles} />
+    <motion.div className="h-full" 
+    initial={{y:"-200vh"}}
+     animate={{y:"0%"}} 
+     transition={{duration:1}}> 
+
+
+    <div className=" flex flex-row justify-between  ">
+      <div className="w-full inset-0  mt-64  ">
+        <Banner  />
       </div>
-      <AnimatePresence>
-        {bannerCompleted && (
+      
+        
           <motion.div
-          className=" w-1/2  px-3  justify-center "
+          className=" w-full  px-3  justify-center mt-64 "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 1 }}
@@ -41,8 +32,9 @@ export default function Home() {
           >
             <CubeBg />
           </motion.div>
-        )}
-      </AnimatePresence>
+       
+      
     </div>
+    </motion.div>
   );
 }
