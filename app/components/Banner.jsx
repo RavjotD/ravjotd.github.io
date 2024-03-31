@@ -6,20 +6,19 @@ import { TypeAnimation } from "react-type-animation";
 const Banner = ({}) => {
   return (
     <div className="w-full h-full flex flex-col font-bold justify-start items-start ">
-      <div className="text-white text-6xl md:text-6xl lg:text-9xl mb-12">    
+      <div className="text-white text-4xl md:text-6xl lg:text-9xl mb-12">    
             <TypeAnimation
               sequence={[
                 
                 'Hi I am Ravjot!',
                 1000,
-                '',
-                2000, 
+                
              
               ]}
               wrapper="span"
               speed={20}
               style={{ display: 'inline-block' }}
-              repeat={Infinity}
+              repeat={1}
             />
                   </div>
 

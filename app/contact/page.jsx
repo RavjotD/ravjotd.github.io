@@ -77,8 +77,8 @@ const form = useRef();
 
             <span> Dear Ravjot Duhra,</span>
             
-            <input rows={6} 
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+            <input type="text" 
+            className="bg-transparent border-b-2 border-b-black outline-none resize-none p-4"
              name="user_message"/>
 
             <span> My email address is:</span>
