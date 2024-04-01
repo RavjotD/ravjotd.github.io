@@ -16,24 +16,25 @@ export default function Home() {
 
     <motion.div
      
-      className="h-full"
+      className=" max-h-max flex flex-col lg:flex-row pt-2 lg:pt-44 "
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}>   
 
-    <div className=" flex flex-col lg:flex-row px-4 mt-12 lg:mt-64 ">
-      <div className="w-full   ">
-        <Banner  />
-      </div>
-          <div
-          className=" w-full  px-3 justify-center  "
-        
-          >
-            <CubeBg />
-          </div>
+    
+        <div className="w-full lg:w-1/2">
+
+        <Banner/>
+
+        </div>
        
-         
+    <div className="w-full lg:w-1/2">
+
+    <CubeBg/>
+
     </div>
+    
+    
     </motion.div>
   );
 }
