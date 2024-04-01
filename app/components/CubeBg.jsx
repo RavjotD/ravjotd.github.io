@@ -70,7 +70,7 @@ const Cube = () => {
     const texture_6 = useLoader (TextureLoader, "././6.jpeg")
 
 
-    const boxSize = window.innerWidth < 1024 ? 1.5:3;
+    const boxSize = window.innerWidth < 1024 ? 2.9:3;
         return (
 
                 <mesh ref={mesh}>
