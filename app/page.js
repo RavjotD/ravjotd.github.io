@@ -16,7 +16,7 @@ export default function Home() {
 
     <motion.div
      
-      className=" max-h-max flex flex-col lg:flex-row pt-2 lg:pt-20 xl:pt-40 "
+      className=" max-h-max flex flex-col lg:flex-row  "
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}>   
@@ -28,7 +28,7 @@ export default function Home() {
 
         </div>
        
-    <div className="w-full lg:w-1/2">
+    <div className="w-full lg:w-1/2 ">
 
     <CubeBg/>
 
