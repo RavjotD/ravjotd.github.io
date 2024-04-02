@@ -16,7 +16,7 @@ export default function Home() {
 
     <motion.div
      
-      className=" max-h-max flex flex-col lg:flex-row pt-2 lg:pt-44 "
+      className=" max-h-max flex flex-col lg:flex-row pt-2 lg:pt-20 xl:pt-40 "
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}>   

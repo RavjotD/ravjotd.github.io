@@ -3,7 +3,7 @@ import Lottie from "react-lottie";
 import animationData from "./Animation-.json"
 
 const Typing = () => {
-    const [animationSize, setAnimationSize] = useState({ width: 800, height: 800 });
+    const [animationSize, setAnimationSize] = useState({ width: 750, height: 750 });
 
     useEffect(() => {
         const handleResize = () => {
@@ -12,7 +12,7 @@ const Typing = () => {
           if (screenWidth <= 1024) {
             setAnimationSize({ width: 200, height: 150 });
           } else {
-            setAnimationSize({ width: 800, height: 800 });
+            setAnimationSize({ width: 750, height: 750 });
           }
         };
     
