@@ -28,7 +28,7 @@ export default function Home() {
 
         </div>
        
-    <div className="w-full lg:w-1/2 ">
+    <div className="w-full lg:w-1/2 pt-0 lg:pt-32 ">
 
     <CubeBg/>
 
