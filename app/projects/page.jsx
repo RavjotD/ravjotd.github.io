@@ -25,10 +25,10 @@ const items = [
 
 { id: 3, 
   color: "from-teal-100 to-slate-300",
-  title: "Digital Clock",
-  desc: " My first small React app to familiarize myself with it's concepts, I displayed an exquisite view to keep track of time.",
-  img: "/Clock.png",
-  link: "https://clock-pi-ten.vercel.app/"
+  title: "Weather App",
+  desc: " Check out weather conditions for any city across the world using this Weather API app. This responsive applications consists of Javascript, HTML and CSS.",
+  img: "/weather.png",
+  link: "https://weather-h5nnz78tg-ravjotds-projects.vercel.app/"
 }, 
 
 ];
