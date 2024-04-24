@@ -28,7 +28,7 @@ const items = [
   title: "Weather App",
   desc: " Check out weather conditions for any city across the world using this Weather API app. This responsive applications consists of Javascript, HTML and CSS.",
   img: "/weather.png",
-  link: "https://weather-h5nnz78tg-ravjotds-projects.vercel.app/"
+  link: "https://weather-app-chi-sandy.vercel.app/"
 }, 
 
 ];
