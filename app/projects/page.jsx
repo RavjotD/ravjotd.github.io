@@ -10,7 +10,7 @@ const items = [
   color: "from-gray-500 to-blue-200",
   title: "Business Website",
   desc: "Being a student that practices in Web Development, I utilized the latest technologies to help out a client's business by establishing an online presence.",
-  img: "/Stallion.png",
+  img: "/Screenshot.png",
   link: "https://stalliongroupsecurity.ca/"
 }, 
 
