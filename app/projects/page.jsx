@@ -8,27 +8,26 @@ const items = [
 
 { id: 1, 
   color: "from-gray-500 to-blue-200",
-  title: "Business Website",
-  desc: "Being a student that practices in Web Development, I utilized the latest technologies to help out a client's business by establishing an online presence.",
+  title: "Business Site",
+  desc: "Being a student that practices in Web Development, I utilized the latest technologies to help out a client's business by establishing an online presence for a Security company..",
   img: "/Screenshot.png",
   link: "https://stalliongroupsecurity.ca/"
 }, 
 
 { id: 2, 
   color: "from-blue-200 to-teal-100",
-  title: "To-Do List",
-  desc: " In order to become a creative developer I needed to lay out the fundamentals within React. A simple to-do list application for users to keep track of their daily schedule. ",
-  img: "/project.png",
-  link: "https://dolist-eta.vercel.app/"
+  title: "Weather App",
+  desc: " Check out weather conditions for any city across the world using this Weather application. This responsive applications consists of Javascript, HTML and CSS with the implementation of the Weather API.",
+  img: "/weather.png",
+  link: "https://weather-app-chi-sandy.vercel.app/"
 }, 
-
 
 { id: 3, 
   color: "from-teal-100 to-slate-300",
-  title: "Weather App",
-  desc: " Check out weather conditions for any city across the world using this Weather API app. This responsive applications consists of Javascript, HTML and CSS.",
-  img: "/weather.png",
-  link: "https://weather-app-chi-sandy.vercel.app/"
+  title: "To-Do List",
+  desc: " I developed a simple To-Do list application to gain more practical experience in my programming skills. Using  the fundamentals within React, applied practices of HTML, CSS and JavaScript for a application so users can keep track of their daily schedule.",
+  img: "/App.png",
+  link: "https://dolist-eta.vercel.app/"
 }, 
 
 ];
@@ -80,7 +79,7 @@ const projectPage = () => {
                     </div> 
                     <p className="w-80 lg:w-[500px] lg:text-lg xl:w-[600px] font-bold font-sans  flex text-lg">{item.desc}</p>
                       <Link href ={item.link} className="flex justify-end">
-                        <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg  bg-slate-800 hover:bg-gray-700 text-white font-semibold m-4 rounded"> 
+                        <button className=" rounded-4xl border-2 border-doubled border-black bg-slate-500 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none "> 
                         See Demo
                         </button></Link>
               </div>
