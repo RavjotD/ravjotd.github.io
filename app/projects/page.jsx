@@ -9,7 +9,7 @@ const items = [
 { id: 1, 
   color: "from-gray-500 to-blue-200",
   title: "Business Site",
-  desc: "Being a student that practices in Web Development, I utilized the latest technologies to help out a client's business by establishing an online presence for a Security company.",
+  desc: "Being a student that practices in Web Development, I utilized the latest technologies to help out a client's business reliability by establishing an online presence for a Security company.",
   img: "/Screenshot.png",
   link: "https://stalliongroupsecurity.ca/"
 }, 
