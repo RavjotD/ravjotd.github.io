@@ -77,7 +77,7 @@ const projectPage = () => {
                   <div className=" relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
                    <img src={item.img} className=" rounded-2xl"/>
                     </div> 
-                    <p className="w-80 lg:w-[500px] md:text-lg xl:w-[600px] font-bold font-sans  flex text-sm">{item.desc}</p>
+                    <p className="w-80 lg:w-[500px] lg:text-lg xl:w-[600px] font-bold font-sans  flex text-sm">{item.desc}</p>
                       <Link href ={item.link} className="flex justify-end">
                         <button className=" rounded-2xl border-2 border-doubled border-black bg-slate-500 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none "> 
                         See Demo
