@@ -9,7 +9,7 @@ const items = [
 { id: 1, 
   color: "from-gray-500 to-blue-200",
   title: "Business Site",
-  desc: "Being a student that practices in Web Development, I utilized the latest technologies to help out a client's business by establishing an online presence for a Security company..",
+  desc: "Being a student that practices in Web Development, I utilized the latest technologies to help out a client's business by establishing an online presence for a Security company.",
   img: "/Screenshot.png",
   link: "https://stalliongroupsecurity.ca/"
 }, 
@@ -17,7 +17,7 @@ const items = [
 { id: 2, 
   color: "from-blue-200 to-teal-100",
   title: "Weather App",
-  desc: " Check out weather conditions for any city across the world using this Weather application. This responsive applications consists of Javascript, HTML and CSS with the implementation of the Weather API.",
+  desc: " Check out weather conditions for any city across the world using this Weather application. This applications consists of JavaScript, HTML, CSS and implements the Weather API.",
   img: "/weather.png",
   link: "https://weather-app-chi-sandy.vercel.app/"
 }, 
@@ -25,7 +25,7 @@ const items = [
 { id: 3, 
   color: "from-teal-100 to-slate-300",
   title: "To-Do List",
-  desc: " I developed a simple To-Do list application to gain more practical experience in my programming skills. Using  the fundamentals within React, applied practices of HTML, CSS and JavaScript for a application so users can keep track of their daily schedule.",
+  desc: " I developed a simple To-Do list application so users can keep track of their daily schedule. Using the fundamentals within React, I applied practices of HTML, CSS and JavaScript.",
   img: "/App.png",
   link: "https://dolist-eta.vercel.app/"
 }, 
@@ -69,7 +69,7 @@ const projectPage = () => {
       <div className= "h-screen w-screen flex items-center justify-center bg-gradient-to-r from-gray-600 to-gray-500 "/>
           {items.map((item) => (
           // Project Div// 
-          <div className={`h-screen w-screen  flex items-center justify-center lg:px-8 bg-gradient-to-r ${item.color}`} key={item.id}>
+          <div className={`h-screen w-screen  flex items-center justify-center lg:px-8  bg-gradient-to-r ${item.color}`} key={item.id}>
             
             
             <div className="flex flex-col gap-8 text-slate-950">
@@ -77,9 +77,9 @@ const projectPage = () => {
                   <div className=" relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
                    <img src={item.img} className=" rounded-2xl"/>
                     </div> 
-                    <p className="w-80 lg:w-[500px] lg:text-lg xl:w-[600px] font-bold font-sans  flex text-lg">{item.desc}</p>
+                    <p className="w-80 lg:w-[500px] lg:text-lg xl:w-[600px] font-bold font-sans  flex text-lg sm:text-sm">{item.desc}</p>
                       <Link href ={item.link} className="flex justify-end">
-                        <button className=" rounded-4xl border-2 border-doubled border-black bg-slate-500 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none "> 
+                        <button className=" rounded-2xl border-2 border-doubled border-black bg-slate-500 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none "> 
                         See Demo
                         </button></Link>
               </div>
