@@ -17,7 +17,7 @@ const items = [
 { id: 2, 
   color: "from-blue-200 to-teal-100",
   title: "Weather App",
-  desc: " Check out weather conditions for any city across the world using this Weather application. This applications consists of JavaScript, HTML, CSS and implements the Weather API.",
+  desc: " Check out weather conditions for any city across the world using this Weather application. This applications consists of JavaScript, HTML, CSS and integrates the Weather API for real-time data.",
   img: "/weather.png",
   link: "https://weather-app-chi-sandy.vercel.app/"
 }, 
@@ -25,9 +25,17 @@ const items = [
 { id: 3, 
   color: "from-teal-100 to-slate-300",
   title: "To-Do List",
-  desc: " I developed a simple To-Do list application so users can keep track of their daily schedule. Using the fundamentals within React, I applied practices of HTML, CSS and JavaScript.",
+  desc: " I developed a simple To-Do list application so users can keep track of their daily schedule. Using the fundamentals, I applied practices of HTML, CSS and JavaScript to create this responsive app.",
   img: "/App.png",
   link: "https://dolist-eta.vercel.app/"
+}, 
+
+{ id: 4, 
+  color: "from-slate-300 to-blue-100",
+  title: "Object Detection",
+  desc: "I got the opportunity to work on a robotics project using Raspberry Pi for object detection purposes . Integrating python practices for obstacle avoidance, ball tracking and face-detection.",
+  img: "/face.png",
+  link: "https://github.com/RavjotD/Object-Detection/"
 }, 
 
 ];
@@ -46,7 +54,7 @@ const projectPage = () => {
       const {scrollYProgress} = useScroll ({target:ref})
 
 
-      const x = useTransform(scrollYProgress, [0,1], ["0%", "-75%"]);
+      const x = useTransform(scrollYProgress, [0,1], ["0%", "-79%"]);
 
 
 
