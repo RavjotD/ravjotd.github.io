@@ -12,7 +12,7 @@ export default function Home() {
 
     <motion.div
      
-      className=" max-h-full flex flex-col lg:flex-row  "
+      className=" max-h-full relative flex flex-col lg:flex-row  "
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}>   
