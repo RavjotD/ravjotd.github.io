@@ -8,7 +8,7 @@ import Experience from "../components/Experience";
 import Typing from "../components/Animation";
 
 
-
+// About page that uses react hooks for transition and animation features to showcase content uniquely.
 const AboutPage = () => {
 
     const profileRef = useRef(null);    
@@ -83,10 +83,10 @@ const AboutPage = () => {
                     <p className=" text-medium lg:text-2xl p-6  font-serif font-medium text-slate-100">
 
                   " Hi I'm Ravjot! A full-stack developer that holds a great passion to continuously grow in the IT realm.     
-                    Within my final  year of schooling, I am extending my expertise with the practices of using the latest technologies to gain more experience in bettering  my creativity as a developer.</p>
+                    Within my final  year of schooling, I am extending my expertise with the practices of using the latest technologies to gain more experience in bettering my Software Engineering practices.</p>
                     <p className=" text-medium lg:text-2xl p-6  font-serif font-medium text-slate-100">
-                    While technology continues to evolve everyday, I have grasped 4 years of experience in the field 
-                    during my education, showcasing my knowledge of growth throughout my projects from business to personal ones.</p>
+                    While technology continues to evolve everyday, I have grasped 4 years of experience in my academical pursuit
+                    by showcasing my knowledge of growth throughout my projects, from business to personal applications.</p>
                     <p className="text-medium lg:text-2xl p-6  font-serif font-medium text-slate-100"> Just as the tech world stays in the pursuit of evolution, I hold myself to the same standard. I look forward in presenting more projects that showcases my innovation, feel free to check out of my work and let's connect! "
 
                      </p>
