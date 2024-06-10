@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
-
+// Page component that displays page foundations around children elements
 const TransitionProvider = ({children}) => {
 
 

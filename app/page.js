@@ -4,19 +4,15 @@ import { animate, motion, useTransform, useMotionValue, AnimatePresence  } from 
 import CubeBg from "./components/CubeBg";
 import Banner from "./components/Banner";
 
-
+// Home page that displays Banner and cube component.
 export default function Home() {
- 
-
-  // Use useEffect to detect when banner animation is completed
  
   return (
   
 
-
     <motion.div
      
-      className=" max-h-max flex flex-col lg:flex-row  "
+      className=" max-h-full flex flex-col lg:flex-row  "
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}>   

@@ -3,8 +3,8 @@ import React, { useRef } from 'react'
 import { motion, useTransform,useScroll } from "framer-motion";
 import Link from "next/link"
 
+// Constant for items to display each project.
 const items = [
-
 
 { id: 1, 
   color: "from-gray-500 to-blue-200",
@@ -43,10 +43,8 @@ const items = [
 
 
 
-
+//Project page to display unique scrolling features and content.
 const projectPage = () => {
-
-
 
       const ref = useRef();
 
@@ -55,11 +53,6 @@ const projectPage = () => {
 
 
       const x = useTransform(scrollYProgress, [0,1], ["0%", "-79%"]);
-
-
-
-
-
 
   return (
     <motion.div className="h-full" 
@@ -101,6 +94,7 @@ const projectPage = () => {
 
            </div>
        </div>
+          {/* Contact button section */}
             <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-gradient-to-b from-slate-300 to-slate-600">
                 <h1 className="font-bold text-8xl">Let's Get In Touch!</h1>
                     {/* SVG Container */}

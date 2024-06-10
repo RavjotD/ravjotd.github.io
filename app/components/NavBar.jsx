@@ -6,14 +6,14 @@ import NavLink from "./navLink";
 import { motion } from "framer-motion";
 
 
-
+// Links for Navbar
 const links = [
     {url:"/", title:"Home"},
     {url:"/about", title:"About"},
     {url:"/projects", title:"Portfolio"},
     {url:"/contact", title:"Contact"}
 ];
-
+// Navbar features of close and open state
 const NavBar = () => {
     const [open,setOpen] = useState(false);
 
@@ -79,7 +79,7 @@ const NavBar = () => {
     }
 
   return (
-        // NavBar
+        // NavBar being linked to constant links and css styling.
     <div className="h-full flex items-center justify-between px-8 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
               
               {/* Links on Nav*/}

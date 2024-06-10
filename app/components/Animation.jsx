@@ -2,6 +2,7 @@ import React, {useEffect,useState} from "react";
 import Lottie from "react-lottie";
 import animationData from "./Animation-.json"
 
+// Animation for Experience section that display computing work
 const Typing = () => {
     const [animationSize, setAnimationSize] = useState({ width: 750, height: 750 });
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
-
+// Constant created for banner to display text on home page.
 const Banner = ({}) => {
   return (
     <div className="w-full h-full flex flex-col font-bold justify-start items-start pt-4 lg:pt-48">

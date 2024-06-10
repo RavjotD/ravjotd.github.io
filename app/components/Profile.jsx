@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 const Profile = () => {
   return (
 
-    // Component parent div
+    // Component for technology skills display
     <div className="flex  flex-col  my-10 justify-center px-12   items-center">
                 {/* Skills */}
               <div>
-                <h1 className=" text-6xl lg:text-8xl  text-white font-extrabold "> Skills<span className="text-blue-300 ">.</span> </h1>
+                <h1 className=" text-6xl lg:text-8xl  text-white font-extrabold ">Tech<span className="text-blue-300 ">.</span> </h1>
                 <hr className="w-full my-2 rounded-xl border-gray-700 border-2"></hr>
                </div>
 

@@ -1,10 +1,9 @@
 
-//import { Inter } from 'next/font/google';
 import TransitionProvider from "./components/transitionProvider";
 import './globals.css'
 
-//const inter = Inter({ subsets: ['latin'] })
 
+// Root page of children. Surrounding children elements from Transition page layout.
 export const metadata = {
   title: 'Ravjot Duhra',
   description: "Ravjot Duhra's Portfolio",

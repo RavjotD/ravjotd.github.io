@@ -8,8 +8,7 @@ import { TypeAnimation } from "react-type-animation";
 
 
 
-
-
+// Cube component to display on home page, using canavas and three.js features.
 
 export default function CubeBg (){
 
@@ -24,8 +23,6 @@ export default function CubeBg (){
                             </Canvas> 
             
 );
-
-
 
 
 }
@@ -51,8 +48,11 @@ const Cube = () => {
           window.removeEventListener('resize', handleResize);
         };
       }, []);
+     
+      
     const mesh = useRef(null);
 
+    // Rotation features of cube.
     useFrame( (state, delta) => {
 
         mesh.current.rotation.x += delta * 0.25;
@@ -61,7 +61,7 @@ const Cube = () => {
     
     });
     
-
+// Images for each side of cube display
     const texture_1 = useLoader (TextureLoader, "././traveller.webp")
     const texture_2 = useLoader (TextureLoader, "././2.jpeg")
     const texture_3 = useLoader (TextureLoader, "././3.jpeg")

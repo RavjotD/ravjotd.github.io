@@ -3,10 +3,8 @@ import React, { useRef, useState } from 'react'
 import { animate, motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
 
-
+//Contact page that displays text and form to send me emails from free emailing server.
 const contactPage = () => {
-
-
 
 const [success,setSuccess] = useState(false)
 const [error,setError] = useState(false)
