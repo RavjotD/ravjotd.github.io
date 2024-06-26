@@ -96,7 +96,7 @@ const projectPage = () => {
        </div>
           {/* Contact button section */}
             <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-gradient-to-b from-slate-300 to-slate-600">
-                <h1 className="font-bold text-8xl">Let's Get In Touch!</h1>
+                <h1 className="font-bold  text-6xl lg:text-8xl">Let's Get In Touch!</h1>
                     {/* SVG Container */}
                     <div className="relative">
 
