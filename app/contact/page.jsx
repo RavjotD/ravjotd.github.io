@@ -42,7 +42,7 @@ const form = useRef();
           
 
     
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 p-12 ">
+      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 lg:p-12 p-4 ">
 
           {/* Text Container */}
       <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl"> 
