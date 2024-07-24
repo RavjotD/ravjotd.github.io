@@ -41,7 +41,7 @@ const Experience = () => {
               <div className="min-w-0 flex-1 py-0">
                 <div className=" px-8 text-white bg-gradient-to-b from-gray-700 to-gray-800 rounded  ">
                      <div>
-                        <h2 className="mb-3 py-3 font-bold text-2xl ">Web Developer</h2>
+                        <h2 className="mb-3 py-3 font-bold text-2xl ">Front-End Engineer</h2>
                               <h4 className="mb-3 font-semibold text-xl">Stallion Group Security</h4>
                                 <ul className="text-sm list-disc leading-snug tracking-wide ">                             
                                     <li className="my-3 font-sans">Created an online presence for the company by establishing a website to better market the company’s business. I gained an understanding of the client’s business to promote it’s services and company background throughout the website. 
