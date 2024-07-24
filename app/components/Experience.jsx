@@ -15,7 +15,7 @@ const Experience = () => {
     <div className="">
 
        {/* EXPERIENCE CONTAINER */}
-       <div className="flex flex-col gap-12 justify-center pb-48 w-full  my-2  items-center">      
+       <div className="flex flex-col gap-12 justify-center pb-24 w-full  my-2  items-center">      
           
             {/* EXPERIENCE TITLE */}
             <div>
@@ -23,7 +23,7 @@ const Experience = () => {
                 <hr className="w-full my-2 rounded-xl border-gray-700 border-2"></hr>
                </div>
               {/* EXP Content */}
-               <div className="w-screen md:w-2/3 mr-10 p-8">
+               <div className="w-screen md:w-2/3 mr-6 px-8">
               <div className="flow-root">
           <ul className="-mb-8">
         {/* Line Item */}
@@ -44,12 +44,10 @@ const Experience = () => {
                         <h2 className="mb-3 py-3 font-bold text-2xl ">Web Developer</h2>
                               <h4 className="mb-3 font-semibold text-xl">Stallion Group Security</h4>
                                 <ul className="text-sm list-disc leading-snug tracking-wide ">                             
-                                    <li className="my-3 font-sans">Created an online presence for the company by establishing a website to better market company’s business. 
-                                     Gained a understanding of the client’s business to promote its services and company background throughout the website.
+                                    <li className="my-3 font-sans">Created an online presence for the company by establishing a website to better market the company’s business. I gained an understanding of the client’s business to promote it’s services and company background throughout the website. 
                                     </li>
                                     <li className="my-3 font-sans ">
-                                    Using latest technology, developed a user-friendly and responsive interface which highlights appealing visuals with credible content.
-                                    In addition, included client communication by offering contact forum to allow company to engage with clients that brings professionalism to the company.
+                                    Using the latest technology, I developed a user-friendly and responsive interface that highlights appealing visuals with credible content. In addition, provided client communication through a contact forum to allow company engagement with clients, bringing professionalism to the business.
                                     </li>
                                   </ul>
 
@@ -85,8 +83,7 @@ const Experience = () => {
                             <h2 className="mb-3 py-3  font-bold text-2xl">Service Desk Analyst </h2>
                               <h4 className="mb-3 font-semibold  text-xl">Microserve</h4>
                               <ul className="text-sm te list-disc leading-snug tracking-wide font-sans ">     
-                                  <li className="my-3">Worked as a service agent for multiple clienteles. Supported specialized applications 
-                                  while maintaining and developing internal software tools by reporting and processing automation
+                                  <li className="my-3">Worked as a service agent for multiple clienteles to provide technical support. Supported specialized applications while maintaining and developing internal software tools through reporting and processing automation.
                                   </li>
                                   <li className="my-3">
                                   Conducted application testing by engaging users for acceptance testing, then collected and summarized test data, all while multitasking by troubleshooting user issues between live calls and service ticket requests.
@@ -127,12 +124,10 @@ const Experience = () => {
                                     <h2 className="mb-3 py-3  font-bold text-2xl">Sales Representative</h2>
                                       <h4 className="mb-3 font-semibold text-xl">Club 16 Trevor Linden Fitness</h4>
                                       <ul className="text-sm list-disc leading-snug tracking-wide ">                                     
-                                         <li className="my-3 font-sans">Managed the client experience, delivered excellence in customer service by selling memberships and meeting monthly quotes. 
-                                          Identified prospective customers by using business directories, following leads from existing clients and creating personal leads by connecting with the community. 
+                                         <li className="my-3 font-sans">Managed the client experience, delivered excellence in customer service by selling memberships and meeting monthly quotes. Identified prospective customers by using business directories, following leads from existing clients, and creating personal leads by connecting with the community 
                                           </li>
                                           <li className="my-3 font-sans ">
-                                          Completed daily outbound calls. 
-                                          Researched and learned sales and health knowledge of the fitness industry to understand the market better. 
+                                          Completed daily outbound calls, researched and learned sales and health knowledge of the fitness industry to understand the market better. 
                                           </li>
                                         </ul>
 
@@ -141,6 +136,7 @@ const Experience = () => {
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Communication</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Problem-solving</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Leadership</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Customer Service</span>
                                   </div>
                                     <p className="my-2 py-3 font-medium">  August 2018-December 2022</p>
                                 </div> 
@@ -167,12 +163,17 @@ const Experience = () => {
                             <h2 className="mb-3 py-3  font-bold text-2xl">Bachelors of Technology </h2>
                                     <h4 className="mb-3 font-semibold  text-xl">Kwantlen Polytechnic University</h4>
                                     <ul className="text-sm te list-disc leading-snug tracking-wide font-sans ">               
-                                        <li className="my-3">	Year 4 in BTECH.</li>
-                                        <li className="my-3">	Proactively grasping fundamentals within the IT field.</li>                         
+                                        <li className="my-3">	Year 4 in Computer Science.</li>
+                                        <li className="my-3">	Understanding of Data Structures and Algorithms in various languages.</li>                         
+                                        <li className="my-3">	Database Management System using SQL practices.</li>                         
+                                        <li className="my-3">	Experienced in identifying and resolving issues through advanced networking technologies.</li>                         
+                                        <li className="my-3">	Expertise in Software Engineering Development methodologies and best practices.</li>                         
+                                        <li className="my-3">	Proficient in operating Linux systems with comprehensive system security coverage.</li>                         
+                                        <li className="my-3">	Software Quality Assurance practices in debugging and quality control maintenance.</li>                         
                                         <li className="my-3">
-                                        Enhancing knowledge in programming languages and practices in modern software/API’s.
-                                        Progressively gaining experience in troubleshooting tasks from hardware to software.                           
+                                        Full-stack development with RESTful API integration                          
                                         </li>
+
                                       </ul>
                                       <div className="my-4 text-xl">Skills:   
                                     
