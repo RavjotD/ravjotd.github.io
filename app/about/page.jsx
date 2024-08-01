@@ -80,16 +80,19 @@ const AboutPage = () => {
                     <hr className="w-full my-8 rounded-xl border-gray-700 border-2"></hr>
               </div>
               <div className=" w-full lg:w-2/3 hover:shadow-2xl justify-evenly items-center hover:shadow-black p-3  cursor-grab hover:bg-gradient-to-b hover:from-gray-700 hover:to-gray-800  flex flex-col  rounded-xl my-6 ">
-                    <p className=" text-medium lg:text-2xl pb-4  font-serif font-medium text-slate-100">
+                    <p className=" text-medium lg:text-2xl pb-4  font-sans font-medium text-slate-100">
                   " Hi I'm Ravjot! A full-stack developer that holds a great passion to continuously grow in the IT realm.     
                     Within my final  year of schooling, I am extending my expertise by utilizing the latest technologies to gain more experience in bettering my Software Engineering practices.</p>
-                    <p className=" text-medium lg:text-2xl pb-4  font-serif font-medium text-slate-100">
+                    <p className=" text-medium lg:text-2xl pb-4  font-sans font-medium text-slate-100">
                     While technology continues to evolve everyday, I have grasped 4 years of experience in my academical pursuit
                     by showcasing my knowledge of growth throughout my projects, from business to personal applications.</p>
-                    <p className="text-medium lg:text-2xl pb-4 font-serif font-medium text-slate-100"> Just as the tech world stays in the pursuit of evolution, I hold myself to the same standard. I look forward in presenting more innovative projects, feel free to check out of my work and let's connect! "
+                    <p className="text-medium lg:text-2xl pb-4 font-sans font-medium text-slate-100"> Just as the tech world stays in the pursuit of evolution, I hold myself to the same standard. I look forward in presenting more innovative projects, feel free to check out of my work and let's connect! "
 
                      </p>
               </div>
+
+
+            
                       {/*Slide animation for profile section*/}
                     <motion.div
                     className="bg-slate-700"

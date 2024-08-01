@@ -8,14 +8,14 @@ const items = [
   { id: 1, 
     color: "from-gray-500 to-blue-300",
     title: "TicketHub",
-    desc: "A react app that acts as an a alternative to TicketMaster. Searching for festivals and events that you want to attend by integrating the Discovery API and data storage using PocketBase. ",
+    desc: "A react app that acts as an a alternative to TicketMaster. Search for any events around the world that you want to attend with the integration of TicketMaster Discovery API and PocketBase. ",
     img: "/THSS.png",
     link: "https://ticket-hub-pink.vercel.app/"
   }, 
 { id: 2, 
   color: "from-blue-300 to-blue-200",
   title: "Business Site",
-  desc: "By specializing in full-stack development, I utilized the latest technologies to help out a client's business reliability by establishing an online presence for a Security company.",
+  desc: "By specializing in full-stack development, I utilized the latest technologies to help out a client's business by providing reliability by an developing online presence for a Security company.",
   img: "/Screenshot.png",
   link: "https://stalliongroupsecurity.ca/"
 }, 
@@ -23,7 +23,7 @@ const items = [
 { id: 3, 
   color: "from-blue-200 to-teal-100",
   title: "Weather App",
-  desc: " Check out weather conditions for any city across the world using this Weather application. This applications consists of JavaScript, HTML, CSS and integrates the Weather API for real-time data.",
+  desc: " Check out weather conditions for any city across the world using this Weather application. The app consists of JavaScript, HTML, CSS, as well as integrates the Weather API for real-time data.",
   img: "/weather.png",
   link: "https://weather-app-chi-sandy.vercel.app/"
 }, 
@@ -31,7 +31,7 @@ const items = [
 { id: 4, 
   color: "from-teal-100 to-slate-300",
   title: "To-Do List",
-  desc: " I developed a simple To-Do list application so users can keep track of their daily schedule. Using the fundamentals, I applied practices of HTML, CSS and JavaScript to create this responsive app.",
+  desc: " I developed a simple To-Do list application so users can keep track of their daily schedule. Using the fundamentals, I applied practices of HTML, CSS and JavaScript to create this application.",
   img: "/App.png",
   link: "https://dolist-eta.vercel.app/"
 }, 
@@ -39,7 +39,7 @@ const items = [
 { id: 5, 
   color: "from-slate-300 to-blue-100",
   title: "Object Detection",
-  desc: "I got the opportunity to work on a robotics project using Raspberry Pi for object detection purposes . Integrating python practices for obstacle avoidance, ball tracking and face-detection.",
+  desc: "I got the opportunity to work with robotics using Raspberry Pi for object detection purposes. Integrating python practices for obstacle avoidance, ball tracking and face-detection on a remote 4WD.",
   img: "/face.png",
   link: "https://github.com/RavjotD/Object-Detection/"
 }, 
@@ -58,7 +58,7 @@ const projectPage = () => {
       const {scrollYProgress} = useScroll ({target:ref})
 
 
-      const x = useTransform(scrollYProgress, [0,1], ["0%", "-79%"]);
+      const x = useTransform(scrollYProgress, [0,1], ["0%", "-83.5%"]);
 
   return (
     <motion.div className="h-full" 
@@ -66,27 +66,27 @@ const projectPage = () => {
          animate={{y:"0%"}} 
          transition={{duration:1}}> 
           
-    
-     <div className="h-[600vh] relative" ref={ref}>
+    {/* Parent Div */}
+     <div className="h-[600vh] relative p-0" ref={ref}>
       
-          <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center text-black text-opacity-70 font-sans font-bold ">My Work</div>      
-          <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden ">
+          <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-4xl lg:text-8xl text-center p-2 text-black text-opacity-70 font-sans font-bold ">My Work</div>      
+          <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden p-4">
 
             <motion.div style={{x}} className="flex">
       <div className= "h-screen w-screen flex items-center justify-center bg-gradient-to-r from-gray-600 to-gray-500 "/>
           {items.map((item) => (
           // Project Div// 
-          <div className={`h-screen w-screen  flex items-center justify-center lg:px-8  bg-gradient-to-r ${item.color}`} key={item.id}>
+          <div className={`h-screen w-screen  flex items-center justify-center  lg:px-8  bg-gradient-to-r ${item.color}`} key={item.id}>
             
             
-            <div className="flex flex-col gap-8 text-slate-950">
-                <h1 className=" font-bold text-xl md:text-4xl lg:text-6xl xl:text-8xl">{item.title}</h1>
+            <div className="flex flex-col gap-4 text-slate-950  ">
+                <h1 className=" font-bold text-xl md:text-4xl lg:text-6xl xl:text-8xl p-2">{item.title}</h1>
                   <div className=" relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                   <img src={item.img} className=" rounded-2xl"/>
+                   <img src={item.img} className=" px-2 rounded-2xl"/>
                     </div> 
-                    <p className="w-80 lg:w-[500px] lg:text-lg xl:w-[600px] font-bold font-sans  flex text-sm">{item.desc}</p>
+                    <p className="w-80 lg:w-[500px] lg:text-lg xl:w-[600px] font-bold font-sans  flex text-sm p-2">{item.desc}</p>
                       <Link href ={item.link} className="flex justify-end">
-                        <button className=" rounded-2xl border-2 border-doubled border-black bg-slate-500 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none "> 
+                        <button className=" p-2 rounded-2xl border-2 border-doubled border-black bg-slate-500 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none "> 
                         See Demo
                         </button></Link>
               </div>
@@ -102,7 +102,7 @@ const projectPage = () => {
        </div>
           {/* Contact button section */}
             <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-gradient-to-b from-slate-300 to-slate-600">
-                <h1 className="font-bold  text-6xl lg:text-8xl">Let's Get In Touch!</h1>
+                <h1 className="font-bold  text-2xl lg:text-8xl">Let's Get In Touch!</h1>
                     {/* SVG Container */}
                     <div className="relative">
 
@@ -118,7 +118,7 @@ const projectPage = () => {
 
                           <text fill="#000">
 
-                            <textPath  xlinkHref="#circlePath" className="text-xl font-semibold"> Full-Stack Developer and UI Designer</textPath>
+                            <textPath  xlinkHref="#circlePath" className="text-lg  font-semibold">Software Engineer & Full-Stack Developer</textPath>
 
                           </text>
                       </motion.svg>
