@@ -5,16 +5,22 @@ import Link from "next/link"
 
 // Constant for items to display each project.
 const items = [
-
-{ id: 1, 
-  color: "from-gray-500 to-blue-200",
+  { id: 1, 
+    color: "from-gray-500 to-blue-300",
+    title: "TicketHub",
+    desc: "A react app that acts as an a alternative to TicketMaster. Searching for festivals and events that you want to attend by integrating the Discovery API and data storage using PocketBase. ",
+    img: "/THSS.png",
+    link: "https://ticket-hub-pink.vercel.app/"
+  }, 
+{ id: 2, 
+  color: "from-blue-300 to-blue-200",
   title: "Business Site",
-  desc: "Being a student that practices in Web Development, I utilized the latest technologies to help out a client's business reliability by establishing an online presence for a Security company.",
+  desc: "By specializing in full-stack development, I utilized the latest technologies to help out a client's business reliability by establishing an online presence for a Security company.",
   img: "/Screenshot.png",
   link: "https://stalliongroupsecurity.ca/"
 }, 
 
-{ id: 2, 
+{ id: 3, 
   color: "from-blue-200 to-teal-100",
   title: "Weather App",
   desc: " Check out weather conditions for any city across the world using this Weather application. This applications consists of JavaScript, HTML, CSS and integrates the Weather API for real-time data.",
@@ -22,7 +28,7 @@ const items = [
   link: "https://weather-app-chi-sandy.vercel.app/"
 }, 
 
-{ id: 3, 
+{ id: 4, 
   color: "from-teal-100 to-slate-300",
   title: "To-Do List",
   desc: " I developed a simple To-Do list application so users can keep track of their daily schedule. Using the fundamentals, I applied practices of HTML, CSS and JavaScript to create this responsive app.",
@@ -30,7 +36,7 @@ const items = [
   link: "https://dolist-eta.vercel.app/"
 }, 
 
-{ id: 4, 
+{ id: 5, 
   color: "from-slate-300 to-blue-100",
   title: "Object Detection",
   desc: "I got the opportunity to work on a robotics project using Raspberry Pi for object detection purposes . Integrating python practices for obstacle avoidance, ball tracking and face-detection.",

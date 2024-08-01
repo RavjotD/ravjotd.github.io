@@ -12,22 +12,21 @@ export default function Home() {
 
     <motion.div
      
-      className=" max-h-full relative flex flex-col lg:flex-row  "
+      className=" min-h-full inset-0  flex flex-col  lg:flex-row justify-center items-center "
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}>   
 
     
-        <div className="w-full lg:w-1/2">
+    
+    <div className=" flex flex-col lg:flex-row justify-center items center w-full h-full xl:w-2/3  p-3">
+      <div className="flex-1 flex justify-center items-center">    
+      <Banner/>
 
-        <Banner/>
-
-        </div>
-       
-    <div className="w-full lg:w-1/2 pt-0 lg:pt-32 ">
-
+      </div>
+      <div className="flex-1 flex justify-center items-center "> 
     <CubeBg/>
-
+    </div>
     </div>
     
     
