@@ -4,7 +4,7 @@ import animationData from "./Animation-.json"
 
 // Animation for Experience section that display computing work
 const Typing = () => {
-    const [animationSize, setAnimationSize] = useState({ width: 750, height: 750 });
+    const [animationSize, setAnimationSize] = useState({ width: 650, height: 650 });
 
     useEffect(() => {
         const handleResize = () => {
@@ -13,7 +13,7 @@ const Typing = () => {
           if (screenWidth <= 1024) {
             setAnimationSize({ width: 200, height: 150 });
           } else {
-            setAnimationSize({ width: 750, height: 750 });
+            setAnimationSize({ width: 650, height: 650 });
           }
         };
     

@@ -59,7 +59,7 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
         {/* Page container */}
-        <div  className="h-full w-full flex flex-col p-10  px-16 sm:px-24 md:px-12 lg:px-20 xl:px-48 overflow-y-auto " >
+        <div  className="h-full w-full flex flex-col p-5  px-16 sm:px-24 md:px-12 lg:px-20 xl:px-48 overflow-y-auto " >
           <div ref={profileRef} >
                {/* Profile  */}
                  <motion.div 
@@ -79,20 +79,40 @@ const AboutPage = () => {
                     <h2 className="text-6xl lg:text-8xl px-0 sm:px-24 text-white font-extrabold">About<span className="text-blue-300 ">.</span> </h2>
                     <hr className="w-full my-8 rounded-xl border-gray-700 border-2"></hr>
               </div>
-              <div className=" w-full lg:w-2/3 hover:shadow-2xl justify-evenly items-center hover:shadow-black p-3  cursor-grab hover:bg-gradient-to-b hover:from-gray-700 hover:to-gray-800  flex flex-col  rounded-xl my-6 ">
-                    <p className=" text-medium lg:text-2xl pb-4  font-sans font-medium text-slate-100">
+              <div className=" text-white text-sm lg:text-2xl font-sans font-medium lg:w-2/3 hover:shadow-2xl justify-evenly items-center hover:shadow-black p-2  cursor-grab hover:bg-gradient-to-b hover:from-gray-700 hover:to-gray-800  flex flex-col  rounded-xl my-6 ">
+                    <p className=" pb-4  ">
                   " Hi I'm Ravjot! A full-stack developer that holds a great passion to continuously grow in the IT realm.     
                     Within my final  year of schooling, I am extending my expertise by utilizing the latest technologies to gain more experience in bettering my Software Engineering practices.</p>
-                    <p className=" text-medium lg:text-2xl pb-4  font-sans font-medium text-slate-100">
+                    <p className="  pb-4 ">
                     While technology continues to evolve everyday, I have grasped 4 years of experience in my academical pursuit
                     by showcasing my knowledge of growth throughout my projects, from business to personal applications.</p>
-                    <p className="text-medium lg:text-2xl pb-4 font-sans font-medium text-slate-100"> Just as the tech world stays in the pursuit of evolution, I hold myself to the same standard. I look forward in presenting more innovative projects, feel free to check out of my work and let's connect! "
+                    <p className=" pb-4 "> Just as the tech world stays in the pursuit of evolution, I hold myself to the same standard. I look forward in presenting more innovative projects, feel free to check out of my work and let's connect! "
 
                      </p>
               </div>
 
 
-            
+              <div className="flex w-full h-full gap-3 flex-col lg:grid lg:grid-cols-3 text-white">
+                
+                <div className=" border-4 border-slate-800 hover:border-cyan-800 bg-gradient-to-br  from-slate-900 to-gray-700 hover:bg-gradient-to-tl hover:from-slate-900 hover:to-cyan-700  flex flex-col justify-center items-center text-center p-6 rounded-t-md rounded-b-md ">
+                  <img  className ="w-1/6 rounded-full pb-2" src="/stack.png" />
+                    <h1 className="font-bold font-sans pb-2 ">Full-Stack Development</h1>
+                    <p className="font-sans"> Accountable in developing and maintaining all aspects of a software application, from front-end to back-end. </p> 
+                   </div>
+
+                   <div className=" border-4 border-slate-800 hover:border-cyan-800 bg-gradient-to-br  from-slate-900 to-gray-700 hover:bg-gradient-to-tl hover:from-slate-900 hover:to-cyan-700  flex flex-col justify-center items-center text-center p-6 rounded-t-md rounded-b-md ">
+                    <img  className ="w-1/6 rounded-full pb-2" src="/UX.png" />
+                      <h1 className="font-bold font-sans pb-2">UX/UI Design</h1>
+                      <p className="font-sans"> Experienced in intuitive interfaces that ensures positive user experience and increased user retention.</p> 
+                    </div>
+
+                   <div className=" border-4 border-slate-800 hover:border-cyan-800 bg-gradient-to-br  from-slate-900 to-gray-700 hover:bg-gradient-to-tl hover:from-slate-900 hover:to-cyan-700  flex flex-col justify-center items-center text-center p-4 rounded-t-md rounded-b-md">
+                      <img  className ="w-1/5 rounded-xl pb-2 " src="/debugging.png" />
+                       <h1 className="font-bold font-sans pb-2">Testing & Debugging</h1>
+                        <p className="font-sans">Analyzing requirements and defining system functionality from designing, developing, testing and maintaining software applications. </p> 
+                       </div>
+                
+                 </div>
                       {/*Slide animation for profile section*/}
                     <motion.div
                     className="bg-slate-700"
