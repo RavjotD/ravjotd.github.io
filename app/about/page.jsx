@@ -92,7 +92,7 @@ const AboutPage = () => {
               </div>
 
 
-              <div className="flex w-full h-full gap-3 flex-col lg:grid lg:grid-cols-3 text-white">
+              <div className=" mt-6 flex w-full h-full gap-3 flex-col lg:grid lg:grid-cols-3 text-white">
                 
                 <div className=" border-4 border-slate-800 hover:border-cyan-800 bg-gradient-to-br  from-slate-900 to-gray-700 hover:bg-gradient-to-tl hover:from-slate-900 hover:to-cyan-700  flex flex-col justify-center items-center text-center p-6 rounded-t-md rounded-b-md ">
                   <img  className ="w-1/6 rounded-full pb-2" src="/stack.png" />
