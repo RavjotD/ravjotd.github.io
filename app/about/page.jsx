@@ -95,19 +95,19 @@ const AboutPage = () => {
               <div className=" mt-6 flex w-full h-full gap-3 flex-col lg:grid lg:grid-cols-3 text-white">
                 
                 <div className=" border-4 border-slate-800 hover:border-cyan-800 bg-gradient-to-br  from-slate-900 to-gray-700 hover:bg-gradient-to-tl hover:from-slate-900 hover:to-cyan-700  flex flex-col justify-center items-center text-center p-6 rounded-t-md rounded-b-md ">
-                  <img  className ="w-1/6 rounded-full pb-2" src="/stack.png" />
+                  <img  className ="w-1/6 rounded-xl pb-2" src="/stack.png" />
                     <h1 className="font-bold font-sans pb-2 ">Full-Stack Development</h1>
                     <p className="font-sans"> Accountable in developing and maintaining all aspects of a software application, from front-end to back-end. </p> 
                    </div>
 
                    <div className=" border-4 border-slate-800 hover:border-cyan-800 bg-gradient-to-br  from-slate-900 to-gray-700 hover:bg-gradient-to-tl hover:from-slate-900 hover:to-cyan-700  flex flex-col justify-center items-center text-center p-6 rounded-t-md rounded-b-md ">
-                    <img  className ="w-1/6 rounded-full pb-2" src="/UX.png" />
+                    <img  className ="w-1/6 rounded-xl pb-2" src="/UX.png" />
                       <h1 className="font-bold font-sans pb-2">UX/UI Design</h1>
                       <p className="font-sans"> Experienced in intuitive interfaces that ensures positive user experience and increased user retention.</p> 
                     </div>
 
                    <div className=" border-4 border-slate-800 hover:border-cyan-800 bg-gradient-to-br  from-slate-900 to-gray-700 hover:bg-gradient-to-tl hover:from-slate-900 hover:to-cyan-700  flex flex-col justify-center items-center text-center p-4 rounded-t-md rounded-b-md">
-                      <img  className ="w-1/5 rounded-xl pb-2 " src="/debugging.png" />
+                      <img  className ="w-1/6 rounded-xl pb-2 " src="/debugging.png" />
                        <h1 className="font-bold font-sans pb-2">Testing & Debugging</h1>
                         <p className="font-sans">Analyzing requirements and defining system functionality from designing, developing, testing and maintaining software applications. </p> 
                        </div>

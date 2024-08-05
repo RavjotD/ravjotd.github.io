@@ -52,10 +52,7 @@ const Experience = () => {
                                   </ul>
 
                                   <div className="my-4 text-xl">Skills:   
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 ml-2 mb-2">HTML</span>
-                                    <span className="inline-block bg-gray-200  hover:bg-teal-300  rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">CSS</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Full-Stack Development</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">CMS</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 ml-2 mr-2 mb-2">CMS</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">SEO</span>
                                   </div>
                               <p className="my-2 py-3  font-medium"> January 2024-Present</p>                                                 
@@ -91,13 +88,13 @@ const Experience = () => {
                                 </ul>
 
                                 <div className="my-4 text-xl p-0 ">Skills:   
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 ml-2 mb-2">Microsoft 365 Admin</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 ml-2 mb-2">Microsoft AD</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 ml-2 mb-2">Microsoft Azure</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Troubleshooting</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Networking Services</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Communication</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Time-Management</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">ECM</span>
                                   </div>
                             <p className="my-2 py-3  font-medium"> December 2022-September 2023</p>
                         </div>  
@@ -171,7 +168,7 @@ const Experience = () => {
                                         <li className="my-3">	Proficient in operating Linux systems with comprehensive system security coverage.</li>                         
                                         <li className="my-3">	Software Quality Assurance practices in debugging and quality control maintenance.</li>                         
                                         <li className="my-3">
-                                        Full-stack development with RESTful API integration                          
+                                        Full-stack development with RESTful API integration.                          
                                         </li>
 
                                       </ul>
@@ -184,7 +181,7 @@ const Experience = () => {
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Programming-Languages</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Problem-Solving</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Computer-Networking</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Leadership</span>
+                                    
 
                                   </div>
                                      <p className="my-2 py-3 font-medium"> September 2019-Present</p>

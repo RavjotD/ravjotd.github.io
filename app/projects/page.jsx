@@ -39,7 +39,7 @@ const items = [
 { id: 5, 
   color: "from-slate-300 to-blue-100",
   title: "Object Detection",
-  desc: "I got the opportunity to work with robotics using Raspberry Pi for object detection purposes. Integrating python practices for obstacle avoidance, ball tracking and face-detection on a remote 4WD.",
+  desc: "I got the opportunity to work with robotics using Raspberry Pi for object detection purposes. Integrating python practices for obstacle avoidance, ball tracking and face-detection via remote 4WD.",
   img: "/face.png",
   link: "https://github.com/RavjotD/Object-Detection/"
 }, 
