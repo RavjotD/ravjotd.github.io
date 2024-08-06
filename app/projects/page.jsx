@@ -6,38 +6,38 @@ import Link from "next/link"
 // Constant for items to display each project.
 const items = [
   { id: 1, 
-    color: "from-gray-500 to-blue-300",
+    color: "from-gray-500 via-cyan-200 to-blue-300",
     title: "TicketHub",
     desc: "A react app that acts as an a alternative to TicketMaster. Search for any events around the world that you want to attend with the integration of TicketMaster Discovery API and PocketBase. ",
     img: "/THSS.png",
     link: "https://ticket-hub-pink.vercel.app/"
   }, 
 { id: 2, 
-  color: "from-blue-300 to-blue-200",
+  color: "from-neutral-800 via-yellow-400 to-neutral-700",
   title: "Business Site",
-  desc: "By specializing in full-stack development, I utilized the latest technologies to help out a client's business by providing reliability by an developing online presence for a Security company.",
+  desc: "Specializing in full-stack development, I utilized the latest technologies to enhance a client's business by developing a reliable online presence for a security company.",
   img: "/Screenshot.png",
   link: "https://stalliongroupsecurity.ca/"
 }, 
 
 { id: 3, 
-  color: "from-blue-200 to-teal-100",
+  color: "from-orange-300 via-orange-500 to-orange-200",
   title: "Weather App",
-  desc: " Check out weather conditions for any city across the world using this Weather application. The app consists of JavaScript, HTML, CSS, as well as integrates the Weather API for real-time data.",
+  desc: "Discover weather conditions for any city worldwide with this Weather application. Built with JavaScript, HTML, CSS, as well as integrates the Weather API to provide real-time data.",
   img: "/weather.png",
   link: "https://weather-app-chi-sandy.vercel.app/"
 }, 
 
 { id: 4, 
-  color: "from-teal-100 to-slate-300",
+  color: "from-gray-800 via-slate-300 to-zinc-800",
   title: "To-Do List",
-  desc: " I developed a simple To-Do list application so users can keep track of their daily schedule. Using the fundamentals, I applied practices of HTML, CSS and JavaScript to create this application.",
+  desc: " A simple To-Do list application so users can keep track of their daily schedule. Utilizing practices of HTML, CSS and JavaScript to create this application.",
   img: "/App.png",
   link: "https://dolist-eta.vercel.app/"
 }, 
 
 { id: 5, 
-  color: "from-slate-300 to-blue-100",
+  color: "from-slate-300 via-teal-500 to-blue-teal-100",
   title: "Object Detection",
   desc: "I got the opportunity to work with robotics using Raspberry Pi for object detection purposes. Integrating python for detecting obstacle avoidance, ball tracking and face-detection via remote 4WD.",
   img: "/face.png",
@@ -58,7 +58,7 @@ const projectPage = () => {
       const {scrollYProgress} = useScroll ({target:ref})
 
 
-      const x = useTransform(scrollYProgress, [0,1], ["0%", "-83.5%"]);
+      const x = useTransform(scrollYProgress, [0,1], ["0%", "-83%"]);
 
   return (
     <motion.div className="h-full" 
@@ -76,15 +76,15 @@ const projectPage = () => {
       <div className= "h-screen w-screen flex items-center justify-center bg-gradient-to-r from-gray-600 to-gray-500 "/>
           {items.map((item) => (
           // Project Div// 
-          <div className={`h-screen w-screen  flex items-center justify-center  lg:px-8  bg-gradient-to-r ${item.color}`} key={item.id}>
+          <div className={`h-screen w-screen  flex items-center justify-center  lg:px-8  bg-gradient-to-tr ${item.color}`} key={item.id}>
             
             
-            <div className="flex flex-col gap-4 text-slate-950  ">
-                <h1 className=" font-bold text-xl md:text-4xl lg:text-6xl xl:text-8xl p-2">{item.title}</h1>
-                  <div className=" relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                   <img src={item.img} className=" px-2 rounded-2xl"/>
+            <div className="flex flex-col gap-2 text-slate-950 p-0 ">
+                <h1 className=" font-bold text-xl md:text-4xl lg:text-6xl  p-2">{item.title}</h1>
+                  <div className=" relative w-80 h-48 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
+                   <img src={item.img} loading="lazy" className=" px-2 rounded-2xl"/>
                     </div> 
-                    <p className="w-80 lg:w-[500px] lg:text-lg xl:w-[600px] font-bold font-sans  flex text-sm p-2">{item.desc}</p>
+                    <p className="w-80 lg:w-[500px] lg:text-lg xl:w-[600px] font-bold font-sans  flex text-sm p-2 text-justify">{item.desc}</p>
                       <Link href ={item.link} className="flex justify-end">
                         <button className=" p-2 rounded-2xl border-2 border-doubled border-black bg-slate-500 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none "> 
                         See Demo
@@ -122,7 +122,7 @@ const projectPage = () => {
 
                           </text>
                       </motion.svg>
-                      <Link href="/contact" className="w-16 h-16 md:w-28 md:h-28  absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center hover:bg-gray-700  hover:text-black">Hire Me</Link>
+                      <Link href="/contact" className="w-16 h-16 md:w-28 md:h-28  absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center hover:bg-gray-700 text-md   hover:text-black">Hire Me</Link>
                     </div>
             </div>
     </motion.div>
