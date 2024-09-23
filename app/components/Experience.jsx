@@ -194,12 +194,7 @@ const Experience = () => {
                       </ul>
                      </div>
                    </div>  
-                    {/* Resume button */}
-                   <div className="shadow-2xl w-100 h-100 rounded-xl hover:shadow-black">
-                    <button className=" font-bold px-3 py-2 border-teal-400 rounded-4xl border-2 border-doubled text-white hover:text-black hover:bg-teal-300  uppercase  transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
-                      <a href="/RD-Resume.pdf" className=" p-6" target="_blank" alt="My Resume" rel="noopener noreferrer">Download Resume </a>
-                    </button>
-                  </div>
+                
               
                  </div>
                  

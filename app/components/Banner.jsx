@@ -17,7 +17,10 @@ const Banner = ({}) => {
        </div>
 
 
-         <button className=" border-2 border-slate-500  border-x-cyan-600 rounded bg-slate-600 p-3 mt-4 transition ease-in-out  hover:bg-cyan-700 top-0 block transform  bg-gradient-to-bl from-transparent to-cyan-700  group-hover:animate-shine hover:border-cyan-600 " > <a href="/contact" className="p-1" >Get in Touch</a> </button>
+         <button className=" border-2 border-slate-500  border-x-cyan-600 rounded bg-slate-600 p-3 mt-4 transition ease-in-out  hover:bg-cyan-700 top-0 block transform  bg-gradient-to-bl from-transparent to-cyan-900  group-hover:animate-shine hover:border-cyan-600 " ><a href="/RD-Resume.pdf" className=" p-6" target="_blank" alt="My Resume" rel="noopener noreferrer">Download CV </a>
+         </button>
+
+         
       </div>
                 
              
