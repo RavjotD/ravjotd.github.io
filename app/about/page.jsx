@@ -79,16 +79,13 @@ const AboutPage = () => {
                     <h2 className="text-6xl lg:text-8xl px-0 sm:px-24 text-white font-extrabold">About<span className="text-blue-300 ">.</span> </h2>
                     <hr className="w-full my-8 rounded-xl border-gray-700 border-2"></hr>
               </div>
-              <div className=" text-white text-sm lg:text-2xl font-sans font-medium lg:w-2/3 hover:shadow-2xl justify-evenly items-center hover:shadow-black p-2  cursor-grab hover:bg-gradient-to-b hover:from-gray-700 hover:to-gray-800  flex flex-col  rounded-xl my-6 ">
-                    <p className=" pb-4  ">
-                  " Hi I'm Ravjot! A full-stack developer that holds a great passion to continuously grow in the IT realm.     
-                    Within my final  year of schooling, I am extending my expertise by utilizing the latest technologies to gain more experience in bettering my Software Engineering practices.</p>
+              <div className=" text-white text-sm lg:text-2xl font-sans font-medium md:w-full  hover:shadow-2xl justify-evenly items-center hover:shadow-black p-2  cursor-grab hover:bg-gradient-to-b hover:from-gray-700 hover:to-gray-800  flex flex-col  rounded-xl my-6 ">
+                  <p className=" pb-4  ">
+                  <span className='text-2xl lg:text-4xl'>" Hi I'm</span><span className=' text-2xl lg:text-4xl text-cyan-400'> Ravjot!</span> A passionate <span className=' lg:text-2xl bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400  text-transparent bg-clip-text'>full stack developer</span> who remains in the pursuit to continuously grow in the IT realm.     
+                    With over 2 years of proficient experience in programming, I have aquired a skillset that hones versatiltity in both front-end and back-end specialties to web applications, such as React, Django and Next.js. My continuous hunger to remain at the forefront of the industry allowed me to enroll and obtain a Meta Backend Professional Certification that assures extensive practices in backend development.</p> 
                     <p className="  pb-4 ">
-                    While technology continues to evolve everyday, I have grasped 4 years of experience in my academical pursuit
-                    by showcasing my knowledge of growth throughout my projects, from business to personal applications.</p>
-                    <p className=" pb-4 "> Just as the tech world stays in the pursuit of evolution, I hold myself to the same standard. I look forward in presenting more innovative projects, feel free to check out of my work and let's connect! "
-
-                     </p>
+                    Outside of programming, I seek fun in other areas which allows me to enjoy who I am to this day. I find fun in socializing and networking with friends, savouring new food experiences, and keeping my mind activated through sports and video games. My goal is to always take part in new opportunities, whether that's networking with new people, or being part of innovative solutions by engaging with engineers to leverage my expertise to drive businesn growth! "</p>
+                    
               </div>
 
 

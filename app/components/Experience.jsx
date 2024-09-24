@@ -23,7 +23,7 @@ const Experience = () => {
                 <hr className="w-full my-2 rounded-xl border-gray-700 border-2"></hr>
                </div>
               {/* EXP Content */}
-               <div className="w-screen md:w-2/3 mr-6 px-8">
+               <div className=" w-screen md:w-full mr-6 px-8">
               <div className="flow-root">
           <ul className="-mb-8">
         {/* Line Item */}
@@ -43,8 +43,10 @@ const Experience = () => {
                      <div>
                         <h2 className="mb-3 py-3 font-bold text-2xl ">Front-End Engineer</h2>
                               <h4 className="mb-3 font-semibold text-xl">Stallion Group Security</h4>
-                                <ul className="text-sm list-disc leading-snug tracking-wide ">                             
-                                    <li className="my-3 font-sans">Created an online presence for the company by establishing a website to better market the company’s business. I gained an understanding of the client’s business to promote it’s services and company background throughout the website. 
+                                <ul className="text-sm list-disc leading-snug tracking-wide ">   
+                                  <p className=" font-sans">Created an online presence for the company by establishing a website to better market the company’s business using a CMS platform of 10web:</p>                          
+                                    <li className="my-3 font-sans">
+                                    Gained an understanding of the client’s business to promote its services and company background throughout the website. 
                                     </li>
                                     <li className="my-3 font-sans ">
                                     Using the latest technology, I developed a user-friendly and responsive interface that highlights appealing visuals with credible content. In addition, provided client communication through a contact forum to allow company engagement with clients, bringing professionalism to the business.
@@ -54,6 +56,7 @@ const Experience = () => {
                                   <div className="my-4 text-xl">Skills:   
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 ml-2 mr-2 mb-2">CMS</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">SEO</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">10web</span>
                                   </div>
                               <p className="my-2 py-3  font-medium"> January 2024-Present</p>                                                 
                           </div>                
@@ -79,12 +82,19 @@ const Experience = () => {
                            <div>
                             <h2 className="mb-3 py-3  font-bold text-2xl">Service Desk Analyst </h2>
                               <h4 className="mb-3 font-semibold  text-xl">Microserve</h4>
-                              <ul className="text-sm te list-disc leading-snug tracking-wide font-sans ">     
-                                  <li className="my-3">Worked as a service agent for multiple clienteles to provide technical support. Supported specialized applications while maintaining and developing internal software tools through reporting and processing automation.
+                              <ul className="text-sm te list-disc leading-snug tracking-wide font-sans ">   
+                                <p> Worked as a tier-1 service agent for multiple clienteles to provide technical support:</p>  
+                                  <li className="my-3">Supporting user service request through ConnectWise, escalating appropriately.
                                   </li>
                                   <li className="my-3">
-                                  Conducted application testing by engaging users for acceptance testing, then collected and summarized test data, all while multitasking by troubleshooting user issues between live calls and service ticket requests.
-                                  </li>
+                                  Managed Client operations (Active directory, Licensing, GPO, Permissions).</li>
+                                  <li className="my-3 font-sans">Server Management: Windows Server (Domain Controller, File Server, DHCP), </li>
+                                  <li className="my-3 font-sans">One-Drive: Sync’d One-Drive, troubleshooted syncing issues</li>
+                                  <li className="my-3 font-sans">Remote Management: Utilizing Remote Tools, Windows RDP, TeamViewer</li>
+                                  <li className="my-3 font-sans">Email Migrations:  Converted existing OST files to PST format to ensure compatibility and accessibility.</li>
+                                  <li className="my-3 font-sans">Supported specialized applications while maintaining and developing internal software tools through reporting and processing automation.</li>
+                                  <li className="my-3 font-sans">Laptop and User provisioning for onboarding processes.</li>
+                            
                                 </ul>
 
                                 <div className="my-4 text-xl p-0 ">Skills:   
@@ -94,7 +104,7 @@ const Experience = () => {
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Troubleshooting</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Networking Services</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Communication</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Time-Management</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">IT Service-Management</span>
                                   </div>
                             <p className="my-2 py-3  font-medium"> December 2022-September 2023</p>
                         </div>  
@@ -120,16 +130,16 @@ const Experience = () => {
                                   <div>
                                     <h2 className="mb-3 py-3  font-bold text-2xl">Sales Representative</h2>
                                       <h4 className="mb-3 font-semibold text-xl">Club 16 Trevor Linden Fitness</h4>
-                                      <ul className="text-sm list-disc leading-snug tracking-wide ">                                     
-                                         <li className="my-3 font-sans">Managed the client experience, delivered excellence in customer service by selling memberships and meeting monthly quotes. Identified prospective customers by using business directories, following leads from existing clients, and creating personal leads by connecting with the community 
+                                      <ul className="text-sm list-disc leading-snug tracking-wide ">   
+                                        <p className="font-sans">Managed the client experience, delivered excellence in customer service by selling memberships and meeting monthly quotes:</p>                                  
+                                         <li className="my-3 font-sans">Identified prospective customers by using business directories, following leads from existing clients, and creating personal leads by connecting with the community.  
                                           </li>
                                           <li className="my-3 font-sans ">
-                                          Completed daily outbound calls, researched and learned sales and health knowledge of the fitness industry to understand the market better. 
-                                          </li>
+                                          Completed daily outbound calls, researched and learned sales and health knowledge of the fitness industry to understand the market better.                                          </li>
                                         </ul>
 
                                         <div className="my-4 text-xl">Skills:   
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 ml-2 mb-2">Negotiation</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 ml-2 mb-2">Sales</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Communication</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Problem-solving</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Leadership</span>
@@ -161,30 +171,27 @@ const Experience = () => {
                                     <h4 className="mb-3 font-semibold  text-xl">Kwantlen Polytechnic University</h4>
                                     <ul className="text-sm te list-disc leading-snug tracking-wide font-sans ">               
                                         <li className="my-3">	Year 4 in Computer Science.</li>
-                                        <li className="my-3">	Understanding of Data Structures and Algorithms in various languages.</li>                         
-                                        <li className="my-3">	Database Management System using SQL practices.</li>                         
-                                        <li className="my-3">	Experienced in identifying and resolving issues through advanced networking technologies.</li>                         
-                                        <li className="my-3">	Expertise in Software Engineering Development methodologies and best practices.</li>                         
-                                        <li className="my-3">	Proficient in operating Linux systems with comprehensive system security coverage.</li>                         
-                                        <li className="my-3">	Software Quality Assurance practices in debugging and quality control maintenance.</li>                         
-                                        <li className="my-3">
-                                        Full-stack development with RESTful API integration.                          
-                                        </li>
+                                        
 
                                       </ul>
                                       <div className="my-4 text-xl">Skills:   
                                     
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 ml-2 mb-2">Full-Stack Development</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 ml-2 mb-2">Web Development</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Software QA</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Data Structure/Algorithm</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Software-Engineering</span>
-                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Programming-Languages</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Database Management Systems</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Problem-Solving</span>
                                     <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Computer-Networking</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Java</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">Python</span>
+                                    <span className="inline-block bg-gray-200 hover:bg-teal-300 rounded-full p-0.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-gray-700 mr-2 mb-2">JavaScript</span>
+
                                     
 
                                   </div>
-                                     <p className="my-2 py-3 font-medium"> September 2019-Present</p>
+                                     <p className="my-2 py-3 font-medium"> Graduating 2025</p>
                                   </div> 
                                  </div>
                                 </div>
