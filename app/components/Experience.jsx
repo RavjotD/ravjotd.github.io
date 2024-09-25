@@ -49,8 +49,9 @@ const Experience = () => {
                                     Gained an understanding of the client’s business to promote its services and company background throughout the website. 
                                     </li>
                                     <li className="my-3 font-sans ">
-                                    Using the latest technology, I developed a user-friendly and responsive interface that highlights appealing visuals with credible content. In addition, provided client communication through a contact forum to allow company engagement with clients, bringing professionalism to the business.
+                                    Developed a user-friendly and responsive interface that highlights appealing visuals with credible content. 
                                     </li>
+                                    <li className="my-3 font-sans">SEO implementation using keyword implementation to increase search rankings.</li>
                                   </ul>
 
                                   <div className="my-4 text-xl">Skills:   
@@ -83,7 +84,7 @@ const Experience = () => {
                             <h2 className="mb-3 py-3  font-bold text-2xl">Service Desk Analyst </h2>
                               <h4 className="mb-3 font-semibold  text-xl">Microserve</h4>
                               <ul className="text-sm te list-disc leading-snug tracking-wide font-sans ">   
-                                <p> Worked as a tier-1 service agent for multiple clienteles to provide technical support:</p>  
+                                <p> Worked as a Tier-1 service agent for multiple clienteles to provide technical support:</p>  
                                   <li className="my-3">Supporting user service request through ConnectWise, escalating appropriately.
                                   </li>
                                   <li className="my-3">
