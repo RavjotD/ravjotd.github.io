@@ -91,7 +91,7 @@ const NavBar = () => {
               
                {/* Logo */}
                 <div className="  flex justify-center items-center w-1/3 "> 
-                      <Link href="/" className=" text-2xl font-bold bg-black  text-cyan-800 rounded-full p-2">RD</Link>            
+                      <Link href="/" className=" text-2xl font-bold bg-black  text-cyan-600 rounded-full p-2">RD</Link>            
                  </div>
 
                 {/* Socials */}

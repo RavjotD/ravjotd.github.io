@@ -59,7 +59,7 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
         {/* Page container */}
-        <div  className="h-full w-full flex flex-col p-5  px-10 sm:px-24 md:px-12 lg:px-20 xl:px-48 overflow-y-auto " >
+        <div  className="h-full w-full flex flex-col p-4  px-8 sm:px-24 md:px-12 lg:px-20 xl:px-48 overflow-y-auto " >
           <div ref={profileRef} >
                {/* Profile  */}
                  <motion.div 

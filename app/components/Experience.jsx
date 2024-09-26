@@ -41,13 +41,13 @@ const Experience = () => {
               <div className="min-w-0 flex-1 py-0">
                 <div className=" px-8 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800  ">
                      <div>
-                        <span><h2 className=" inline-block mb-2 py-4 font-bold text-md md:text-2xl ">Front-End Engineer </h2>
-                          <h5  className=" py-4 inline-block float-right text-sm md:text-xl font-sans italic font-medium">Stallion Group Security</h5>
+                        <span><h2 className=" inline-block mb-2 py-4 font-bold text-xs md:text-2xl">Front-End Engineer </h2>
+                          <h5  className=" py-4 inline-block float-right text-xs md:text-xl font-sans italic font-normal">Stallion Group Security</h5>
                           </span>
 
 
-                                <ul className="text-sm list-disc leading-snug tracking-wide ">   
-                                  <p className=" font-sans font-semibold">Created an online presence for the company by establishing a website to better market the company’s business using a CMS platform of 10web:</p>                          
+                                <ul className="text-xs md:text-sm list-disc leading-snug tracking-wide ">   
+                                  <p className=" font-sans font-normal text-xs md:text-sm">Created an online presence for the company by establishing a website to better market the company’s business using a CMS platform of 10web:</p>                          
                                     <li className="my-3 font-sans">
                                     Gained an understanding of the client’s business to promote its services and company background throughout the website. 
                                     </li>
@@ -84,11 +84,11 @@ const Experience = () => {
               <div className="min-w-0 flex-1 py-0">
                 <div className=" px-8 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800 ">
                            <div>
-                           <span><h2 className=" inline-block mb-2 py-4 font-bold text-md md:text-2xl ">Service Desk Analyst Co-op </h2>
-                          <h5  className=" py-4 inline-block float-right text-sm md:text-xl font-sans italic font-medium">Microserve</h5>
+                           <span><h2 className=" inline-block mb-2 py-4 font-bold text-xs md:text-2xl ">Service Desk Analyst Co-op </h2>
+                          <h5  className=" py-4 inline-block float-right text-xs md:text-xl font-sans italic font-normal">Microserve</h5>
                           </span>
-                              <ul className="text-sm te list-disc leading-snug tracking-wide font-sans ">   
-                                <p className="font-semibold "> Worked as a Tier-1 service agent for multiple clienteles to provide technical support:</p>  
+                              <ul className="text-xs md:text-sm list-disc leading-snug tracking-wide font-sans ">   
+                                <p className="font-normal text-xs md:text-sm "> Worked as a Tier-1 service agent for multiple clienteles to provide technical support:</p>  
                                   <li className="my-3">Supporting user service request through ConnectWise, escalating appropriately.
                                   </li>
                                   <li className="my-3">
@@ -133,10 +133,11 @@ const Experience = () => {
                             <div className="min-w-0 flex-1 py-0">
                               <div className="px-8 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800">
                                   <div>
-                                  <span><h2 className=" inline-block mb-2 py-4 font-bold text-md md:text-2xl ">Sales Rep </h2>
-                                      <h5  className=" py-4 inline-block float-right text-sm md:text-xl font-sans italic font-medium">Club16 Trevor Linden Fitness</h5>
-                                    </span>                                      <ul className="text-sm list-disc leading-snug tracking-wide ">   
-                                        <p className="font-sans font-semibold">Managed the client experience, delivered excellence in customer service by selling memberships and meeting monthly quotes:</p>                                  
+                                  <span><h2 className=" inline-block mb-2 py-4 font-bold text-sm md:text-2xl ">Sales Rep </h2>
+                                      <h5  className=" py-4 inline-block float-right text-xs md:text-xl font-sans italic font-normal">Club16 Trevor Linden Fitness</h5>
+                                    </span>                                     
+                                     <ul className="text-xs md:text-sm list-disc leading-snug tracking-wide ">   
+                                        <p className="font-sans font-normal text-xs md:text-sm">Managed the client experience, delivered excellence in customer service by selling memberships and meeting monthly quotes:</p>                                  
                                          <li className="my-3 font-sans">Identified prospective customers by using business directories, following leads from existing clients, and creating personal leads by connecting with the community.  
                                           </li>
                                           <li className="my-3 font-sans ">
@@ -172,10 +173,10 @@ const Experience = () => {
                <div className="min-w-0 flex-1 py-0">
                     <div className="px-8 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800">
                          <div>
-                         <span><h2 className=" inline-block mb-2 py-4 font-bold text-md md:text-2xl ">BTech </h2>
-                          <h5  className=" py-4 inline-block float-right text-sm md:text-xl font-sans italic font-medium">Kwantlen Polytechnic University</h5>
+                         <span><h2 className=" inline-block mb-2 py-4 font-bold text-sm md:text-2xl ">BTech </h2>
+                          <h5  className=" py-4 inline-block float-right text-xs md:text-xl font-sans italic font-normal">Kwantlen Polytechnic University</h5>
                           </span>                                                 
-                                        < p className="my-3 font-sans text-sm md:text-lg font-semibold">Year 4 of BTech.</p>
+                                        < p className="my-3 font-sans text-sm md:text-lg font-normal">Year 4 of BTech.</p>
                                       <div className="my-4 flex flex-wrap gap-2 justify-start">  
                                     
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Full-Stack Development</span>
@@ -214,10 +215,10 @@ const Experience = () => {
                <div className="min-w-0 flex-1 py-0">
                     <div className="px-8 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800">
                          <div>
-                         <span><h2 className=" inline-block mb-2 py-4 font-bold text-xs md:text-2xl ">Meta Back-End Professional Certification</h2>
-                          <h5  className=" py-4 inline-block float-right text-xs md:text-xl font-sans italic font-medium">Coursera</h5>
+                         <span><h2 className=" inline-block mb-2 py-4 font-bold text-xs md:text-2xl ">Meta Back-End Professional</h2>
+                          <h5  className=" py-4 inline-block float-right text-xs md:text-xl font-sans italic font-normal">Coursera</h5>
                           </span>
-                                    <a className=" italic underline font-sans font-semibold" href="/combine.pdf" target="_blank" alt="Certification" rel="noopener noreferrer">Certification</a>
+                                    <a className=" italic underline font-sans font-normal" href="/combine.pdf" target="_blank" alt="Certification" rel="noopener noreferrer">Certification</a>
                                       <div className="my-4 flex flex-wrap gap-2 justify-start ">  
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Python</span>
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Django Web Framework</span>
