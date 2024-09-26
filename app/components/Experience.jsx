@@ -218,7 +218,8 @@ const Experience = () => {
                          <span><h2 className=" inline-block mb-2 py-4 font-bold text-xs md:text-2xl ">Meta Back-End Professional</h2>
                           <h5  className=" py-4 inline-block float-right text-xs md:text-xl font-sans italic font-normal">Coursera</h5>
                           </span>
-                                    <a className=" italic underline font-sans font-normal" href="/combine.pdf" target="_blank" alt="Certification" rel="noopener noreferrer">Certification</a>
+
+                                   <p><a className=" italic underline font-sans font-normal" href="/combine.pdf" target="_blank" alt="Certification" rel="noopener noreferrer">Certification</a></p> 
                                       <div className="my-4 flex flex-wrap gap-2 justify-start ">  
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Python</span>
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Django Web Framework</span>
