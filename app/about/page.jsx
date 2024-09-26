@@ -59,7 +59,7 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
         {/* Page container */}
-        <div  className="h-full w-full flex flex-col p-5  px-16 sm:px-24 md:px-12 lg:px-20 xl:px-48 overflow-y-auto " >
+        <div  className="h-full w-full flex flex-col p-5  px-10 sm:px-24 md:px-12 lg:px-20 xl:px-48 overflow-y-auto " >
           <div ref={profileRef} >
                {/* Profile  */}
                  <motion.div 
@@ -77,11 +77,11 @@ const AboutPage = () => {
                  }}>
                     <div>
                     <h2 className="text-6xl lg:text-8xl px-0 sm:px-24 text-white font-extrabold">About<span className="text-blue-300 ">.</span> </h2>
-                    <hr className="w-full my-8 rounded-xl border-gray-700 border-2"></hr>
+                    <hr className="w-full my-2 rounded-xl border-gray-700 border-2"></hr>
               </div>
-              <div className=" text-white text-sm lg:text-2xl font-sans font-medium md:w-full  hover:shadow-2xl justify-evenly items-center hover:shadow-black p-2  cursor-grab hover:bg-gradient-to-b hover:from-gray-700 hover:to-gray-800  flex flex-col  rounded-xl my-6 ">
+              <div className=" text-white text-sm lg:text-2xl font-sans font-medium md:w-full  hover:shadow-2xl text-justify items-center hover:shadow-black p-2  cursor-grab hover:bg-gradient-to-b hover:from-gray-700 hover:to-gray-800  flex flex-col  rounded-xl my-6 ">
                   <p className=" pb-4  ">
-                  <span className='text-2xl lg:text-4xl'>" Hi I'm</span><span className=' text-2xl lg:text-4xl text-cyan-400'> Ravjot!</span> A passionate <span className=' lg:text-2xl bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400  text-transparent bg-clip-text'>full stack developer</span> who remains in the pursuit to continuously grow in the IT realm.     
+                  <span className='text-2xl lg:text-4xl'>"Hi I'm</span> <span className=' text-2xl lg:text-4xl text-cyan-400'>Ravjot!</span> A passionate <span className=' lg:text-2xl bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400  text-transparent bg-clip-text'>full stack developer</span> who remains in the pursuit to continuously grow in the IT realm.     
                     With over 2 years of proficient experience in programming, I have aquired a skillset that hones versatiltity in both front-end and back-end specialties to web applications, such as React, Django and Next.js. My continuous hunger to remain at the forefront of the industry allowed me to enroll and obtain a Meta Backend Professional Certification that assures extensive practices in backend development.</p> 
                     <p className="  pb-4 ">
                     Outside of programming, I seek fun in other areas which allows me to enjoy who I am to this day. I find fun in socializing and networking with friends, savouring new food experiences, and keeping my mind activated through sports and video games. My goal is to always take part in new opportunities, whether that's networking with new people, or being part of innovative software solutions by engaging with engineers to leverage my expertise to drive business growth! "</p>

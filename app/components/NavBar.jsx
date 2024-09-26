@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 const links = [
     {url:"/", title:"Home"},
     {url:"/about", title:"About"},
-    {url:"/projects", title:"Portfolio"},
+    {url:"/projects", title:"Projects"},
     {url:"/contact", title:"Contact"}
 ];
 // Navbar features of close and open state
@@ -91,7 +91,7 @@ const NavBar = () => {
               
                {/* Logo */}
                 <div className="  flex justify-center items-center w-1/3 "> 
-                      <Link href="/" className=" text-2xl font-bold bg-black  text-slate-400 rounded-full p-2">RD</Link>            
+                      <Link href="/" className=" text-2xl font-bold bg-black  text-cyan-800 rounded-full p-2">RD</Link>            
                  </div>
 
                 {/* Socials */}
@@ -107,7 +107,7 @@ const NavBar = () => {
                  </div>
                  
 
-                 {/* Reponsive Menu */}
+                 {/* Hamburger Menu */}
                  <div className="md:hidden">
                      {/* Menu button */}
                         <button className=" w-10 h-8 flex flex-col justify-between z-50 relative" 
@@ -142,7 +142,7 @@ const NavBar = () => {
                                
                                 {links.map((link) => (
                                     <motion.div variants={listItemVariants} className="p-2" key={link.title}> 
-                                    <Link href={link.url} key={link.title} className=" p-2 hover:underline">
+                                    <Link href={link.url} key={link.title} className=" p-2 hover:underline hover:decoration-cyan-900 underline-offset-8">
                                         {link.title}
                                     </Link>
                                     
