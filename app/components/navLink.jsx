@@ -13,7 +13,7 @@ const NavLink = ({link}) => {
   
     return (
     
-        <Link className={`rounded p-1 ${pathName === link.url && " hover:underline underline underline-offset-4 decoration-cyan-600"}`} href={link.url}>
+        <Link className={`hover:underline decoration-cyan-700 underline-offset-8 rounded p-1 ${pathName === link.url && " bg-cyan-600"}`} href={link.url}>
             {link.title}
         </Link>
 
