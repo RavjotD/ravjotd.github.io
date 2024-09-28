@@ -39,15 +39,12 @@ const Experience = () => {
               </div>
               {/* EXP 1 */}
               <div className="min-w-0 flex-1 py-0">
-                <div className=" px-2 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800  ">
+                <div className=" px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800  ">
                      <div className="">
-                        <span><h2 className=" inline-block mb-2 py-4 font-bold text-xs md:text-2xl">Front-End Engineer </h2>
-                          <h5  className=" py-4 inline-block float-right text-xs md:text-xl font-sans italic font-normal">Stallion Group Security</h5>
-                          </span>
-
-
-                                <ul className=" px-4 text-xs md:text-sm list-disc leading-snug tracking-wide ">   
-                                  <p className=" font-sans font-normal text-xs md:text-sm">Created an online presence for the company by establishing a website to better market the company’s business using a CMS platform of 10web:</p>                          
+                     <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Stallion Group Security</h2>
+                        <h3 className=" px-2  pt-6 font-bold text-xs md:text-2xl">Front-End Engineer </h3>
+                        <p className="  px-2 font-sans font-light text-xs md:text-sm">Created an online presence for the company by establishing a website to better market the company’s business using a CMS platform of 10web:</p>                          
+                                <ul className=" pt-3 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide ">   
                                     <li className="my-3 font-sans">
                                     Gained an understanding of the client’s business to promote its services and company background throughout the website. 
                                     </li>
@@ -62,7 +59,7 @@ const Experience = () => {
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">SEO</span>
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">10web</span>
                                   </div>
-                              <p className="my-2 py-3 text-xs md:text-sm font-medium"> January 2024 - Present</p>                                                 
+                              <p className="my-2 py-3 px-2 text-xs md:text-sm font-medium"> January 2024 - Present</p>                                                 
                           </div>                
                         </div>         
                       </div>
@@ -82,27 +79,26 @@ const Experience = () => {
               </div>
               {/* EXP 2 */}
               <div className="min-w-0 flex-1 py-0">
-                <div className=" px-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800 ">
+                <div className=" px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800 ">
                            <div>
-                           <span><h2 className=" inline-block mb-2 py-4 font-bold text-xs md:text-2xl ">Service Desk Analyst Co-op </h2>
-                          <h5  className=" py-4 inline-block float-right text-xs md:text-xl font-sans italic font-normal">Microserve</h5>
-                          </span>
-                              <ul className=" px-4 text-xs md:text-sm list-disc leading-snug tracking-wide font-sans ">   
-                                <p className="font-normal text-xs md:text-sm "> Worked as a Tier-1 service agent for multiple clienteles to provide technical support:</p>  
+                           <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Microserve</h2>
+                            <h3 className=" px-2  pt-6 font-bold text-xs md:text-2xl">Service Desk Analyst Co-op </h3>
+                              <p className="  px-2 font-sans font-light text-xs md:text-sm">Worked as a Tier-1 service agent for multiple clienteles to provide technical support</p>                          
+                              <ul className=" pt-3 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide font-sans ">   
                                   <li className="my-3">Supporting user service request through ConnectWise, escalating appropriately.
                                   </li>
                                   <li className="my-3">
                                   Managed Client operations (Active directory, Licensing, GPO, Permissions).</li>
-                                  <li className="my-3 font-sans">Server Management: Windows Server (Domain Controller, File Server, DHCP), </li>
-                                  <li className="my-3 font-sans">One-Drive: Sync’d One-Drive, troubleshooted syncing issues</li>
-                                  <li className="my-3 font-sans">Remote Management: Utilizing Remote Tools, Windows RDP, TeamViewer</li>
-                                  <li className="my-3 font-sans">Email Migrations:  Converted existing OST files to PST format to ensure compatibility and accessibility.</li>
-                                  <li className="my-3 font-sans">Supported specialized applications while maintaining and developing internal software tools through reporting and processing automation.</li>
-                                  <li className="my-3 font-sans">Laptop and User provisioning for onboarding processes.</li>
+                                  <li className="my-3 ">Server Management: Windows Server (Domain Controller, File Server, DHCP), </li>
+                                  <li className="my-3 ">One-Drive: Sync’d One-Drive, troubleshooted syncing issues</li>
+                                  <li className="my-3 ">Remote Management: Utilizing Remote Tools, Windows RDP, TeamViewer</li>
+                                  <li className="my-3 ">Email Migrations:  Converted existing OST files to PST format to ensure compatibility and accessibility.</li>
+                                  <li className="my-3 ">Supported specialized applications while maintaining and developing internal software tools through reporting and processing automation.</li>
+                                  <li className="my-3 ">Laptop and User provisioning for onboarding processes.</li>
                             
                                 </ul>
 
-                                <div className="my-4 flex flex-wrap gap-2 justify-start ">   
+                                <div className="my-4 px-2 flex flex-wrap gap-2 justify-start ">   
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Microsoft 365 Admin</span>
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Microsoft AD</span>
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Microsoft Azure</span>
@@ -111,7 +107,7 @@ const Experience = () => {
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Communication</span>
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">IT Service-Management</span>
                                   </div>
-                            <p className="my-2 py-3 text-xs md:text-sm font-medium"> December 2022 - September 2023</p>
+                            <p className="my-2 py-3 px-2 text-xs md:text-sm font-medium"> December 2022 - September 2023</p>
                         </div>  
                       </div>
                     </div>
@@ -131,27 +127,26 @@ const Experience = () => {
                         </div>
                         {/* EXP 3 */}
                             <div className="min-w-0 flex-1 py-0">
-                              <div className="px-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800">
+                              <div className="px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800">
                                   <div>
-                                  <span><h2 className=" inline-block mb-2 py-4 font-bold text-sm md:text-2xl ">Sales Rep </h2>
-                                      <h5  className=" py-4 inline-block float-right text-xs md:text-xl font-sans italic font-normal">Club16 Trevor Linden Fitness</h5>
-                                    </span>                                     
-                                     <ul className=" px-2 text-xs md:text-sm list-disc leading-snug tracking-wide ">   
-                                        <p className="font-sans font-normal text-xs md:text-sm">Managed the client experience, delivered excellence in customer service by selling memberships and meeting monthly quotes:</p>                                  
+                                  <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Club16 Trevor Linden Fitness</h2>
+                            <h3 className=" px-2 pt-6 font-bold text-xs md:text-2xl">Sales Rep </h3>
+                              <p className="  px-2 font-sans font-light text-xs md:text-sm">Managed the client experience, delivered excellence in customer service by selling memberships and meeting monthly quotes.</p>                          
+                              <ul className=" pt-3 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide font-sans ">   
                                          <li className="my-3 font-sans">Identified prospective customers by using business directories, following leads from existing clients, and creating personal leads by connecting with the community.  
                                           </li>
                                           <li className="my-3 font-sans ">
                                           Completed daily outbound calls, researched and learned sales and health knowledge of the fitness industry to understand the market better.                                          </li>
                                         </ul>
 
-                                        <div className="my-4 flex flex-wrap gap-2 justify-start ">
+                                        <div className="my-4 px-2 flex flex-wrap gap-2 justify-start ">
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Sales</span>
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Communication</span>
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Problem-solving</span>
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Leadership</span>
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Customer Service</span>
                                   </div>
-                                    <p className="my-2 py-3 text-xs md:text-sm font-medium">  August 2018 - December 2022</p>
+                                    <p className="my-2 py-3 px-2 text-xs md:text-sm font-medium">August 2018 - December 2022</p>
                                 </div> 
                                 </div>
                               </div>
@@ -171,13 +166,12 @@ const Experience = () => {
               </div>
               {/* Education Item */}
                <div className="min-w-0 flex-1 py-0">
-                    <div className="px-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800">
+                    <div className="px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800">
                          <div>
-                         <span><h2 className=" inline-block mb-2 py-4 font-bold text-sm md:text-2xl ">BTech </h2>
-                          <h5  className=" py-4 inline-block float-right text-xs md:text-xl font-sans italic font-normal">Kwantlen Polytechnic University</h5>
-                          </span>                                                 
-                                        < p className="my-3 font-sans text-sm md:text-lg font-normal">Year 4 of BTech.</p>
-                                      <div className="my-4 flex flex-wrap gap-2 justify-start">  
+                         <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Kwantlen Polytechnic University</h2>
+                            <h3 className=" px-2 pt-6 font-bold text-sm md:text-2xl">BTech </h3>
+                              <p className="  px-2 font-sans font-light text-xs md:text-sm">Year 4.</p>                          
+                                      <div className="my-4 px-2 flex flex-wrap gap-2 justify-start">  
                                     
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Full-Stack Development</span>
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Web Development</span>
@@ -194,7 +188,7 @@ const Experience = () => {
                                     
 
                                   </div>
-                                     <p className="my-2 py-3 text-xs md:text-sm font-medium">Graduating 2025</p>
+                                     <p className="my-2 py-3 px-2 text-xs md:text-sm font-medium">Graduating 2025</p>
                                   </div> 
                                  </div>
                                 </div>
@@ -213,13 +207,11 @@ const Experience = () => {
               </div>
               {/* Education Item */}
                <div className="min-w-0 flex-1 py-0">
-                    <div className="px-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800">
+                    <div className="px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800">
                          <div>
-                         <span><h2 className=" inline-block mb-2 py-4 font-bold text-xs md:text-2xl ">Meta Back-End Professional</h2>
-                          <h5  className=" py-4 inline-block float-right text-xs md:text-xl font-sans italic font-normal">Coursera</h5>
-                          </span>
-
-                                   <p><a className=" italic underline font-sans font-normal" href="/combine.pdf" target="_blank" alt="Certification" rel="noopener noreferrer">Certification</a></p> 
+                         <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Coursera</h2>
+                            <h3 className=" px-2 pt-6 font-bold text-xs md:text-2xl">Meta Back-End Professional Certificate </h3>
+                                   <p><a className=" px-2 pt-1 italic underline font-sans font-normal text-sm" href="/combine.pdf" target="_blank" alt="Certification" rel="noopener noreferrer">Certification</a></p> 
                                       <div className="my-4 flex flex-wrap gap-2 justify-start ">  
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Python</span>
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Django Web Framework</span>
@@ -236,7 +228,7 @@ const Experience = () => {
                                     
 
                                   </div>
-                                     <p className="my-2 py-3 text-xs md:text-sm font-medium">August 2024 - September 2024</p>
+                                     <p className="my-2 py-3 px-2 text-xs md:text-sm font-medium">August 2024 - September 2024</p>
                                   </div> 
                                  </div>
                                 </div>
