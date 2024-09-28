@@ -40,9 +40,9 @@ const Experience = () => {
               {/* EXP 1 */}
               <div className="min-w-0 flex-1 py-0">
                 <div className=" px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800  ">
-                     <div className="">
+                     <div className="w-full">
                      <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Stallion Group Security</h2>
-                        <h3 className=" px-2  pt-6 font-bold text-xs md:text-2xl">Front-End Engineer </h3>
+                        <h3 className=" px-2 p-1 pt-6 font-bold text-xs md:text-2xl">Front-End Engineer </h3>
                         <p className="  px-2 font-sans font-light text-xs md:text-sm">Created an online presence for the company by establishing a website to better market the company’s business using a CMS platform of 10web:</p>                          
                                 <ul className=" pt-3 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide ">   
                                     <li className="my-3 font-sans">
@@ -82,7 +82,7 @@ const Experience = () => {
                 <div className=" px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800 ">
                            <div>
                            <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Microserve</h2>
-                            <h3 className=" px-2  pt-6 font-bold text-xs md:text-2xl">Service Desk Analyst Co-op </h3>
+                            <h3 className=" px-2 p-1 pt-6 font-bold text-xs md:text-2xl">Service Desk Analyst Co-op </h3>
                               <p className="  px-2 font-sans font-light text-xs md:text-sm">Worked as a Tier-1 service agent for multiple clienteles to provide technical support</p>                          
                               <ul className=" pt-3 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide font-sans ">   
                                   <li className="my-3">Supporting user service request through ConnectWise, escalating appropriately.
@@ -130,7 +130,7 @@ const Experience = () => {
                               <div className="px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800">
                                   <div>
                                   <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Club16 Trevor Linden Fitness</h2>
-                            <h3 className=" px-2 pt-6 font-bold text-xs md:text-2xl">Sales Rep </h3>
+                            <h3 className=" px-2 p-1 pt-6 font-bold text-xs md:text-2xl">Sales Rep </h3>
                               <p className="  px-2 font-sans font-light text-xs md:text-sm">Managed the client experience, delivered excellence in customer service by selling memberships and meeting monthly quotes.</p>                          
                               <ul className=" pt-3 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide font-sans ">   
                                          <li className="my-3 font-sans">Identified prospective customers by using business directories, following leads from existing clients, and creating personal leads by connecting with the community.  
@@ -210,7 +210,7 @@ const Experience = () => {
                     <div className="px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800">
                          <div>
                          <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Coursera</h2>
-                            <h3 className=" px-2 pt-6 font-bold text-xs md:text-2xl">Meta Back-End Professional Certificate </h3>
+                            <h3 className=" px-2 p-1 pt-6 font-bold text-xs md:text-2xl">Meta Back-End Professional</h3>
                                    <p><a className=" px-2 pt-1 italic underline font-sans font-normal text-sm" href="/combine.pdf" target="_blank" alt="Certification" rel="noopener noreferrer">Certification</a></p> 
                                       <div className="my-4 flex flex-wrap gap-2 justify-start ">  
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Python</span>
