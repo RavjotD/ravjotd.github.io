@@ -110,7 +110,7 @@ const NavBar = () => {
                  {/* Hamburger Menu */}
                  <div className="md:hidden">
                      {/* Menu button */}
-                        <button className=" w-10 h-8 flex flex-col justify-between z-50 relative" 
+                        <button className=" w-10 h-8 flex flex-col justify-between z-50 relative " 
                         onClick={(()=>setOpen(!open))}
                         >
                         <motion.div
@@ -138,15 +138,14 @@ const NavBar = () => {
                         <motion.div variants={listVariants}
                          initial="closed" 
                          animate="opened" 
-                         className=" absolute top-0  left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40 ">
+                         className=" fixed top-0  left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40 ">
                                
                                 {links.map((link) => (
                                     <motion.div variants={listItemVariants} className="p-2" key={link.title}> 
-                                    <Link href={link.url} key={link.title} className=" p-2 hover:underline hover:decoration-cyan-900 underline-offset-8">
+                                    <Link href={link.url} key={link.title} className=" p-2 hover:underline hover:decoration-cyan-900 underline-offset-8"
+                                    onClick={()=> setOpen(false)}>
                                         {link.title}
                                     </Link>
-                                    
-                                    
                                     </motion.div>
                                 ))}
 
@@ -156,20 +155,20 @@ const NavBar = () => {
                                 variants={listItemVariants}
                                 className=" flex  gap-4    ">
                             <Link href="https://github.com/RavjotD">
-                        <motion.img   src="/github.png" alt="" className="bg-white rounded-full " width={55} height={55} whileHover={{y:-4}}/>
+                                <motion.img   src="/github.png" alt="" className="bg-white rounded-full " width={55} height={55} whileHover={{y:-4}}/>
                              </Link>
 
                             <Link href="https://www.linkedin.com/in/ravjot-duhra-bb5970234/">
                                 <motion.img src="/linkedin.png" alt="" width={55} height={55} whileHover={{y:-4}}/>
-                                </Link>
+                            </Link>
 
-                 </motion.div>
+                        </motion.div>
                 
-                              </motion.div>
+                        </motion.div>
                         )}
-             </div>
-        </div>
-  )
+                    </div>
+                </div>
+    )
 }
 
 export default NavBar

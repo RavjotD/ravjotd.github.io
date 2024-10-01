@@ -9,11 +9,11 @@ const Profile = () => {
     <div className="flex  flex-col  my-10 justify-center px-2 items-center">
                {/* Title */}
               <div>
-                <h1 className=" text-4xl lg:text-8xl  text-white font-extrabold ">Tech Stack<span className="text-blue-300 ">.</span> </h1>
-                <hr className="w-full my-2 rounded-xl border-gray-700 border-2"></hr>
+                <h1 className=" text-center text-4xl lg:text-8xl  text-white font-extrabold ">Tech Stack<span className="text-blue-300 ">.</span> </h1>
+                <hr className="w-screen my-2 rounded-xl border-slate-600 border-2"></hr>
                </div>
                 {/* Elements */}
-                <div className=" grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-6 lg:grid-rows-2 gap-6 text-center my-4  items-center justify-center">           
+                <div className=" grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-6 lg:grid-rows-2 gap-6 text-center my-10  items-center justify-center">           
                     
                         <div className=" relative group w-full  max-w-[150px] min-w-[120px] min-h-[150px] border-4 border-slate-800 hover:border-yellow-500 rounded-lg bg-gray-700 p-2 hover:-translate-y-4 duration-300  flex flex-col justify-center items-center text-white font-medium text-center "> 
                           <img src="/python.png"  className="max-w-[50px]  h-auto py-3"/>

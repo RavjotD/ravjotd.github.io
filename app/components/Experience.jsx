@@ -19,8 +19,8 @@ const Experience = () => {
           
             {/* EXPERIENCE TITLE */}
             <div>
-                <h1 className=" text-6xl  lg:text-8xl  text-white font-extrabold ">Experience<span className="text-blue-300 ">.</span> </h1>
-                <hr className="w-full my-2 rounded-xl border-gray-700 border-2"></hr>
+                <h1 className=" text-center text-4xl  lg:text-8xl  text-white font-extrabold ">Experience<span className="text-blue-300 ">.</span> </h1>
+                <hr className="w-screen my-2 rounded-xl border-slate-600 border-2"></hr>
                </div>
               {/* EXP Content */}
                <div className=" w-screen md:w-full mr-6 px-8">
