@@ -81,7 +81,7 @@ const AboutPage = () => {
                     <hr  className=' w-screen my-2 rounded-xl border-slate-600 border-2'/>
 
               </div>
-              <div className=" text-white text-xs md:text-sm lg:text-2xl font-sans font-medium md:w-full lg:w-2/3  hover:shadow-2xl text-justify items-center hover:shadow-black  hover:border-4 hover:border-cyan-800 p-2  cursor-grab hover:bg-gradient-to-b hover:from-gray-700 hover:to-gray-800  flex flex-col  rounded-xl my-8 ">
+              <div className=" text-white text-xs md:text-sm lg:text-2xl font-sans font-medium md:w-full lg:w-2/3  hover:shadow-2xl text-justify items-center hover:shadow-black  hover:border-4 hover:border-cyan-800 p-2  cursor-grab hover:bg-gradient-to-b hover:from-gray-700 hover:to-gray-800 transition-transform duration-300 flex flex-col  rounded-xl my-8 ">
                   <p className=" pb-4 ">
                   <span className='text-2xl lg:text-4xl'>"Hi I'm</span> <span className=' text-2xl lg:text-4xl text-cyan-400'>Ravjot!</span> A passionate <span className=' lg:text-2xl bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400  text-transparent bg-clip-text'>full-stack developer</span> who remains in the pursuit to continuously grow in the IT realm.     
                     With over 2 years of proficient experience in programming, I have aquired a skillset that hones versatiltity in both front-end and back-end specialties to web applications, such as React, Django and Next.js. My continuous hunger to remain at the forefront of the industry allowed me to enroll and obtain a Meta Backend Professional Certification that assures extensive practices in backend development.</p> 
