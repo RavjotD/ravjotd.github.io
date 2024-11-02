@@ -45,9 +45,9 @@ const Experience = () => {
                         <h3 className=" inline-block px-2 p-1 pt-3 font-bold text-sm md:text-2xl">Front-End Engineer </h3>
                                 <ul className=" pt-2 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide ">   
                                     <li className="my-3 font-sans">
-                                    Built a fully functional website using 10web CMS platform to enhance company’s online presence and increase credibility.                                    </li>
+                                    Engineered and launched company’s web presence using 10web CMS, driving 50% increase in client sales through optimized user-experience.</li>
                                     <li className="my-3 font-sans ">
-                                    Collaborated with the client to promote its business services to transform a user-friendly interface optimized for mobile and desktop.                                    </li>
+                                    Implemented targeted digital marketing strategy via TikTok ad integration, defining audience segments for British Columbia’s Lower Mainland.</li>
                                     <li className="my-3 font-sans">
                                     SEO implementation using keyword optimization to increase search rankings to drive organic traffic.                                      </li>
                                   </ul>
@@ -83,19 +83,16 @@ const Experience = () => {
                             <h1 className=" inline-block px-2 p-1 pt-3 font-bold text-sm md:text-2xl">Service Desk Analyst Co-op </h1>
                               <ul className=" pt-3 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide font-sans ">   
                                   <li className="my-3">
-                                  Provided Tier-1 technical support services for multiple clienteles resolving user request via ConnectWise, while escalating issues as needed.</li>
+                                  Provided Tier-1 technical support via ConnectWise while maintaining high-service quality across a diverse client base.</li>
                                   <li className="my-3">
-                                  Managed IT infrastructure (Active directory, Licensing, GPO, Permissions) to ensure smooth client operations.</li>
+                                  Managed enterprise IT infrastructure: Active directory, GPO, Windows Server Administration to ensure smooth client operations..</li>
                                   <li className="my-3 ">
-                                  Administrative Windows Server: Backend system management and maintenance (Domain Controller, File Server, DHCP).</li>
+                                  Sync’d One-Drive, troubleshooted syncing issues via remote tools (Windows RDP, TeamViewer).</li>
                                   <li className="my-3 ">
-                                  One-Drive: Sync’d One-Drive, troubleshooted syncing issues via remote tools (Windows RDP, TeamViewer).</li>
+                                  Orchestrated Email Migrations: Converted existing OST files to PST format to ensure compatibility and data accessibility.</li>
                                   <li className="my-3 ">
-                                  Email Migrations:  Converted existing OST files to PST format to ensure compatibility and data accessibility.</li>
-                                  <li className="my-3 ">
-                                  Supported specialized software applications and contributed to internal tools by automating reporting and processing tasks (PowerShell & Batch scripts).</li>
-                                  <li className="my-3 ">
-                                  Managed laptop and user provisioning for onboarding processes.</li>
+                                  Supported specialized software applications by automating scripts to streamline onboarding processing via PowerShell & Batch.</li>
+                                  
                                 </ul>
 
                                 <div className="my-4 px-2 flex flex-wrap gap-2 justify-start ">   
@@ -132,9 +129,8 @@ const Experience = () => {
                                   <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Club16 Trevor Linden Fitness</h2>
                                   <h1 className=" inline-block px-2 p-1 pt-3 font-bold text-sm md:text-2xl">Sales Representative </h1>
                                       <ul className=" pt-3 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide font-sans ">   
-                                         <li className="my-3 ">Managed the client experience and delivered excellence in customer service by consistently selling memberships and meeting monthly quotes.</li>
-                                          <li className="my-3">Identified prospective customers by using business directories, following leads, and creating personal leads by connecting with the community.</li> 
-                                          <li className="my-3">Completed daily outbound calls, researched and learned sales and health knowledge of the fitness industry to enable market targeting better.</li> 
+                                         <li className="my-3 ">Delivered exceptional customer service by consistently selling 20+ memberships monthly, meeting monthly quotas. </li>
+                                          <li className="my-3">Identified prospective customers by using business directories and developing leads by networking within the community.</li> 
                                       </ul>
                                         <div className="my-4 px-2 flex flex-wrap gap-2 justify-start ">
                                           <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Sales</span>
