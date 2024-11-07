@@ -8,13 +8,13 @@ const items = [
   { id: 1, 
     color: "from-stones-700 via-neutral-800 to-green-900",
     title: "Restaurant App",
-    desc: "Full-Stack web app features reservation system with API endpoints and an admin panel for efficient management.",
+    desc: "Full-Stack web app features reservation system with API endpoints and an admin panel for management operations.",
     img: "/LittleLemon.png",
     link: "https://github.com/RavjotD/LittleLemonCapstone",
     bcolor: 'border-green-600',
     bgcolor: 'bg-gradient-to-b from-neutral-800 to-lime-950',
     imgcolor: 'border-green-400',
-    skills: ['Python', 'Django','DRF','RESTFul', 'MySQL','HTML/CSS', 'JavaScript'],
+    skills: ['Python', 'Django','DRF','RESTFul', 'MySQL',],
     txtcolor:'text-lime-500'
   
   }, 
@@ -36,7 +36,7 @@ const items = [
 { id: 3, 
   color: "from-zinc-900 via-zinc-800 to-yellow-600",
   title: "Business Site",
-  desc: "A modern business website developed using a CMS, offering security services.",
+  desc: "A business website built with a CMS, providing security services to enhance an online presence.",
   img: "/Screenshot.png",
   link: "https://stalliongroupsecurity.ca/",
   bcolor: 'border-amber-300',
@@ -52,7 +52,7 @@ const items = [
 { id: 4, 
   color: "from-zinc-700 via-zinc-800 to-orange-700",
   title: "Weather App",
-  desc: "Weather app providing real-time data for all cities across the world.",
+  desc: "Weather app providing real-time data for all cities across the world using the OpenWeatherAPI.",
   img: "/weather.png",
   link: "https://weather-app-chi-sandy.vercel.app/",
   bcolor: 'border-orange-500',
@@ -67,7 +67,7 @@ const items = [
 { id: 4, 
   color: "from-purple-900 via-teal-500 to-emerald-700",
   title: "Object Detection",
-  desc: "Raspberry Pi project for detection methods of human-face and object avoidance.",
+  desc: "Raspberry Pi project utlilizing detection methods of human-face and object avoidance and red ball tracking.",
   img: "/face.png",
   link: "https://github.com/RavjotD/Object-Detection/",
   bcolor: 'border-green-400',
@@ -112,7 +112,7 @@ const projectPage = () => {
           {items.map((item) => (
 
           // Project Div// 
-          <div className={`h-screen w-screen  flex items-center justify-center px-4  lg:px-8  bg-gradient-to-tr ${item.color}`} key={item.id}>
+          <div className={`h-screen w-screen  flex items-center justify-center px-4 lg:px-8  bg-gradient-to-tr ${item.color}`} key={item.id}>
             <div className={`flex flex-col  gap-2 border-4 ${item.bgcolor} ${item.bcolor} rounded-lg text-white `}>
                 <h1 className=" font-bold text-xl md:text-4xl lg:text-6xl my-4 p-2">{item.title}</h1>
                   <div className=" relative w-80  md:w-96  lg:w-[500px] xl:w-[600px] xl:h-[320px]">
