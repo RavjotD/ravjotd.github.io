@@ -6,9 +6,24 @@ import Link from "next/link"
 // Constant for items to display each project.
 const items = [
   { id: 1, 
+    color: "from-stones-700 via-neutral-800 to-green-900",
+    title: "Restaurant App",
+    desc: "Full-Stack web app features reservation system with API endpoints and an admin panel for efficient management.",
+    img: "/LittleLemon.png",
+    link: "https://github.com/RavjotD/LittleLemonCapstone",
+    bcolor: 'border-green-600',
+    bgcolor: 'bg-gradient-to-b from-neutral-800 to-lime-950',
+    imgcolor: 'border-green-400',
+    skills: ['Python', 'Django','DRF','RESTFul', 'MySQL','HTML/CSS', 'JavaScript'],
+    txtcolor:'text-lime-500'
+  
+  }, 
+
+
+  { id: 2, 
     color: "from-gray-500 via-sky-900 to-blue-900",
     title: "TicketHub",
-    desc: "Full-Stack event search app to discover events & festivals globally.",
+    desc: "Full-Stack project offering discovery of events & festivals globally, serving as a TicketMaster Alternative.",
     img: "/THSS.png",
     link: "https://ticket-hub-pink.vercel.app/",
     bcolor: 'border-cyan-500',
@@ -18,7 +33,7 @@ const items = [
     txtcolor:'text-cyan-400'
 
   }, 
-{ id: 2, 
+{ id: 3, 
   color: "from-zinc-900 via-zinc-800 to-yellow-600",
   title: "Business Site",
   desc: "A modern business website developed using a CMS, offering security services.",
@@ -34,7 +49,7 @@ const items = [
 
 }, 
 
-{ id: 3, 
+{ id: 4, 
   color: "from-zinc-700 via-zinc-800 to-orange-700",
   title: "Weather App",
   desc: "Weather app providing real-time data for all cities across the world.",
@@ -48,21 +63,8 @@ const items = [
 
 }, 
 
+ 
 { id: 4, 
-  color: "from-stones-700 via-zinc-800 to-sky-900",
-  title: "To-Do List",
-  desc: "A simple task management app to track daily activities.",
-  img: "/App.png",
-  link: "https://dolist-eta.vercel.app/",
-  bcolor: 'border-gray-400',
-  bgcolor: 'bg-gradient-to-b from-gray-500 to-zinc-900',
-  imgcolor: 'border-gray-400',
-  skills: ['JavaScript', 'HTML/CSS'],
-  txtcolor:'text-white-400'
-
-}, 
-
-{ id: 5, 
   color: "from-purple-900 via-teal-500 to-emerald-700",
   title: "Object Detection",
   desc: "Raspberry Pi project for detection methods of human-face and object avoidance.",
