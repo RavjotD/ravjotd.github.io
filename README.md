@@ -25,10 +25,10 @@ This portfolio website leverages the latest advancements in web development to c
 As a passionate Full Stack Developer, I consider the signifance to both frontend and backends equally. This dynamic allows me to understand the practice of modern web application from a consumer and a producer perspective.
 
 My work experiences consists in the following:
-- ** Developing and maintaining web applications.
-- ** Designing intuitive user interfaces, and implementing complex backend functionalities.
-- ** Managing IT infractisure and support for small to large enterprises.
-- ** Developing Customer rapport through sales.
+-  Developing and maintaining web applications.
+-  Designing intuitive user interfaces, and implementing complex backend functionalities.
+-  Managing IT infractisure and support for small to large enterprises.
+-  Developing Customer rapport through sales.
   
 This portfolio website is a testament to my dedication and proficiency in the field.
 
