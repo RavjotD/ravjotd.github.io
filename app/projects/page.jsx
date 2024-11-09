@@ -98,9 +98,9 @@ const ProjectPage = () => {
                     <img src={item.img} loading="lazy" className={`border-t-2 border-b-2 ${item.imgcolor}`} />
                   </div>
                   <p className="w-80 lg:w-[500px] lg:text-lg xl:w-[600px] font-bold font-sans text-sm text-start p-2 mx-auto">{item.desc}</p>
-                  <div className="flex flex-wrap px-1 gap-1 justify-center">
+                  <div className="flex flex-nowrap px-1 gap-1 justify-center">
                     {item.skills.map((skill, index) => (
-                      <div key={index} className={`inline-block rounded text-xs md:text-sm p-2 bg-zinc-900 ${item.txtcolor}`}>
+                      <div key={index} className={`inline-block rounded text-xs md:text-sm p-1 bg-zinc-900 ${item.txtcolor}`}>
                         {skill}
                       </div>
                     ))}
