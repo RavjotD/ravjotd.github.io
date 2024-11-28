@@ -100,7 +100,7 @@ const NavBar = () => {
                         <motion.img   src="/github.png" alt="" width={32} height={32} whileHover={{y:-4}}/>
                     </Link>
 
-                    <Link href="https://www.linkedin.com/in/ravjot-duhra-bb5970234/">
+                    <Link href="https://www.linkedin.com/in/ravjot-duhra/">
                         <motion.img src="/linkedin.png" alt="" width={32} height={32} whileHover={{y:-4}}/>
                     </Link>
 

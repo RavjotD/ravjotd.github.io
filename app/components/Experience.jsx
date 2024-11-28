@@ -16,7 +16,7 @@ const Experience = () => {
 
        {/* EXPERIENCE CONTAINER */}
        <div className="flex flex-col gap-12 justify-center pb-24 w-full  my-2  items-center">      
-          
+            
             {/* EXPERIENCE TITLE */}
             <div>
                 <h1 className=" text-center text-4xl  lg:text-8xl  text-white font-extrabold ">Experience<span className="text-blue-300 ">.</span> </h1>
@@ -27,6 +27,43 @@ const Experience = () => {
               <div className="flow-root">
           <ul className="-mb-8">
         {/* Line Item */}
+        <li>
+          <div className="relative pb-8 ">
+            <span className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-white" ></span>
+            <div className="relative flex items-start space-x-3">
+              <div>
+                <div className="relative px-1">
+                  <div className="h-8 w-8  rounded-full ring-8 ring-teal-300 flex items-center justify-center"><img src="/work.svg" className=" w-12  relative bg-teal-400"/>     
+                  </div>
+                </div>
+              </div>
+              {/* EXP 1 */}
+              <div className="min-w-0 flex-1 py-0">
+                <div className=" px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800  ">
+                     <div className="w-full">
+                     <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Braintrust Outliers</h2>
+                        <h3 className=" inline-block px-2 p-1 pt-3 font-bold text-sm md:text-2xl">AI Software Engineer</h3>
+                                <ul className=" pt-2 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide ">   
+                                    <li className="my-3 font-sans">
+                                    Training AI LLMs by designing prompts aligned with API requirements.</li>
+                                    <li className="my-3 font-sans ">
+                                    Conducting validation testing by attempting to make AI models fail to ensure robustness.</li>
+                                    <li className="my-3 font-sans">
+                                    Assessed and summarized the quality of AI generated code.</li>
+                                  </ul>
+
+                                  <div className="my-4 flex flex-wrap gap-2 justify-start ">  
+                                    <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ml-2 ">Prompt Engineering</span>
+                                    <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">API Integration</span>
+                                    <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Machine Learning</span>
+                                  </div>
+                              <p className="my-2 py-3 px-2 text-xs md:text-sm font-medium">October 2024 - Present</p>                                                 
+                          </div>                
+                        </div>         
+                      </div>
+                    </div>
+                  </div>
+                </li>
         <li>
           <div className="relative pb-8 ">
             <span className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-white" ></span>
