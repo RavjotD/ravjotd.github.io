@@ -9,7 +9,7 @@ const items = [
     id: 1,
     color: "from-stones-700 via-neutral-800 to-green-900",
     title: "Restaurant App",
-    desc: "Full-Stack web app features reservation system with REST API endpoints and an admin panel for management operations.",
+    desc: "Full-Stack webapp features reservation system with RESTFul API endpoints.",
     img: "/LittleLemon.png",
     link: "https://github.com/RavjotD/LittleLemonCapstone",
     bcolor: 'border-green-600',
@@ -22,7 +22,7 @@ const items = [
     id: 2,
     color: "from-gray-500 via-sky-900 to-blue-900",
     title: "TicketHub",
-    desc: "Full-Stack project offering discovery of events & festivals globally, serving as a TicketMaster Alternative.",
+    desc: "Full-Stack webapp serving as a TicketMaster Alternative.",
     img: "/THSS.png",
     link: "https://ticket-hub-pink.vercel.app/",
     bcolor: 'border-cyan-500',
@@ -35,7 +35,7 @@ const items = [
     id: 3,
     color: "from-zinc-900 via-zinc-800 to-yellow-600",
     title: "Business Site",
-    desc: "A business website built with a CMS, providing security services to enhance its online presence and increase sales.",
+    desc: "A business website built with a CMS, providing security services.",
     img: "/Screenshot.png",
     link: "https://stalliongroupsecurity.ca/",
     bcolor: 'border-amber-300',
@@ -46,9 +46,23 @@ const items = [
   },
   {
     id: 4,
+    color: "from-purple-900 via-teal-500 to-emerald-700",
+    title: "Object Detection",
+    desc: "Raspberry Pi 4 project detecting mechanisms of face and object avoidance.",
+    img: "/face.png",
+    link: "https://github.com/RavjotD/Object-Detection/",
+    bcolor: 'border-green-400',
+    bgcolor: 'bg-gradient-to-b from-emerald-900 to-green-900',
+    imgcolor: 'border-green-400',
+    skills: ['Python', 'Raspberry Pi', 'RealNVC'],
+    txtcolor: 'text-green-400'
+  },
+
+  {
+    id: 5,
     color: "from-zinc-700 via-zinc-800 to-orange-700",
     title: "Weather App",
-    desc: "Weather app providing real-time data metrics of wind, humidity, and temperature levels for all cities globally.",
+    desc: "Weather app providing real-time data of all cities globally.",
     img: "/weather.png",
     link: "https://weather-app-chi-sandy.vercel.app/",
     bcolor: 'border-orange-500',
@@ -57,19 +71,7 @@ const items = [
     skills: ['JavaScript', 'HTML/CSS', 'OpenWeather API'],
     txtcolor: 'text-orange-400'
   },
-  {
-    id: 5,
-    color: "from-purple-900 via-teal-500 to-emerald-700",
-    title: "Object Detection",
-    desc: "Raspberry Pi project utilizing detection mechanisms for human-face and object avoidance, along with red ball tracking.",
-    img: "/face.png",
-    link: "https://github.com/RavjotD/Object-Detection/",
-    bcolor: 'border-green-400',
-    bgcolor: 'bg-gradient-to-b from-emerald-900 to-green-900',
-    imgcolor: 'border-green-400',
-    skills: ['Python', 'Raspberry Pi', 'RealNVC'],
-    txtcolor: 'text-green-400'
-  }
+  
 ];
 
 // Project page to display unique scrolling features and content.
@@ -119,7 +121,7 @@ const ProjectPage = () => {
         </div>
       </div>
           {/* Contact button section */}
-            <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-gradient-to-b from-emerald-300 via-cyan-700 to-slate-600">
+            <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-gradient-to-l from-gray-500 via-cyan-700 to-zinc-700">
                 <h1 className="font-bold  text-2xl lg:text-8xl">Let's Connect!</h1>
                     {/* SVG Container */}
                     <div className="relative">

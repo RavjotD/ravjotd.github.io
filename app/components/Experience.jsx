@@ -41,7 +41,7 @@ const Experience = () => {
               <div className="min-w-0 flex-1 py-0">
                 <div className=" px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800  ">
                      <div className="w-full">
-                     <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Braintrust Outliers</h2>
+                     <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal hover:text-cyan-500"><a href="https://www.usebraintrust.com/">Braintrust Outliers </a></h2>
                         <h3 className=" inline-block px-2 p-1 pt-3 font-bold text-sm md:text-2xl">AI Software Engineer</h3>
                                 <ul className=" pt-2 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide ">   
                                     <li className="my-3 font-sans">
@@ -49,13 +49,14 @@ const Experience = () => {
                                     <li className="my-3 font-sans ">
                                     Conducting validation testing by attempting to make AI models fail to ensure robustness.</li>
                                     <li className="my-3 font-sans">
-                                    Assessed and summarized the quality of AI generated code.</li>
+                                    Assessing and summarizing the quality of AI generated code.</li>
                                   </ul>
 
                                   <div className="my-4 flex flex-wrap gap-2 justify-start ">  
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ml-2 ">Prompt Engineering</span>
-                                    <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">API Integration</span>
-                                    <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Machine Learning</span>
+                                    <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ml-2 ">Large Language Models</span>
+                                    <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">API Testing</span>
+                                    <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">Artificial Intelligence</span>
                                   </div>
                               <p className="my-2 py-3 px-2 text-xs md:text-sm font-medium">October 2024 - Present</p>                                                 
                           </div>                
@@ -78,7 +79,7 @@ const Experience = () => {
               <div className="min-w-0 flex-1 py-0">
                 <div className=" px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800  ">
                      <div className="w-full">
-                     <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Stallion Group Security</h2>
+                     <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal hover:text-cyan-500"><a href="https://stalliongroupsecurity.ca/">Stallion Group Security </a></h2>
                         <h3 className=" inline-block px-2 p-1 pt-3 font-bold text-sm md:text-2xl">Front-End Engineer </h3>
                                 <ul className=" pt-2 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide ">   
                                     <li className="my-3 font-sans">
@@ -116,7 +117,7 @@ const Experience = () => {
               <div className="min-w-0 flex-1 py-0">
                 <div className=" px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800 ">
                            <div>
-                           <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Microserve</h2>
+                           <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal hover:text-cyan-500"><a href="https://www.microserve.ca/">Microserve</a></h2>
                             <h1 className=" inline-block px-2 p-1 pt-3 font-bold text-sm md:text-2xl">Service Desk Analyst Co-op </h1>
                               <ul className=" pt-3 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide font-sans ">   
                                   <li className="my-3">
@@ -163,7 +164,7 @@ const Experience = () => {
                             <div className="min-w-0 flex-1 py-0">
                               <div className="px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800">
                                   <div>
-                                  <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Club16 Trevor Linden Fitness</h2>
+                                  <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal hover:text-cyan-500"><a href="https://www.trevorlindenfitness.com/">Club16 Trevor Linden Fitness</a></h2>
                                   <h1 className=" inline-block px-2 p-1 pt-3 font-bold text-sm md:text-2xl">Sales Representative </h1>
                                       <ul className=" pt-3 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide font-sans ">   
                                          <li className="my-3 ">Delivered exceptional customer service by consistently selling 20+ memberships monthly, meeting monthly quotas. </li>
@@ -198,7 +199,7 @@ const Experience = () => {
                <div className="min-w-0 flex-1 py-0">
                     <div className="px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800">
                          <div>
-                         <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Kwantlen Polytechnic University</h2>
+                         <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal hover:text-cyan-500"><a href="https://www.kpu.ca/">Kwantlen Polytechnic University</a></h2>
                             <h3 className=" px-2  pt-3 font-bold text-sm md:text-2xl">BTech </h3>
                             <ul className=" pt-3 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide font-sans ">   
                               <li className="my-3 ">Year 4 of Bachelors of Technology in Information Technology.</li>
@@ -241,7 +242,7 @@ const Experience = () => {
                <div className="min-w-0 flex-1 py-0">
                     <div className="px-2 py-4 text-white bg-gradient-to-b from-slate-700 to-gray-900 rounded border-2 border-slate-800">
                          <div>
-                         <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal">Coursera</h2>
+                         <h2  className=" pb-4 float-right text-xs md:text-xl font-sans italic font-normal hover:text-cyan-500"><a href="https://www.coursera.org/">Coursera</a></h2>
                             <h3 className=" px-2 p-1 pt-6 font-bold text-sm md:text-2xl">Meta Back-End Professional</h3>
                             <ul className=" pt-3 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide font-sans ">   
                                    <li><a className=" px-2 pt-1 italic underline font-sans font-normal text-sm" href="/combine.pdf" target="_blank" alt="Certification" rel="noopener noreferrer">Certification</a></li> 
