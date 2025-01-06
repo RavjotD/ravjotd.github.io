@@ -45,18 +45,17 @@ const Experience = () => {
                         <h3 className=" inline-block px-2 p-1 pt-3 font-bold text-sm md:text-2xl">AI Software Engineer</h3>
                                 <ul className=" pt-2 px-6 text-xs md:text-sm list-disc leading-snug tracking-wide ">   
                                     <li className="my-3 font-sans">
-                                    Training AI LLMs by designing prompts aligned with API requirements.</li>
+                                    Training LLMs by developing prompts aligned with API requirements.</li>
                                     <li className="my-3 font-sans ">
                                     Conducting validation testing by attempting to make AI models fail to ensure robustness.</li>
                                     <li className="my-3 font-sans">
-                                    Assessing and summarizing the quality of AI generated code.</li>
+                                    Assessing and summarizing the quality of AI generated code to achieve high standards of data accuracy and completeness.</li>
                                   </ul>
 
                                   <div className="my-4 flex flex-wrap gap-2 justify-start ">  
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ml-2 ">Prompt Engineering</span>
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ml-2 ">Large Language Models</span>
                                     <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">API Testing</span>
-                                    <span className="inline-block bg-gray-900 hover:-translate-y-2 transition-transform duration-300 rounded-lg p-1.5 md:p-2 text-xs md:text-sm font-normal md:font-semibold text-cyan-500 ">AI</span>
                                   </div>
                               <p className="my-2 py-3 px-2 text-xs md:text-sm font-medium">October 2024 - Present</p>                                                 
                           </div>                
