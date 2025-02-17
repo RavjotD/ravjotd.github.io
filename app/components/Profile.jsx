@@ -1,76 +1,191 @@
-import React from 'react'
+import React from "react";
+import { motion } from "framer-motion";
 
-import { motion, reverseEasing, useAnimation, useInView, useScroll, useTransform } from "framer-motion";
-import { Link } from "react-router-dom";
 const Profile = () => {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const item = {
+    hidden: {
+      opacity: 0,
+      scale: 0,
+      x: (index) => (index % 3 === 0 ? -100 : index % 3 === 2 ? 100 : 0),
+      y: (index) => (index < 3 ? -100 : index > 8 ? 100 : 0),
+    },
+    show: {
+      opacity: 1,
+      scale: 1,
+      x: 0,
+      y: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+      },
+    },
+  };
+
   return (
+    <div className="flex flex-col my-10 justify-center px-2 items-center">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-4 px-2 gap-8 text-center my-10 items-center justify-center"
+      >
+        {[
+          {
+            img: "tech/python.png",
+            years: "1 year",
+            color: "blue-400",
+            text: "Python",
+          },
+          {
+            img: "tech/logo-javascript.svg",
+            years: "2 years",
+            color: "yellow-400",
+            text: "JavaScript",
+          },
+          {
+            img: "tech/react-2.svg",
+            years: "2 years",
+            color: "cyan-400",
+            text: "ReactJS",
+          },
+          {
+            img: "tech/mysql.png",
+            years: "2 years",
+            color: "orange-500",
+            text: "MySQL",
+          },
+          {
+            img: "tech/java-4.svg",
+            years: "2 years",
+            color: "red-500",
+            text: "Java",
+          },
+          {
+            img: "tech/tailwind-css-2.svg",
+            years: "1 year",
+            color: "teal-400",
+            text: "Tailwind CSS",
+          },
+          {
+            img: "tech/aws.png",
+            years: "1 year",
+            color: "orange-500",
+            text: "AWS",
+          },
+          {
+            img: "tech/css-3.svg",
+            years: "3 years",
+            color: "blue-500",
+            text: "CSS3",
+          },
+          {
+            img: "tech/html-1.svg",
+            years: "3 years",
+            color: "orange-600",
+            text: "HTML5",
+          },
+          {
+            img: "tech/nodejs.png",
+            years: "2 years",
+            color: "green-500",
+            text: "NodeJS",
+          },
+          {
+            img: "tech/mg.png",
+            years: "1 year",
+            color: "green-500",
+            text: "MongoDB",
+          },
+          {
+            img: "tech/next-js.svg",
+            years: "1 year",
+            color: "gray-400",
+            text: "Next.js",
+          },
 
-    // Component for tech stack
-    <div className="flex  flex-col  my-10 justify-center px-2 items-center">
-               {/* Title */}
-              <div>
-                <h1 className=" text-center text-4xl lg:text-8xl  text-white font-extrabold ">Tech Stack<span className="text-blue-300 ">.</span> </h1>
-                <hr className="w-screen my-2 rounded-xl border-slate-600 border-2"></hr>
-               </div>
-                {/* Elements */}
-                <div className=" grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-6 lg:grid-rows-2 gap-6 text-center my-10  items-center justify-center">           
-                    
-                        <div className=" relative group w-full  max-w-[150px] min-w-[120px] min-h-[150px] border-4 border-slate-800 hover:border-yellow-500 rounded-lg bg-gray-700 p-2 hover:-translate-y-4 duration-300  flex flex-col justify-center items-center text-white font-medium text-center "> 
-                          <img src="/python.png"  className="max-w-[50px]  h-auto py-3"/>
-                          <div className='inset-0 flex items-center justify-center  text-white text-lg font-semibold transform scale-0 group-hover:scale-100 transition-transform duration-300'>1 year</div>
-                          </div> 
-                        <div className=" relative group w-full  max-w-[150px] min-w-[120px] min-h-[150px] border-4 border-slate-800 hover:border-yellow-500 rounded-lg bg-gray-700 p-2 hover:-translate-y-4 duration-300 flex flex-col justify-center items-center "> 
-                          <img src="logo-javascript.svg"  className="max-w-[50px]  h-auto py-3"/>
-                          <div className='inset-0 flex items-center justify-center  text-white text-lg font-semibold transform scale-0 group-hover:scale-100 transition-transform duration-300'>2 years</div>
-                          </div>
-                        <div className="relative group w-full  max-w-[150px] min-w-[120px] min-h-[150px] border-4 border-slate-800 hover:border-cyan-500 rounded-lg bg-gray-700 p-2 hover:-translate-y-4 duration-300 flex flex-col justify-center items-center text-white font-medium text-center">
-                          <img src="/react-2.svg" className="max-w-[50px]  h-auto py-3 "/>
-                          <div className='inset-0 flex items-center justify-center  text-white text-lg font-semibold transform scale-0 group-hover:scale-100 transition-transform duration-300'>1 year</div>
-                          </div>
-                        <div className="relative group w-full  max-w-[150px] min-w-[120px] min-h-[150px] border-4 border-slate-800 hover:border-blue-500 rounded-lg bg-gray-700 p-2 hover:-translate-y-4 duration-300 flex flex-col justify-center items-center text-white font-medium text-center">
-                          <img src="/mysql.png" className="max-w-[50px] h-auto py-3 "/>
-                          <div className='inset-0 flex items-center justify-center  text-white text-lg font-semibold transform scale-0 group-hover:scale-100 transition-transform duration-300'>2 years</div>
-                          </div>
-                        <div className="relative group w-full  max-w-[150px] min-w-[120px] min-h-[150px] border-4 border-slate-800 hover:border-orange-600 rounded-lg bg-gray-700 p-2 hover:-translate-y-4 duration-300  flex flex-col justify-center items-center"> 
-                          <img src="/java-4.svg"  className="max-w-[36px]  h-auto py-3"/>
-                          <div className='inset-0 flex items-center justify-center  text-white text-lg font-semibold transform scale-0 group-hover:scale-100 transition-transform duration-300'>2 years</div>
-                          </div>
-                        <div className=" relative group w-full  max-w-[150px] min-w-[120px] min-h-[150px] border-4 border-slate-800 hover:border-cyan-500 rounded-lg bg-gray-700 p-2 hover:-translate-y-4 duration-300 flex flex-col justify-center items-center text-white font-medium text-center">
-                          <img src="/tailwind-css-2.svg"  className="max-w-[50px]  h-auto py-3"/>
-                          <div className='inset-0 flex items-center justify-center text-white text-lg font-semibold transform scale-0 group-hover:scale-100 transition-transform duration-300'>1 year</div>
-                          </div>
-                        <div className=" relative group w-full  max-w-[150px] min-w-[120px] min-h-[150px] border-4 border-slate-800 hover:border-blue-900 rounded-lg bg-gray-700 p-2 hover:-translate-y-4 duration-300 flex flex-col justify-center items-center" >
-                           <img src="/c.svg"  className="max-w-[50px]  h-auto py-3"/>
-                           <div className='inset-0 flex items-center ju3stify-center text-white text-lg font-semibold transform scale-0 group-hover:scale-100 transition-transform duration-300'>1 year</div>
-                           </div>       
-                        <div className="relative group w-full  max-w-[150px] min-w-[120px] min-h-[150px] border-4 border-slate-800 hover:border-blue-500 rounded-lg bg-gray-700 p-2 hover:-translate-y-4 duration-300  flex flex-col justify-center items-center"> 
-                          <img src="/css-3.svg"  className="max-w-[50px]  h-auto py-3"/>
-                          <div className='inset-0 flex items-center justify-center text-white text-lg font-semibold transform scale-0 group-hover:scale-100 transition-transform duration-300'>2 years</div>
-                          </div>
-                        <div className="relative group w-full max-w-[150px] min-w-[120px] min-h-[150px] border-4 border-slate-800 hover:border-orange-500 rounded-lg bg-gray-700 p-2 hover:-translate-y-4 duration-300 flex flex-col justify-center items-center"> 
-                          <img src="html-1.svg"  className="max-w-[50px] h-auto py-3" />
-                          <div className='inset-0 flex items-center justify-center  text-white text-lg font-semibold transform scale-0 group-hover:scale-100 transition-transform duration-300'>2 years</div>
-                          </div>
-                        <div className="relative group w-full  max-w-[150px] min-w-[120px] min-h-[150px] border-4 border-slate-800 hover:border-green-500 rounded-lg bg-gray-700 p-4 hover:-translate-y-4 duration-300  flex flex-col justify-center items-center text-white font-medium text-center py-1 ">
-                          <img src="/nodejs.png"  className="max-w-[50px] lg:w-20 h-auto py-3"/>
-                          <div className='inset-0 flex items-center justify-center  text-white text-lg font-semibold transform scale-0 group-hover:scale-100 transition-transform duration-300'>2 years</div>
-                          </div>                  
-                        <div className="relative group w-full  max-w-[150px] min-w-[120px] min-h-[150px] border-4 border-slate-800 hover:border-green-300 rounded-lg bg-gray-700 p-2 hover:-translate-y-4 duration-300  flex flex-col justify-center items-center text-white font-medium text-center py-1 ">
-                          <img src="/android-6.svg"  className="max-w-[50px]  h-auto py-3"/>
-                          <div className='inset-0 flex items-center justify-center  text-white text-lg font-semibold transform scale-0 group-hover:scale-100 transition-transform duration-300'>1 year</div>
-                          </div> 
-                        <div className=" relative group w-full  max-w-[150px] min-w-[120px] min-h-[150px] border-4 border-slate-800 hover:border-gray-500 rounded-lg bg-gray-700 p-2 hover:-translate-y-4 duration-300 flex flex-col justify-center items-center   text-white font-medium ">
-                          <img src="/next-js.svg" className="max-w-[50px] h-auto py-3 "/>
-                          <div className='inset-0 flex items-center justify-center text-white text-lg font-semibold transform scale-0 group-hover:scale-100 transition-transform duration-300'>1 year</div>
-                          </div>
-                </div>
-            
-              
+          {
+            img: "tech/tS.png",
+            years: "1 years",
+            color: "blue-500",
+            text: "TypeScript",
+          },
+          {
+            img: "tech/dj.png",
+            years: "1 year",
+            color: "green-400",
+            text: "Django",
+          },
+          {
+            img: "tech/spb.png",
+            years: "1 year",
+            color: "green-400",
+            text: "SpringBoot",
+          },
+
+          {
+            img: "tech/git.png",
+            years: "2 years",
+            color: "orange-500",
+            text: "Git",
+          },
+          {
+            img: "tech/gh.png",
+            years: "3 years",
+            color: "gray-400",
+            text: "GitHub",
+          },
+
+          {
+            img: "tech/linux.png",
+            years: "2 years",
+            color: "yellow-400",
+            text: "Linux",
+          },
+          {
+            img: "tech/windows.png",
+            years: "5 years",
+            color: "blue-400",
+            text: "Windows",
+          },
+        ].map((tech, index) => (
+          <motion.div
+            key={index}
+            variants={item}
+            custom={index}
+            className={`relative group w-full max-w-[150px] min-w-[120px] min-h-[150px] rounded-lg bg-gray-800/30 backdrop-blur-sm p-2 hover:-translate-y-4 duration-300 flex flex-col justify-center items-center overflow-hidden shadow-[0_0_10px_var(--tw-glow-color)] hover:shadow-[0_0_20px_var(--tw-glow-color)] transition-all border-4 border-transparent hover:border-[var(--tw-glow-color)]`}
+            style={{
+              "--tw-glow-color": `rgb(var(--${tech.color}-rgb))`,
+              background: `linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05))`,
+              boxShadow: `inset 0 0 15px rgba(var(--${tech.color}-rgb), 0.3)`,
+            }}
+          >
+            <img
+              src={tech.img}
+              className="max-w-[50px] h-auto py-3 group-hover:blur-lg transition-all duration-300"
+              alt="tech icon"
+            />
+            <h3 className="text-white text-sm font-semibolda group-hover:blur-lg">
+              {tech.text}
+            </h3>
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black/40">
+              <span className="text-lg">{tech.years}</span>
+            </div>
+          </motion.div>
+        ))}
+      </motion.div>
     </div>
+  );
+};
 
-        
-
-  )
-}
-
-export default Profile
+export default Profile;

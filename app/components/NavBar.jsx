@@ -1,174 +1,184 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import React, { useState } from 'react'
-import NavLink from "./navLink";
+import Link from "next/link";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-
-// Links for Navbar
 const links = [
-    {url:"/", title:"Home"},
-    {url:"/about", title:"About"},
-    {url:"/projects", title:"Projects"},
-    {url:"/contact", title:"Contact"}
+    { url: "#home", title: "Home" },
+    { url: "#about", title: "About" },
+    { url: "#projects", title: "Projects" },
+    { url: "#contact", title: "Contact" },
 ];
-// Navbar features of close and open state
+
 const NavBar = () => {
-    const [open,setOpen] = useState(false);
+    const [open, setOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState("#home");
 
-    const topVariants = {
+    React.useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                let visibleSections = [];
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        visibleSections.push({
+                            id: "#" + entry.target.id,
+                            ratio: entry.intersectionRatio,
+                            top: entry.boundingClientRect.top
+                        });
+                    }
+                });
 
-        closed:{
-            rotate:0,  
-        },
-        opened:{
-            rotate:45,
-            backgroundColor: "rgb(255,255,255)", 
+                if (visibleSections.length > 0) {
+                    // Sort by intersection ratio and position
+                    visibleSections.sort((a, b) => {
+                        if (Math.abs(b.ratio - a.ratio) < 0.1) {
+                            return a.top - b.top;
+                        }
+                        return b.ratio - a.ratio;
+                    });
+                    
+                    setActiveSection(visibleSections[0].id);
+                } else if (window.scrollY < 100) {
+                    setActiveSection("#home");
+                }
+            },
+            { 
+                threshold: [0, 0.25, 0.5, 0.75, 1],
+                rootMargin: "-20% 0px -20% 0px"
+            }
+        );
 
-        },
-    };
+        document.querySelectorAll("section[id]").forEach((section) => {
+            observer.observe(section);
+        });
 
-    const centeredVariants = {
+        return () => observer.disconnect();
+    }, [activeSection]);
 
-        closed:{
-            opacity:1,  
-        },
-        open:{
-            opacity:0,       
-        },
-    };
-
-    const bottomVariants = {
-
-        closed:{
-            rotate:0,  
-        },
-        opened:{
-            rotate:-45,
-            backgroundColor: "rgb(255,255,255)",
-        },
-    };
-
-    const listVariants = {
-        closed:{
-            x: "100vw",
-
+    const menuVariants = {
+        closed: {
+            opacity: 0,
+            y: "-100%",
         },
         opened: {
-            x:0,
+            opacity: 1,
+            y: 0,
             transition: {
-                when: "beforeChildren",
-                staggerChildren: 0.2,
+                duration: 0.5,
+                ease: "easeInOut",
             },
         },
     };
 
-    const listItemVariants = {
-
-        closed:{
-            x: -10,
-            opacity:0,
-
-        },
-        opened: {
-            x:0,
-            opacity:1,
-        },
-
-    }
-
-  return (
-        // NavBar being linked to constant links and css styling.
-    <div className="h-full flex items-center justify-between px-8 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
-              
-              {/* Links on Nav*/}
-              <div className="hidden md:flex  gap-2 w-1/3 ">
-                {links.map((link) => (
-                <NavLink  link={link}  key={link.title}/>
-                ))}
-              </div>
-              
-               {/* Logo */}
-                <div className="  flex justify-center items-center w-1/3 "> 
-                      <Link href="/" className=" text-2xl font-bold bg-black  text-cyan-600 rounded-full p-2">RD</Link>            
-                 </div>
-
-                {/* Socials */}
-                 <div className=" md:flex gap-3  w-1/3 justify-end hidden ">
-                    <Link href="https://github.com/RavjotD">
-                        <motion.img   src="/github.png" alt="" width={32} height={32} whileHover={{y:-4}}/>
-                    </Link>
-
-                    <Link href="https://www.linkedin.com/in/ravjot-duhra/">
-                        <motion.img src="/linkedin.png" alt="" width={32} height={32} whileHover={{y:-4}}/>
-                    </Link>
-
-                 </div>
-                 
-
-                 {/* Hamburger Menu */}
-                 <div className="md:hidden">
-                     {/* Menu button */}
-                        <button className=" w-10 h-8 flex flex-col justify-between z-50 relative " 
-                        onClick={(()=>setOpen(!open))}
+    return (
+        <div className="fixed w-full top-0 z-50">
+            <div className="h-24  backdrop-blur-sm">
+                <div className="container mx-auto px-4 h-full">
+                    <div className="flex items-center justify-between h-full">
+                        {/* Logo */}
+                        <Link
+                            href="/"
+                            className="text-3xl font-bold text-cyan-400"
                         >
-                        <motion.div
-                         variants={topVariants} 
-                         animate={open ? "opened" : "closed"}
-                         className="w-10 h-1 bg-black rounded origin-left">  
-                          </motion.div>
+                            <img
+                                src="/icon.png"
+                                alt="Logo"
+                                className="w-24 h-16 object-contain"
+                            />
+                        </Link>
 
-                        <motion.div 
-                        variants={centeredVariants} 
-                        animate={open ? "opened" : "closed"} 
-                        className="w-10 h-1 bg-black rounded ">
-                          </motion.div>
-                        <motion.div 
-                        variants={bottomVariants} 
-                        animate={open ? "opened" : "closed"}
-                        className="w-10 h-1 bg-black rounded origin-left"> 
-                         </motion.div>
-                        
-                        </button>
-
-                        {/* Menu List */}
-
-                        {open && (
-                        <motion.div variants={listVariants}
-                         initial="closed" 
-                         animate="opened" 
-                         className=" fixed top-0  left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40 ">
-                               
-                                {links.map((link) => (
-                                    <motion.div variants={listItemVariants} className="p-2" key={link.title}> 
-                                    <Link href={link.url} key={link.title} className=" p-2 hover:underline hover:decoration-cyan-900 underline-offset-8"
-                                    onClick={()=> setOpen(false)}>
+                        {/* Navigation Links */}
+                        <div className="hidden md:flex items-center gap-4 bg-gray-600/50 px-6 py-4 b-2 border-white rounded-xl">
+                            {links.map((link) => (
+                                <motion.div
+                                    key={link.title}
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                >
+                                    <Link
+                                        href={link.url}
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            const element = document.querySelector(link.url);
+                                            element?.scrollIntoView({ behavior: "smooth" });
+                                        }}
+                                        className={`text-gray-300 hover:text-cyan-400 px-6 py-3 transition-colors relative group`}
+                                    >
                                         {link.title}
+                                        <div
+                                            className={`absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full ${activeSection === link.url ? "w-full" : ""}`}
+                                        />
                                     </Link>
-                                    </motion.div>
-                                ))}
+                                </motion.div>
+                            ))}
+                        </div>
 
-                                <motion.div 
-                                initial="closed" 
-                                animate="opened"
-                                variants={listItemVariants}
-                                className=" flex  gap-4    ">
-                            <Link href="https://github.com/RavjotD">
-                                <motion.img   src="/github.png" alt="" className="bg-white rounded-full " width={55} height={55} whileHover={{y:-4}}/>
-                             </Link>
-
-                            <Link href="https://www.linkedin.com/in/ravjot-duhra-bb5970234/">
-                                <motion.img src="/linkedin.png" alt="" width={55} height={55} whileHover={{y:-4}}/>
-                            </Link>
-
-                        </motion.div>
-                
-                        </motion.div>
-                        )}
+                        {/* Mobile Menu Button */}
+                        <motion.button
+                            className="md:hidden text-white p-2 group"
+                            onClick={() => setOpen(!open)}
+                            whileHover={{ scale: 1.1 }}
+                        >
+                            <div
+                                className={`w-6 h-0.5 bg-cyan-400 mb-1.5 transition-all duration-300 transform ${
+                                    open
+                                        ? "rotate-45 translate-y-2"
+                                        : "group-hover:w-8"
+                                }`}
+                            />
+                            <div
+                                className={`w-6 h-0.5 bg-cyan-400 mb-1.5 transition-all duration-300 ${
+                                    open ? "opacity-0 translate-x-3" : ""
+                                }`}
+                            />
+                            <div
+                                className={`w-6 h-0.5 bg-cyan-400 transition-all duration-300 transform ${
+                                    open ? "-rotate-45 -translate-y-2" : ""
+                                }`}
+                            />
+                        </motion.button>
                     </div>
                 </div>
-    )
-}
+            </div>
 
-export default NavBar
+            {/* Mobile Menu */}
+            <motion.div
+                className="md:hidden fixed inset-0 bg-[#020921] bg-opacity-95"
+                initial="closed"
+                animate={open ? "opened" : "closed"}
+                variants={menuVariants}
+            >
+                <button
+                    className="absolute top-6 right-6 text-cyan-400 p-2"
+                    onClick={() => setOpen(false)}
+                >
+                    <div className="w-6 h-0.5 bg-cyan-400 rotate-45 absolute" />
+                    <div className="w-6 h-0.5 bg-cyan-400 -rotate-45 absolute" />
+                </button>
+                <div className="flex flex-col items-center justify-center h-full space-y-8">
+                    {links.map((link) => (
+                        <Link
+                            key={link.title}
+                            href={link.url}
+                            className={`text-2xl ${activeSection === link.url ? 'text-cyan-400' : 'text-gray-300'} hover:text-cyan-400 transition-colors relative group`}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                const element = document.querySelector(link.url);
+                                element?.scrollIntoView({ behavior: "smooth" });
+                                setOpen(false);
+                            }}
+                        >
+                            {link.title}
+                            <div
+                                className={`absolute bottom-0 left-0 h-0.5 bg-cyan-400 transition-all duration-300 ${activeSection === link.url ? 'w-full' : 'w-0'}`}
+                            />
+                        </Link>
+                    ))}
+                </div>
+            </motion.div>
+        </div>
+    );
+};
+
+export default NavBar;

@@ -1,32 +1,23 @@
-
 import TransitionProvider from "./components/transitionProvider";
-import './globals.css'
-
+import Footer from "./components/Footer";
+import "./globals.css";
 
 // Root page of children. Surrounding children elements from Transition page layout.
 export const metadata = {
-  title: 'Ravjot Duhra',
+  title: "Ravjot Duhra",
   description: "Ravjot Duhra's Portfolio",
-  icons:{
-icon:[
-  "/favicon.png",
-], 
-
-
+  icons: {
+    icon: ["/icon.png"],
   },
-  manifest:"/site.webmanifest"
-}
+  manifest: "/site.webmanifest",
+};
 
 export default function RootLayout({ children }) {
   return (
-  
-    
     <html lang="en">
-      
-      <body>
+      <body className="flex flex-col min-h-screen">
         <TransitionProvider>{children}</TransitionProvider>
       </body>
     </html>
-    
   );
 }

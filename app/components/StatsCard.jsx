@@ -1,0 +1,1 @@
+// Component removed as stats are now directly in Bio.jsx
