@@ -62,14 +62,14 @@ const Hero = () => {
 
         <motion.div variants={item} className="text-2xl text-cyan-400 h-8 mt-4">
           <TypeAnimation
-            sequence={["& freelancer", 1000, "", 500]}
+            sequence={["& Freelancer", 1000, "", 500]}
             repeat={Infinity}
             cursor={true}
           />
         </motion.div>
 
         <motion.p variants={item} className="text-lg text-gray-400 mt-4">
-          helping build reliable web applications
+          Helping build reliable web applications
         </motion.p>
 
         <motion.div variants={item} className="flex gap-6 mt-8">

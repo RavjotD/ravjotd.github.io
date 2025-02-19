@@ -7,7 +7,7 @@ const Projects = () => {
   const items = [
     {
       id: 1,
-      title: "Commercial WebSite",
+      title: "Commercial Website",
       desc: "A user-intuitive commerical website for a company providing security services.",
       img: "projects/Stallion.png",
       link: "https://stalliongroupsecurity.ca/",

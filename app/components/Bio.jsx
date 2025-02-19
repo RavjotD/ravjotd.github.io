@@ -42,7 +42,7 @@ const Bio = () => {
 
             <motion.div className="relative mt-8 group">
               <motion.a
-                href="/RavjotD-Resume.pdf"
+                href="/Portfolio-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative inline-flex items-center px-6 py-3 text-white border-2 border-transparent rounded-lg bg-slate-800/50 hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all duration-300 overflow-hidden"
