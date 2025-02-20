@@ -1,12 +1,70 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
+import { motion, useInView } from "framer-motion";
 
 const Bio = () => {
+  const [counts, setCounts] = useState({
+    experience: 0,
+    certifications: 0,
+    contributions: 0,
+    technologies: 0,
+  });
+
+  const statsRef = React.useRef(null);
+  const isInView = useInView(statsRef, { once: false });
+
+  useEffect(() => {
+    if (!isInView) {
+      setCounts({
+        experience: 0,
+        certifications: 0,
+        contributions: 0,
+        technologies: 0,
+      });
+    }
+  }, [isInView]);
+
+  useEffect(() => {
+    if (isInView) {
+      const targets = {
+        experience: 6,
+        certifications: 10,
+        contributions: 275,
+        technologies: 15,
+      };
+      
+      const duration = 2000; // 2 seconds total duration
+      const steps = 100; // number of steps
+      const interval = duration / steps;
+      let step = 0;
+      
+      const timer = setInterval(() => {
+        step++;
+        const progress = step / steps;
+        
+        setCounts({
+          experience: Math.min(Math.ceil(targets.experience * progress), targets.experience),
+          certifications: Math.min(Math.ceil(targets.certifications * progress), targets.certifications),
+          contributions: Math.min(Math.ceil(targets.contributions * progress), targets.contributions),
+          technologies: Math.min(Math.ceil(targets.technologies * progress), targets.technologies)
+        });
+
+        if (step >= steps) {
+          clearInterval(timer);
+        }
+      }, interval);
+
+      return () => clearInterval(timer);
+    }
+  }, [isInView]);
+
   const githubStats = [
-    { label: "Years of Professional Experience", value: "6" },
-    { label: "Certifications Completed", value: "10+" },
-    { label: "Contributions on GitHub", value: "275+" },
-    { label: "Technologies Used", value: "15+" },
+    {
+      label: "Years of Professional Experience",
+      value: `${counts.experience}`,
+    },
+    { label: "Certifications Completed", value: `${counts.certifications}+` },
+    { label: "Contributions on GitHub", value: `${counts.contributions}+` },
+    { label: "Technologies Used", value: `${counts.technologies}+` },
   ];
 
   return (
@@ -42,7 +100,7 @@ const Bio = () => {
 
             <motion.div className="relative mt-8 group">
               <motion.a
-                href="/Portfolio-Resume.pdf"
+                href="/RavjotD-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative inline-flex items-center px-6 py-3 text-white border-2 border-transparent rounded-lg bg-slate-800/50 hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all duration-300 overflow-hidden"
@@ -56,7 +114,7 @@ const Bio = () => {
           </div>
         </div>
 
-        <div className="md:w-1/3 space-y-8 ">
+        <div ref={statsRef} className="md:w-1/3 space-y-8 ">
           {githubStats.map((stat, index) => (
             <motion.div
               key={index}

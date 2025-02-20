@@ -26,21 +26,49 @@ const Certificates = () => {
     "/certificates/NAI.png",
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: (index) => ({
+      opacity: 0,
+      x: index % 2 === 0 ? -50 : 50,
+      y: 20,
+    }),
+    visible: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: {
+        type: "spring",
+        duration: 0.8,
+        bounce: 0.3,
+      },
+    },
+  };
+
   return (
     <>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+      <motion.div
+        className="grid grid-cols-2 lg:grid-cols-3 gap-4 p-4"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+      >
         {certificates.map((cert, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 0.2,
-              delay: index * 0.1,
-              type: "spring",
-              stiffness: 100,
-            }}
+            custom={index}
+            variants={itemVariants}
             className="relative aspect-[4/3] w-full group cursor-pointer"
             onClick={() => handleCertificateClick(cert)}
           >
@@ -54,7 +82,7 @@ const Certificates = () => {
             </div>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
 
       {selectedCert && (
         <div
