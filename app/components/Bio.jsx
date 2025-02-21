@@ -31,21 +31,33 @@ const Bio = () => {
         contributions: 275,
         technologies: 15,
       };
-      
-      const duration = 2000; // 2 seconds total duration
-      const steps = 100; // number of steps
+
+      const duration = 2000;
+      const steps = 100;
       const interval = duration / steps;
       let step = 0;
-      
+
       const timer = setInterval(() => {
         step++;
         const progress = step / steps;
-        
+
         setCounts({
-          experience: Math.min(Math.ceil(targets.experience * progress), targets.experience),
-          certifications: Math.min(Math.ceil(targets.certifications * progress), targets.certifications),
-          contributions: Math.min(Math.ceil(targets.contributions * progress), targets.contributions),
-          technologies: Math.min(Math.ceil(targets.technologies * progress), targets.technologies)
+          experience: Math.min(
+            Math.ceil(targets.experience * progress),
+            targets.experience,
+          ),
+          certifications: Math.min(
+            Math.ceil(targets.certifications * progress),
+            targets.certifications,
+          ),
+          contributions: Math.min(
+            Math.ceil(targets.contributions * progress),
+            targets.contributions,
+          ),
+          technologies: Math.min(
+            Math.ceil(targets.technologies * progress),
+            targets.technologies,
+          ),
         });
 
         if (step >= steps) {
@@ -98,23 +110,41 @@ const Bio = () => {
               technology.
             </p>
 
-            <motion.div className="relative mt-8 group">
-              <motion.a
-                href="/RavjotD-Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative inline-flex items-center px-6 py-3 text-white border-2 border-transparent rounded-lg bg-slate-800/50 hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all duration-300 overflow-hidden"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <span className="relative z-10">Download CV</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-teal-400 animate-slide" />
-              </motion.a>
-            </motion.div>
+            <div className="flex gap-4 mt-8">
+              <motion.div className="relative group">
+                <motion.a
+                  href="/RavjotD-Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative inline-flex items-center px-6 py-3 text-white border-2 border-transparent rounded-lg bg-slate-800/50 hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all duration-300 overflow-hidden"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <span className="relative z-10">Download CV</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-teal-400 animate-slide" />
+                </motion.a>
+              </motion.div>
+              <motion.div className="relative group">
+                <motion.a
+                  href="#contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .querySelector("#contact")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="relative inline-flex items-center px-6 py-3 text-cyan-400 border-2 border-cyan-400/50 rounded-lg bg-transparent hover:bg-cyan-400/10 transition-all duration-300"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <span className="relative z-10">Contact me</span>
+                </motion.a>
+              </motion.div>
+            </div>
           </div>
         </div>
 
-        <div ref={statsRef} className="md:w-1/3 space-y-8 ">
+        <div ref={statsRef} className="md:w-1/3 space-y-8">
           {githubStats.map((stat, index) => (
             <motion.div
               key={index}
@@ -123,7 +153,7 @@ const Bio = () => {
               transition={{ delay: index * 0.1 }}
               className="space-y-2"
             >
-              <div className="flex items-center justify-between ">
+              <div className="flex items-center justify-between">
                 <span className="text-white text-lg font-semibold">
                   {stat.label}
                 </span>

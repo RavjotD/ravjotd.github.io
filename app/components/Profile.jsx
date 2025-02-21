@@ -1,10 +1,9 @@
+
 import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
+
 
 const Profile = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
-
   const item = {
     hidden: { opacity: 0, y: 50 },
     show: (index) => ({
@@ -137,16 +136,13 @@ const Profile = () => {
 
   return (
     <div className="flex flex-col my-10 justify-center px-2 items-center">
-      <div
-        ref={ref}
-        className="grid grid-cols-2 md:grid-cols-4 px-2 gap-8 text-center my-10 items-center justify-center"
-      >
+      <div className="grid grid-cols-2 md:grid-cols-4 px-2 gap-8 text-center my-10 items-center justify-center">
         {techStack.map((tech, index) => (
           <motion.div
             key={index}
             variants={item}
             initial="hidden"
-            animate={isInView ? "show" : "hidden"}
+            animate="show"
             custom={index}
             className={`relative group w-full max-w-[150px] min-w-[120px] min-h-[150px] rounded-lg bg-gray-800/30 backdrop-blur-sm p-2 hover:-translate-y-4 duration-300 flex flex-col justify-center items-center overflow-hidden shadow-[0_0_10px_var(--tw-glow-color)] hover:shadow-[0_0_20px_var(--tw-glow-color)] transition-all border-4 border-transparent hover:border-[var(--tw-glow-color)]`}
             style={{
