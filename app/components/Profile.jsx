@@ -92,7 +92,7 @@ const Profile = () => {
     },
     {
       img: "tech/tS.png",
-      years: "1 years",
+      years: "1 year",
       color: "blue-500",
       text: "TypeScript",
     },
