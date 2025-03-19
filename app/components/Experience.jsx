@@ -22,8 +22,8 @@ const Experience = () => {
               companyUrl: "https://www.usebraintrust.com/",
               date: "October 2024 - Present",
               duties: [
-                "Developed API-aligned prompts and conducted validation testing to ensure robustness for the practiced large language models.",
-                "Reviewed and summarized AI-generated code to achieve a high standard of data accuracy and completeness",
+                "Improved AI model accuracy by reviewing and refining outputs using Reinforcement Learning with Human Feedback (RLHF), leading to better alignment with human preferences.",
+                "Enhanced API quality by prompt-engineering and validating large language models (LLMs), optimizing JSON file formatting for seamless integration.",
               ],
               skills: [
                 "Prompt Engineering",
@@ -35,13 +35,12 @@ const Experience = () => {
               title: "Freelance Software Developer",
               company: "Stallion Group Security",
               companyUrl: "https://stalliongroupsecurity.ca/",
-              date: "January 2024 - Present",
+              date: "January 2024 - September 2024",
               duties: [
-                "Engineered and launched a commercial website for a Security services company.",
-                "Implemented successful auto-replies to valid form submissions and Calendly integration to increase client conversion rates.",
-                "Executed a targeted digital marketing strategy via TikTok ads integration.",
+                "Built and deployed a full-stack commercial website using ReactJS and TypeScript, delivering an optimized user experience that boosted client engagement.",
+                "Increased client sales by 50% by implementing TikTok ad integration and defining target audiences in British Columbia through a robust digital marketing strategy",
               ],
-              skills: ["TypeScript", "ReactJS", "TailwindCSS"],
+              skills: ["TypeScript", "ReactJS", "TailwindCSS", "Express"],
             },
             {
               title: "Service Desk Analyst Co-op",
@@ -49,10 +48,9 @@ const Experience = () => {
               companyUrl: "https://www.microserve.ca/",
               date: "December 2022 - September 2023",
               duties: [
-                "Provided Tier-1 technical support via ConnectWise.",
-                "Managed enterprise IT infrastructure: Active directory, GPO, Windows Server Administration to ensure smooth client operations.",
-                "Supported specialized software applications by automating scripts to streamline onboarding processing via PowerShell & Batch.",
-                "Orchestrated Email Migrations.",
+                "Delivered high-quality Tier-1 technical support by resolving end-user issues efficiently via ticketing systems from a range of small to large enterprises.",
+                "Streamlined onboarding processes by automating PowerShell scripts, reducing manual setup time by 40%.",
+                "Maintained smooth client operations by managing enterprise IT infrastructure, including Active Directory, Group Policy Objects (GPO), M365 Administration, and Azure.",
               ],
               skills: [
                 "Microsoft 365 Administration",
@@ -69,7 +67,7 @@ const Experience = () => {
               date: "August 2018 - December 2022",
               duties: [
                 "Delivered exceptional customer service by consistently selling 20+ memberships monthly, meeting monthly quotas.",
-                "Identified prospective customers by using business directories and developing leads by networking within the community.",
+                "Trained and mentored new hires, enhancing team collaboration and productivity, resulting to a 15% improvement in overall sales performance. ",
               ],
               skills: [
                 "Sales",

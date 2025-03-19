@@ -10,7 +10,7 @@ const Expertise = () => {
         "Creating intuitive and engaging user experiences through modern design principles and user-centered approaches.",
     },
     {
-      title: "Full-stack Development",
+      title: "Full-Stack Development",
       description:
         "Building end-to-end web applications using modern technologies like React, Node.js, SpringBoot and Python.",
     },

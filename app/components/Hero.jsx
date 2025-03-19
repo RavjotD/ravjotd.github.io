@@ -69,7 +69,7 @@ const Hero = () => {
         </motion.div>
 
         <motion.p variants={item} className="text-lg text-gray-400 mt-4">
-          Helping build reliable web applications
+          Helping build reliable software solutions
         </motion.p>
 
         <motion.div variants={item} className="flex gap-6 mt-8">
