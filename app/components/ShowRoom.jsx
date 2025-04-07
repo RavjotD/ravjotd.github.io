@@ -12,6 +12,9 @@ const Certificates = () => {
   };
 
   const certificates = [
+    "/certificates/Hacksplaining.png",
+    "/certificates/AWSSecurity.png",
+    "/certificates/AWSGI.png",
     "/certificates/ACP.png",
     "/certificates/AGD.png",
     "/certificates/ASF.png",

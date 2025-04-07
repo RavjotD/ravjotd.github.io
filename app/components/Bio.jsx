@@ -111,19 +111,12 @@ const Bio = () => {
             </p>
 
             <div className="flex gap-4 mt-8">
-              <motion.div className="relative group">
-                <motion.a
-                  href="/Portfolio-Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative inline-flex items-center px-6 py-3 text-white border-2 border-transparent rounded-lg bg-slate-800/50 hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all duration-300 overflow-hidden"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <span className="relative z-10">Download CV</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-teal-400 animate-slide" />
-                </motion.a>
-              </motion.div>
+          <a href="/Portfolio-Resume.pdf"  targets="_blank"  rel="noopener noreferrer" className="relative overflow-hidden bg-gray-800/20 border border-white/20 text-white px-6 py-3 rounded-md group hover:border-cyan-700">
+  <span className="relative z-10">Download CV</span>
+  <span className="absolute inset-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-cyan-500 to-transparent transition-all duration-500 group-hover:left-full"></span>
+</a>
+                
+             
               <motion.div className="relative group">
                 <motion.a
                   href="#contact"
