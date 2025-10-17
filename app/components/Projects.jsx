@@ -17,7 +17,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Epoxy Business Wesbite",
+      title: "Epoxy Business Website",
       desc: "Full-Stack webapp features complete quote submission form",
       img: "projects/labcoat_SS.png",
       link: "https://labcoatings.ca/",
