@@ -89,25 +89,13 @@ const Bio = () => {
         <div className="lg:w-2/3">
           <div className="max-w-3xl mb-16">
             <p className="text-gray-300 mb-6">
-              Full Stack Software Engineer with a seamless passion for
-              developing web applications from inception to deployment. My
-              dedication to both front-end and back-end development fuels my
-              drive to create intuitive and efficient user experiences.
+            Full Stack Developer and IT Specialist with a well-rounded background in software development, technical support, and systems troubleshooting. I’m passionate about building efficient, user-centric web applications — from concept to deployment — while ensuring reliability across both front-end and back-end environments.
             </p>
 
-            <p className="text-gray-300 mb-6">
-              I have honed my expertise in full-stack development, enabling me
-              to integrate diverse technologies into cohesive solutions. My
-              credentials reflect my proficiency and ongoing commitment to
-              evolving within this dynamic field.
-            </p>
+            
 
             <p className="text-gray-300">
-              My passion extends to the integration of AI technologies, which I
-              leverage to optimize workflows and enhance functionality. Outside
-              of coding, I stay engaged with the latest advancements in AI and
-              continually seek innovative ways to push the boundaries of
-              technology.
+            With a foundation in IT support and customer-facing roles, I bring strong communication skills and a solution-driven mindset to every project. I actively integrate AI tools to accelerate workflows, improve efficiency, and enhance functionality. Currently, I’m expanding my expertise into cloud and network engineering, driven by a desire to stay at the forefront of modern technology.
             </p>
 
             <div className="flex gap-4 mt-8">

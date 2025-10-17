@@ -5,10 +5,16 @@ import { motion } from "framer-motion";
 const Expertise = () => {
   const areas = [
     {
-      title: "UX Design",
+      title: "Technical Expertise (IT)",
       description:
-        "Creating intuitive and engaging user experiences through modern design principles and user-centered approaches.",
+        "Strong technical background with hands-on experience in troubleshooting, system maintenance, and implementing IT solutions to improve efficiency and reliability.",
     },
+    {
+      title: "Customer Service & Support (CSS)",
+      description:
+        "Skilled in resolving complex customer concerns efficiently while ensuring a positive, solution-focused experience.",
+    },
+
     {
       title: "Full-Stack Development",
       description:
@@ -33,7 +39,7 @@ const Expertise = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {areas.map((area, index) => (
           <motion.div
             key={index}

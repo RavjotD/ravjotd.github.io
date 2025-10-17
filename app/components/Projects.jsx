@@ -17,6 +17,16 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: "Epoxy Business Wesbite",
+      desc: "Full-Stack webapp features complete quote submission form",
+      img: "projects/labcoat_SS.png",
+      link: "https://labcoatings.ca/",
+      glink: "",
+      skills: ["ReactJS", "TailWind CSS"],
+      txtcolor: "text-green-400",
+    },
+    {
+      id: 3,
       title: "TicketHub",
       desc: "Full-Stack webapp serving as a TicketMaster Alternative using their OpenAPI.",
       img: "projects/THSS.png",
@@ -25,24 +35,15 @@ const Projects = () => {
       skills: ["Next.js", "Tailwind CSS", "PocketBase", "DiscoveryAPI"],
       txtcolor: "text-cyan-400",
     },
-    {
-      id: 3,
-      title: "Restaurant App",
-      desc: "Full-Stack webapp features reservation system with RESTFul API endpoints.",
-      img: "projects/LittleLemon.png",
-      link: "",
-      glink: "https://github.com/RavjotD/LittleLemonCapstone",
-      skills: ["Python", "Django", "DRF", "MySQL"],
-      txtcolor: "text-green-400",
-    },
+    
     {
       id: 4,
-      title: "Object Detection",
-      desc: "4WD Robotic car detecting object avoidance and face detection.",
-      img: "projects/face.png",
-      link: "",
-      glink: "https://github.com/RavjotD/Object-Detection",
-      skills: ["Python", "OpenCV", "Raspberry Pi4", "RealNVC"],
+      title: "Cleaning Business Website",
+      desc: "Full-Stack website with front-end and back-end communication.",
+      img: "projects/WVC_SS.png",
+      link: "https://westviewcleaningservices.ca/",
+      glink: "",
+      skills: ["ReactJS", "Tailwind CSS",],
       txtcolor: "text-green-600",
     },
   ];
@@ -52,7 +53,7 @@ const Projects = () => {
       <h1 className="text-center py-6 text-5xl md:text-7xl font-bold bg-gradient-to-b from-blue-400 via-white to-blue-300 text-transparent bg-clip-text mb-8">
         Projects
       </h1>
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
         {items.map((item) => (
           <motion.div
             key={item.id}
@@ -87,25 +88,16 @@ const Projects = () => {
                 </div>
               </div>
               <div className="flex justify-between gap-4">
-                {item.id !== 3 && item.id !== 4 && (
-                  <a
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="relative px-4 py-2 text-sm text-white rounded-lg overflow-hidden group/btn bg-gray-700 hover:bg-cyan-500 transition-all duration-300 transform hover:-translate-x-1"
-                  >
-                    <span className="relative z-10">Project Demo</span>
-                  </a>
-                )}
-                <a
-                  href={item.glink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`relative px-4 py-2 text-sm text-white rounded-lg overflow-hidden group/btn bg-gray-700 hover:bg-cyan-500 transition-all duration-300 transform hover:-translate-x-1 ${(item.id === 3 || item.id === 4) ? "mx-auto" : ""}`}
-                >
-                  <span className="relative z-10">Source Code</span>
-                </a>
-              </div>
+  <a
+    href={item.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative px-4 py-2 text-sm text-white rounded-lg overflow-hidden group/btn bg-gray-700 hover:bg-cyan-500 transition-all duration-300 transform hover:-translate-x-1"
+  >
+    <span className="relative z-10">Project Demo</span>
+  </a>
+</div>
+
             </div>
           </motion.div>
         ))}

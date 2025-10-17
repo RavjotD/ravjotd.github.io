@@ -17,10 +17,26 @@ const Experience = () => {
         <div className="space-y-8 md:space-y-16 flex flex-col items-center">
           {[
             {
+              title: "Technical Support Expert",
+              company: "Kaseya",
+              companyUrl: "https://www.kaseya.com/",
+              date: "May 2025 - Present",
+              duties: [
+                "Delivering expert-level technical support on ConnectBooster payment solutions software, ensuring seamless operations and training for MSPs and MMEs clients.",
+                "Supporting and troubleshooting software integrations with PSA/CRM platforms, accounting systems, and payment gateway APIs to maintain transaction processing and service delivery.",
+                "Achieved 84% First Day Resolution (FDR) on customer issues, with a sustained weekly average of 50%+, exceeding support benchmarks.",
+              ],
+              skills: [
+                "Troubleshooting",
+                "Communication",
+                "System Administration",
+              ],
+            },
+            {
               title: "AI Software Engineer",
               company: "Braintrust Outliers",
               companyUrl: "https://www.usebraintrust.com/",
-              date: "October 2024 - Present",
+              date: "October 2024 - May 2025",
               duties: [
                 "Improved AI model accuracy by reviewing and refining outputs using Reinforcement Learning with Human Feedback (RLHF), leading to better alignment with human preferences.",
                 "Enhanced API quality by prompt-engineering and validating large language models (LLMs), optimizing JSON file formatting for seamless integration.",
