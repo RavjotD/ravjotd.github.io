@@ -1,35 +1,37 @@
-
 "use client";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-gray-900/50 backdrop-blur-sm py-6 mt-auto">
-      
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="flex gap-6 mb-4 md:mb-0">
+    <footer className="w-full mt-auto">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+        <div className="editorial-rule" />
+        <div className="py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <span className="font-serif text-lg text-cream">
+            Ravjot Duhra
+          </span>
+
+          <div className="flex gap-8">
             <Link
               href="https://github.com/RavjotD"
               target="_blank"
               rel="noopener noreferrer"
+              className="font-sans text-sm text-text-muted hover:text-accent transition-colors duration-300"
             >
-              <div className="w-12 h-12 rounded-full flex items-center justify-center bg-gray-800 hover:shadow-[0_0_15px_cyan] transition-all duration-300">
-                <img src="/github.png" alt="GitHub" className="w-6 h-6" />
-              </div>
+              GitHub
             </Link>
             <Link
-              href="https://linkedin.com/in/ravjotd"
+              href="https://www.linkedin.com/in/ravjot-duhra/"
               target="_blank"
               rel="noopener noreferrer"
+              className="font-sans text-sm text-text-muted hover:text-accent transition-colors duration-300"
             >
-              <div className="w-12 h-12 rounded-full flex items-center justify-center bg-gray-800 hover:shadow-[0_0_15px_cyan] transition-all duration-300">
-                <img src="/linkedin.png" alt="LinkedIn" className="w-6 h-6" />
-              </div>
+              LinkedIn
             </Link>
           </div>
-          <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Ravjot Duhra. All Rights Reserved.
+
+          <p className="font-sans text-xs text-text-muted">
+            &copy; {new Date().getFullYear()} All Rights Reserved
           </p>
         </div>
       </div>

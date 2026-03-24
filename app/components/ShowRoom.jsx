@@ -7,10 +7,6 @@ import Profile from "./Profile";
 const Certificates = () => {
   const [selectedCert, setSelectedCert] = React.useState(null);
 
-  const handleCertificateClick = (cert) => {
-    setSelectedCert(cert);
-  };
-
   const certificates = [
     "/certificates/Hacksplaining.png",
     "/certificates/AWSSecurity.png",
@@ -29,59 +25,34 @@ const Certificates = () => {
     "/certificates/NAI.png",
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.1,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: (index) => ({
-      opacity: 0,
-      x: index % 2 === 0 ? -50 : 50,
-      y: 20,
-    }),
-    visible: {
-      opacity: 1,
-      x: 0,
-      y: 0,
-      transition: {
-        type: "spring",
-        duration: 0.8,
-        bounce: 0.3,
-      },
-    },
-  };
-
   return (
     <>
       <motion.div
         className="grid grid-cols-2 lg:grid-cols-3 gap-4 p-4"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
       >
         {certificates.map((cert, index) => (
           <motion.div
             key={index}
-            custom={index}
-            variants={itemVariants}
-            className="relative aspect-[4/3] w-full group cursor-pointer"
-            onClick={() => handleCertificateClick(cert)}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: index * 0.05 }}
+            className="relative aspect-[4/3] w-full group cursor-pointer overflow-hidden"
+            onClick={() => setSelectedCert(cert)}
           >
             <img
               src={cert}
               alt={`Certificate ${index + 1}`}
-              className="w-full h-full object-cover rounded-lg shadow-lg"
+              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
             />
-            <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-lg">
-              <span className="text-white text-lg font-semibold">View</span>
+            <div className="absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span className="font-sans text-sm text-accent tracking-wider uppercase">
+                View
+              </span>
             </div>
           </motion.div>
         ))}
@@ -89,20 +60,20 @@ const Certificates = () => {
 
       {selectedCert && (
         <div
-          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
+          className="fixed inset-0 bg-charcoal/90 backdrop-blur-sm flex items-center justify-center z-50 p-4"
           onClick={() => setSelectedCert(null)}
         >
           <div className="relative w-full max-w-4xl">
             <img
               src={selectedCert}
               alt="Certificate"
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto"
             />
             <button
               onClick={() => setSelectedCert(null)}
-              className="absolute top-4 right-4 text-white bg-black/50 rounded-full p-2 hover:bg-black/70"
+              className="absolute top-4 right-4 text-cream bg-charcoal/50 w-10 h-10 flex items-center justify-center hover:bg-accent transition-colors"
             >
-              ✕
+              <span className="text-lg">&times;</span>
             </button>
           </div>
         </div>
@@ -115,42 +86,49 @@ const ShowRoom = () => {
   const [activeTab, setActiveTab] = useState("experience");
 
   const tabs = [
-    { id: "experience", label: "Experience", icon: "💼" },
-    { id: "certificates", label: "Certificates", icon: "🎓" },
-    { id: "techstack", label: "Tech Stack", icon: "⚡" },
+    { id: "experience", label: "Experience" },
+    { id: "certificates", label: "Certificates" },
+    { id: "techstack", label: "Tech Stack" },
   ];
 
   return (
-    <div className="w-full py-12">
-      <h1 className=" text-center text-5xl md:text-7xl font-bold bg-gradient-to-br from-white to-blue-300 text-transparent bg-clip-text mb-4">
-        Show Room
-      </h1>
-      <p className="text-gray-400 text-center mb-12 max-w-3xl mx-auto">
-        My journey of projects, certifications, and technical expertise.
-      </p>
+    <div className="w-full max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24 bg-gradient-to-br from-charcoal via-gray-900/20 to-charcoal">
+      <motion.h2
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        className="font-serif text-display-lg text-cream mb-16"
+      >
+        Showroom
+      </motion.h2>
 
-      <div className="flex justify-center gap-2 md:gap-6 mb-12">
+      {/* Tab bar */}
+      <div className="flex gap-8 md:gap-12 mb-12 border-b border-rule">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`relative flex items-center md:gap-2 px-2 py-3 md:px-8 md:py-6 text-xs md:text-lg rounded-lg transition-all duration-300 overflow-hidden
-              ${
-                activeTab === tab.id
-                  ? "text-white scale-110"
-                  : "bg-slate-800/50 text-gray-200 hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)]"
-              } border-2 border-transparent`}
+            className={`relative pb-4 font-sans text-sm md:text-base tracking-wide transition-colors duration-300 ${
+              activeTab === tab.id
+                ? "text-cream"
+                : "text-text-muted hover:text-text-secondary"
+            }`}
           >
-            <span className="relative z-10 text-xl">{tab.icon}</span>
-            <span className="relative z-10">{tab.label}</span>
+            {tab.label}
             {activeTab === tab.id && (
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-teal-400 animate-slide" />
+              <motion.div
+                layoutId="tab-underline"
+                className="absolute bottom-0 left-0 right-0 h-[2px] bg-accent"
+                transition={{ type: "spring", stiffness: 350, damping: 30 }}
+              />
             )}
           </button>
         ))}
       </div>
 
-      <div className="w-full max-w-6xl  mx-auto">
+      {/* Tab content */}
+      <div className="w-full">
         {activeTab === "experience" && <Experience />}
         {activeTab === "certificates" && <Certificates />}
         {activeTab === "techstack" && <Profile />}

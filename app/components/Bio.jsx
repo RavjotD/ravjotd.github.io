@@ -44,19 +44,19 @@ const Bio = () => {
         setCounts({
           experience: Math.min(
             Math.ceil(targets.experience * progress),
-            targets.experience,
+            targets.experience
           ),
           certifications: Math.min(
             Math.ceil(targets.certifications * progress),
-            targets.certifications,
+            targets.certifications
           ),
           contributions: Math.min(
             Math.ceil(targets.contributions * progress),
-            targets.contributions,
+            targets.contributions
           ),
           technologies: Math.min(
             Math.ceil(targets.technologies * progress),
-            targets.technologies,
+            targets.technologies
           ),
         });
 
@@ -70,87 +70,109 @@ const Bio = () => {
   }, [isInView]);
 
   const githubStats = [
-    {
-      label: "Years of Professional Experience",
-      value: `${counts.experience}`,
-    },
-    { label: "Certifications Completed", value: `${counts.certifications}+` },
-    { label: "Contributions on GitHub", value: `${counts.contributions}+` },
-    { label: "Technologies Used", value: `${counts.technologies}+` },
+    { label: "Years Experience", value: `${counts.experience}` },
+    { label: "Certifications", value: `${counts.certifications}+` },
+    { label: "GitHub Contributions", value: `${counts.contributions}+` },
+    { label: "Technologies", value: `${counts.technologies}+` },
   ];
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 p-4 py-8 relative">
-      <h2 className="text-6xl lg:text-8xl font-bold absolute top-12 left-12 bg-gradient-to-tl from-blue-400 via-white to-blue-500 bg-clip-text text-transparent">
-        About Me
-      </h2>
+    <div className="w-full max-w-[1400px] mx-auto px-6 md:px-12 py-24 md:py-32 bg-gradient-to-b from-gray-950/40 via-charcoal to-charcoal">
+      {/* Section heading */}
+      <motion.h2
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        className="font-serif text-display-lg text-cream mb-16 md:mb-24"
+      >
+        About
+      </motion.h2>
 
-      <div className="flex flex-col lg:flex-row items-start justify-between pt-48 px-4 md:px-12 lg:px-24 gap-12">
-        <div className="lg:w-2/3">
-          <div className="max-w-3xl mb-16">
-            <p className="text-gray-300 mb-6">
-            Full Stack Developer and IT Specialist with a well-rounded background in software development, technical support, and systems troubleshooting. I’m passionate about building efficient, user-centric web applications — from concept to deployment — while ensuring reliability across both front-end and back-end environments.
-            </p>
+      <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-16 lg:gap-24">
+        {/* Left: Bio text */}
+        <div>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="font-sans text-text-secondary text-base md:text-lg leading-[1.8] mb-8"
+          >
+            Full Stack Developer and IT Specialist with a well-rounded background
+            in software development, technical support, and systems
+            troubleshooting. I'm passionate about building efficient,
+            user-centric web applications — from concept to deployment — while
+            ensuring reliability across both front-end and back-end environments.
+          </motion.p>
 
-            
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="font-sans text-text-secondary text-base md:text-lg leading-[1.8] mb-12"
+          >
+            With a foundation in IT support and customer-facing roles, I bring
+            strong communication skills and a solution-driven mindset to every
+            project. I actively integrate AI tools to accelerate workflows,
+            improve efficiency, and enhance functionality. Currently expanding my
+            expertise into cloud and network engineering.
+          </motion.p>
 
-            <p className="text-gray-300">
-            With a foundation in IT support and customer-facing roles, I bring strong communication skills and a solution-driven mindset to every project. I actively integrate AI tools to accelerate workflows, improve efficiency, and enhance functionality. Currently, I’m expanding my expertise into cloud and network engineering, driven by a desire to stay at the forefront of modern technology.
-            </p>
+          {/* CTA buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex flex-wrap gap-6"
+          >
+            <a
+              href="/Portfolio-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans text-sm text-cream border-b border-accent pb-1 hover:text-accent transition-colors duration-300"
+            >
+              Download CV
+            </a>
 
-            <div className="flex gap-4 mt-8">
-          <a href="/Portfolio-Resume.pdf"  targets="_blank"  rel="noopener noreferrer" className="relative overflow-hidden bg-gray-800/20 border border-white/20 text-white px-6 py-3 rounded-md group hover:border-cyan-700">
-  <span className="relative z-10">Download CV</span>
-  <span className="absolute inset-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-cyan-500 to-transparent transition-all duration-500 group-hover:left-full"></span>
-</a>
-                
-             
-              <motion.div className="relative group">
-                <motion.a
-                  href="#contact"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .querySelector("#contact")
-                      ?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                  className="relative inline-flex items-center px-6 py-3 text-cyan-400 border-2 border-cyan-400/50 rounded-lg bg-transparent hover:bg-cyan-400/10 transition-all duration-300"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <span className="relative z-10">Contact me</span>
-                </motion.a>
-              </motion.div>
-            </div>
-          </div>
+            <a
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .querySelector("#contact")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="font-sans text-sm text-accent border border-accent px-6 py-2 hover:bg-accent hover:text-charcoal transition-all duration-300"
+            >
+              Contact me
+            </a>
+          </motion.div>
         </div>
 
-        <div ref={statsRef} className="md:w-1/3 space-y-8">
+        {/* Right: Stats */}
+        <div ref={statsRef} className="space-y-0">
           {githubStats.map((stat, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="space-y-2"
+              className="py-6 border-t border-rule last:border-b"
             >
-              <div className="flex items-center justify-between">
-                <span className="text-white text-lg font-semibold">
-                  {stat.label}
-                </span>
-                <span className="text-4xl font-bold text-teal-400 px-2">
-                  {stat.value}
-                </span>
-              </div>
-              <div className="w-full h-[1px] bg-gradient-to-l from-teal-400 to-cyan-400" />
+              <span className="font-serif text-4xl md:text-5xl text-accent block mb-2">
+                {stat.value}
+              </span>
+              <span className="font-sans text-xs tracking-[0.2em] uppercase text-text-muted">
+                {stat.label}
+              </span>
             </motion.div>
           ))}
         </div>
       </div>
-
-      <h2 className="hidden lg:block text-6xl lg:text-8xl font-bold absolute bottom-12 right-12 bg-gradient-to-br from-white via-gray-700 to-blue-500 bg-clip-text text-transparent">
-        Passionate to Innovate
-      </h2>
     </div>
   );
 };
