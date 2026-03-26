@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Experience from "./Experience";
 import Profile from "./Profile";
 
@@ -82,17 +82,98 @@ const Certificates = () => {
   );
 };
 
+const Education = () => {
+  const items = [
+    {
+      institution: "Amazon Web Services",
+      credential: "Solutions Architect Associate",
+      status: "In Progress",
+      date: "Expected June 2026",
+    },
+    {
+      institution: "Kwantlen Polytechnic University",
+      credential: "Bachelor of Technology",
+      status: "Completed",
+      date: "April 2025",
+    },
+    {
+      institution: "AWS Skill Builder",
+      credential: "AWS Security: Securing Generative AI on AWS",
+      status: "Certified",
+      date: "April 2025",
+    },
+    {
+      institution: "AWS Skill Builder",
+      credential: "AWS Security Fundamentals Second Edition",
+      status: "Certified",
+      date: "February 2025",
+    },
+    {
+      institution: "AWS Skill Builder",
+      credential: "AWS Cloud Practitioner Essentials",
+      status: "Certified",
+      date: "February 2025",
+    },
+    {
+      institution: "Coursera",
+      credential: "Meta Professional Backend Developer [+8 courses]",
+      status: "Certified",
+      date: "September 2024",
+    },
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto py-4">
+      {items.map((item, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: index * 0.08 }}
+          className="border-t border-rule py-6 group"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-[160px_1fr_auto] gap-3 md:gap-8 items-start">
+            <span className="font-mono text-xs text-text-muted tracking-wide">
+              {item.date}
+            </span>
+            <div>
+              <h4 className="font-sans text-base text-cream mb-1 group-hover:text-accent transition-colors duration-300">
+                {item.credential}
+              </h4>
+              <p className="font-sans text-sm text-text-secondary">
+                {item.institution}
+              </p>
+            </div>
+            <span
+              className={`font-mono text-xs tracking-wider uppercase px-3 py-1 border ${
+                item.status === "In Progress"
+                  ? "border-accent/40 text-accent"
+                  : "border-rule text-text-muted"
+              }`}
+            >
+              {item.status}
+            </span>
+          </div>
+        </motion.div>
+      ))}
+      <div className="border-t border-rule" />
+    </div>
+  );
+};
+
 const ShowRoom = () => {
   const [activeTab, setActiveTab] = useState("experience");
 
   const tabs = [
     { id: "experience", label: "Experience" },
+    { id: "education", label: "Education" },
     { id: "certificates", label: "Certificates" },
     { id: "techstack", label: "Tech Stack" },
   ];
 
   return (
-    <div className="w-full max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24 bg-gradient-to-br from-charcoal via-gray-900/20 to-charcoal">
+    <div className="w-full max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24">
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -104,12 +185,12 @@ const ShowRoom = () => {
       </motion.h2>
 
       {/* Tab bar */}
-      <div className="flex gap-8 md:gap-12 mb-12 border-b border-rule">
+      <div className="flex gap-6 md:gap-12 mb-12 border-b border-rule overflow-x-auto">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`relative pb-4 font-sans text-sm md:text-base tracking-wide transition-colors duration-300 ${
+            className={`relative pb-4 font-sans text-sm md:text-base tracking-wide transition-colors duration-300 whitespace-nowrap ${
               activeTab === tab.id
                 ? "text-cream"
                 : "text-text-muted hover:text-text-secondary"
@@ -127,12 +208,22 @@ const ShowRoom = () => {
         ))}
       </div>
 
-      {/* Tab content */}
-      <div className="w-full">
-        {activeTab === "experience" && <Experience />}
-        {activeTab === "certificates" && <Certificates />}
-        {activeTab === "techstack" && <Profile />}
-      </div>
+      {/* Tab content with animation */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={activeTab}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.3 }}
+          className="w-full"
+        >
+          {activeTab === "experience" && <Experience />}
+          {activeTab === "education" && <Education />}
+          {activeTab === "certificates" && <Certificates />}
+          {activeTab === "techstack" && <Profile />}
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 };

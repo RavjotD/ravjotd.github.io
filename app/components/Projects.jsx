@@ -6,35 +6,44 @@ const Projects = () => {
   const items = [
     {
       id: 1,
+      title: "Secure Vault",
+      desc: "Capstone project — a security-focused full-stack application for encrypted password and document storage. AES-256 encryption, MFA authentication, and PIPEDA-aligned design.",
+      img: "projects/Stallion.png",
+      link: "https://github.com/RavjotD",
+      glink: "https://github.com/RavjotD",
+      skills: ["Spring Boot", "Java", "React", "MySQL", "AWS S3", "AWS EFS"],
+    },
+    {
+      id: 2,
       title: "Commercial Website",
-      desc: "A user-intuitive commercial website for a company providing security services.",
+      desc: "A user-intuitive commercial website for a security services company. Increased client sales by 50% through TikTok ad integration and targeted digital marketing.",
       img: "projects/Stallion.png",
       link: "https://stalliongroupsecurity.ca/",
       glink: "https://github.com/RavjotD/StallionWebsite",
       skills: ["ReactJS", "TypeScript", "TailwindCSS", "Express.js"],
     },
     {
-      id: 2,
+      id: 3,
       title: "Epoxy Business Website",
-      desc: "Full-Stack webapp features complete quote submission form.",
+      desc: "Full-Stack webapp with complete quote submission form and automated client communication workflows.",
       img: "projects/labcoat_SS.png",
       link: "https://labcoatings.ca/",
       glink: "",
       skills: ["ReactJS", "Tailwind CSS"],
     },
     {
-      id: 3,
+      id: 4,
       title: "TicketHub",
-      desc: "Full-Stack webapp serving as a TicketMaster Alternative using their OpenAPI.",
+      desc: "Full-Stack webapp serving as a TicketMaster alternative, built on their Discovery API with real-time event search.",
       img: "projects/THSS.png",
       link: "https://ticket-hub-pink.vercel.app/",
       glink: "https://github.com/RavjotD/Ticket-Hub",
       skills: ["Next.js", "Tailwind CSS", "PocketBase", "DiscoveryAPI"],
     },
     {
-      id: 4,
+      id: 5,
       title: "Cleaning Business Website",
-      desc: "Full-Stack website with front-end and back-end communication.",
+      desc: "Full-Stack website with front-end and back-end communication, automated email replies for client booking.",
       img: "projects/WVC_SS.png",
       link: "https://westviewcleaningservices.ca/",
       glink: "",
@@ -43,7 +52,16 @@ const Projects = () => {
   ];
 
   return (
-    <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-24 md:py-32 bg-gradient-to-t from-gray-950/30 via-charcoal to-charcoal">
+    <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-24 md:py-32">
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="font-mono text-xs tracking-[0.3em] uppercase text-accent mb-4"
+      >
+        Selected Work
+      </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -76,8 +94,8 @@ const Projects = () => {
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
 
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-500" />
+            {/* Overlay - enhanced gray gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-zinc-900/20 opacity-80 group-hover:opacity-95 transition-opacity duration-500" />
 
             {/* Project number */}
             <span className="absolute top-6 left-6 font-serif text-6xl md:text-7xl text-cream/10 leading-none">

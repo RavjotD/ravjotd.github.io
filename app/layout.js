@@ -24,8 +24,9 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Ravjot Duhra",
-  description: "Ravjot Duhra's Portfolio",
+  title: "Ravjot Duhra — Infrastructure & Systems Engineer",
+  description:
+    "Systems and infrastructure engineer delivering technical solutions across enterprise integrations, cloud deployments, and full-stack application lifecycles.",
   icons: {
     icon: ["/icon.png"],
   },

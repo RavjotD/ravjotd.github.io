@@ -53,7 +53,7 @@ const ParticleField = () => {
         size={0.03}
         color="#7dd3fc"
         transparent
-        opacity={0.4}
+        opacity={0.3}
         sizeAttenuation
         depthWrite={false}
       />
@@ -92,7 +92,12 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-charcoal via-gray-950 to-charcoal">
+    <div className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-charcoal via-zinc-950 to-charcoal">
+      {/* Subtle radial glow behind name */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="w-[600px] h-[600px] rounded-full bg-accent/[0.03] blur-[120px]" />
+      </div>
+
       {/* Three.js Particle Background */}
       <div className="absolute inset-0">
         <Suspense fallback={null}>
@@ -126,7 +131,7 @@ const Hero = () => {
           variants={item}
           className="font-sans text-sm md:text-base tracking-[0.3em] uppercase text-text-secondary mt-6"
         >
-          Full-Stack Developer
+          Infrastructure & Systems Engineer
         </motion.p>
 
         {/* Typewriter */}
@@ -136,11 +141,13 @@ const Hero = () => {
         >
           <TypeAnimation
             sequence={[
-              "builds reliable software",
+              "resolves complex technical issues",
               2000,
-              "ships production code",
+              "ships production-grade systems",
               2000,
-              "solves real problems",
+              "builds reliable infrastructure",
+              2000,
+              "bridges teams and technology",
               2000,
             ]}
             repeat={Infinity}

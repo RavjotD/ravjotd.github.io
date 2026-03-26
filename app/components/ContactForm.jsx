@@ -13,8 +13,18 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full max-w-[1400px] mx-auto px-6 md:px-12 py-24 md:py-32 bg-gradient-to-b from-charcoal via-gray-950/30 to-charcoal">
+    <div className="w-full max-w-[1400px] mx-auto px-6 md:px-12 py-24 md:py-32">
       <div className="flex flex-col items-center text-center">
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="font-mono text-xs tracking-[0.3em] uppercase text-accent mb-6"
+        >
+          What's Next?
+        </motion.p>
+
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -26,10 +26,10 @@ const Bio = () => {
   useEffect(() => {
     if (isInView) {
       const targets = {
-        experience: 6,
-        certifications: 10,
+        experience: 3,
+        certifications: 15,
         contributions: 275,
-        technologies: 15,
+        technologies: 19,
       };
 
       const duration = 2000;
@@ -70,15 +70,24 @@ const Bio = () => {
   }, [isInView]);
 
   const githubStats = [
-    { label: "Years Experience", value: `${counts.experience}` },
+    { label: "Years Delivering Solutions", value: `${counts.experience}+` },
     { label: "Certifications", value: `${counts.certifications}+` },
     { label: "GitHub Contributions", value: `${counts.contributions}+` },
     { label: "Technologies", value: `${counts.technologies}+` },
   ];
 
   return (
-    <div className="w-full max-w-[1400px] mx-auto px-6 md:px-12 py-24 md:py-32 bg-gradient-to-b from-gray-950/40 via-charcoal to-charcoal">
+    <div className="w-full max-w-[1400px] mx-auto px-6 md:px-12 py-24 md:py-32">
       {/* Section heading */}
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="font-mono text-xs tracking-[0.3em] uppercase text-accent mb-4"
+      >
+        The Story So Far
+      </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -99,11 +108,12 @@ const Bio = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-sans text-text-secondary text-base md:text-lg leading-[1.8] mb-8"
           >
-            Full Stack Developer and IT Specialist with a well-rounded background
-            in software development, technical support, and systems
-            troubleshooting. I'm passionate about building efficient,
-            user-centric web applications — from concept to deployment — while
-            ensuring reliability across both front-end and back-end environments.
+            Systems and infrastructure engineer with 3+ years delivering
+            technical solutions across enterprise integrations, cloud
+            deployments, and full-stack application lifecycles. I'm the person
+            who diagnoses the REST API authentication failure at 2pm, commissions
+            the production system by 4pm, and documents the root cause before
+            leaving.
           </motion.p>
 
           <motion.p
@@ -111,13 +121,25 @@ const Bio = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-sans text-text-secondary text-base md:text-lg leading-[1.8] mb-12"
+            className="font-sans text-text-secondary text-base md:text-lg leading-[1.8] mb-8"
           >
-            With a foundation in IT support and customer-facing roles, I bring
-            strong communication skills and a solution-driven mindset to every
-            project. I actively integrate AI tools to accelerate workflows,
-            improve efficiency, and enhance functionality. Currently expanding my
-            expertise into cloud and network engineering.
+            My path started in customer-facing roles — selling gym memberships,
+            then managing enterprise IT help desks — which hardwired a
+            stakeholder-first mindset into everything I build. Today I bring that
+            same energy to API diagnostics, cloud architecture, and shipping
+            full-stack applications that actually serve the people using them.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="font-sans text-zinc-500 text-sm leading-[1.8] mb-12 border-l-2 border-accent/30 pl-4"
+          >
+            Currently pursuing AWS Solutions Architect Associate. Holds three
+            AWS credentials and 15+ professional certifications spanning cloud
+            security, backend development, and database administration.
           </motion.p>
 
           {/* CTA buttons */}
@@ -125,7 +147,7 @@ const Bio = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-wrap gap-6"
           >
             <a

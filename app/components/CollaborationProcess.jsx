@@ -6,21 +6,21 @@ const CollaborationProcess = () => {
   const steps = [
     {
       num: "01",
-      title: "Communication",
+      title: "Diagnose & Discover",
       description:
-        "Clear and consistent communication throughout the project lifecycle",
+        "Understand the problem space first. Whether it's a production incident, a new feature, or a system migration — methodical investigation before action.",
     },
     {
       num: "02",
-      title: "Design & Development",
+      title: "Architect & Build",
       description:
-        "Iterative development process with regular updates and feedback",
+        "Design with documentation-driven clarity. Iterative development with regular checkpoints, ensuring reliability across front-end and back-end.",
     },
     {
       num: "03",
-      title: "Review & Finalize",
+      title: "Ship & Sustain",
       description:
-        "Thorough testing and refinement before project completion",
+        "Thorough testing, deployment, and knowledge transfer. Systems are only as strong as the documentation and processes that support them.",
     },
   ];
 
@@ -33,9 +33,9 @@ const CollaborationProcess = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="font-sans text-xs tracking-[0.3em] uppercase text-text-muted mb-16 text-center"
+          className="font-mono text-xs tracking-[0.3em] uppercase text-accent mb-16 text-center"
         >
-          Collaboration Process
+          How I Work
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
