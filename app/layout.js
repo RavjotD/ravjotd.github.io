@@ -36,7 +36,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${dmSerif.variable} ${outfit.variable} ${jetbrains.variable}`}>
-      <body className="flex flex-col min-h-screen font-sans">
+      <body className="flex flex-col min-h-screen font-sans" suppressHydrationWarning>
         <TransitionProvider>{children}</TransitionProvider>
       </body>
     </html>

@@ -39,7 +39,7 @@ const Profile = () => {
           >
             <img
               src={tech.img}
-              className="w-10 h-10 object-contain grayscale group-hover:grayscale-0 transition-all duration-500"
+              className="w-10 h-10 object-contain group-hover:scale-110 transition-all duration-500"
               alt={tech.text}
             />
             <span className="font-sans text-sm text-cream group-hover:text-accent transition-colors duration-300">

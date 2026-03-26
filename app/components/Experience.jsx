@@ -2,6 +2,63 @@
 import { motion, useInView } from "framer-motion";
 import React, { useRef } from "react";
 
+const ExperienceItem = ({ job }) => {
+  const ref = useRef(null);
+  const isVisible = useInView(ref, { once: true, margin: "-50px" });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+      className="border-t border-rule py-8 md:py-10"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 md:gap-12">
+        <span className="font-mono text-xs text-text-muted tracking-wide">
+          {job.date}
+        </span>
+
+        <div>
+          <h3 className="font-serif text-xl md:text-2xl text-cream mb-1">
+            {job.title}
+          </h3>
+          <a
+            href={job.companyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-sans text-sm text-accent hover:text-accent-deep transition-colors"
+          >
+            {job.company}
+          </a>
+
+          <ul className="mt-5 space-y-3">
+            {job.duties.map((duty, i) => (
+              <li
+                key={i}
+                className="font-sans text-sm text-text-secondary leading-relaxed pl-4 relative before:content-[''] before:absolute before:left-0 before:top-[0.6em] before:w-1 before:h-1 before:bg-text-muted before:rounded-full"
+              >
+                {duty}
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-5 flex flex-wrap gap-2">
+            {job.skills.map((skill, i) => (
+              <span
+                key={i}
+                className="font-sans text-xs px-3 py-1 border border-rule text-text-muted uppercase tracking-wider hover:border-accent hover:text-accent transition-colors duration-300"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
 const Experience = () => {
   const jobs = [
     {
@@ -75,66 +132,9 @@ const Experience = () => {
 
   return (
     <div className="max-w-6xl mx-auto">
-      {jobs.map((job, index) => {
-        const ref = useRef(null);
-        const isVisible = useInView(ref, { once: true, margin: "-50px" });
-
-        return (
-          <motion.div
-            key={index}
-            ref={ref}
-            initial={{ opacity: 0, y: 30 }}
-            animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="border-t border-rule py-8 md:py-10"
-          >
-            <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 md:gap-12">
-              {/* Date */}
-              <span className="font-mono text-xs text-text-muted tracking-wide">
-                {job.date}
-              </span>
-
-              {/* Content */}
-              <div>
-                <h3 className="font-serif text-xl md:text-2xl text-cream mb-1">
-                  {job.title}
-                </h3>
-                <a
-                  href={job.companyUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-sans text-sm text-accent hover:text-accent-hover transition-colors"
-                >
-                  {job.company}
-                </a>
-
-                <ul className="mt-5 space-y-3">
-                  {job.duties.map((duty, i) => (
-                    <li
-                      key={i}
-                      className="font-sans text-sm text-text-secondary leading-relaxed pl-4 relative before:content-[''] before:absolute before:left-0 before:top-[0.6em] before:w-1 before:h-1 before:bg-text-muted before:rounded-full"
-                    >
-                      {duty}
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {job.skills.map((skill, i) => (
-                    <span
-                      key={i}
-                      className="font-sans text-xs px-3 py-1 border border-rule text-text-muted uppercase tracking-wider hover:border-accent hover:text-accent transition-colors duration-300"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        );
-      })}
-      {/* Bottom rule */}
+      {jobs.map((job, index) => (
+        <ExperienceItem key={index} job={job} />
+      ))}
       <div className="border-t border-rule" />
     </div>
   );

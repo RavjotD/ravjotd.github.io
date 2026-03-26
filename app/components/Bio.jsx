@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 
@@ -78,7 +79,6 @@ const Bio = () => {
 
   return (
     <div className="w-full max-w-[1400px] mx-auto px-6 md:px-12 py-24 md:py-32">
-      {/* Section heading */}
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -99,7 +99,6 @@ const Bio = () => {
       </motion.h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-16 lg:gap-24">
-        {/* Left: Bio text */}
         <div>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -110,10 +109,10 @@ const Bio = () => {
           >
             Systems and infrastructure engineer with 3+ years delivering
             technical solutions across enterprise integrations, cloud
-            deployments, and full-stack application lifecycles. I'm the person
-            who diagnoses the REST API authentication failure at 2pm, commissions
-            the production system by 4pm, and documents the root cause before
-            leaving.
+            deployments, and full-stack application lifecycles. I thrive at
+            the intersection of complex systems — connecting APIs, automating
+            workflows, and building the tools that keep operations running
+            smoothly.
           </motion.p>
 
           <motion.p
@@ -135,14 +134,13 @@ const Bio = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="font-sans text-zinc-500 text-sm leading-[1.8] mb-12 border-l-2 border-accent/30 pl-4"
+            className="font-sans text-text-muted text-sm leading-[1.8] mb-12 border-l-2 border-accent/30 pl-4"
           >
             Currently pursuing AWS Solutions Architect Associate. Holds three
             AWS credentials and 15+ professional certifications spanning cloud
             security, backend development, and database administration.
           </motion.p>
 
-          {/* CTA buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -151,15 +149,6 @@ const Bio = () => {
             className="flex flex-wrap gap-6"
           >
             <a
-              href="/Portfolio-Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-sans text-sm text-cream border-b border-accent pb-1 hover:text-accent transition-colors duration-300"
-            >
-              Download CV
-            </a>
-
-            <a
               href="#contact"
               onClick={(e) => {
                 e.preventDefault();
@@ -167,14 +156,13 @@ const Bio = () => {
                   .querySelector("#contact")
                   ?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="font-sans text-sm text-accent border border-accent px-6 py-2 hover:bg-accent hover:text-charcoal transition-all duration-300"
+              className="font-sans text-sm text-cream bg-accent px-6 py-2 hover:bg-accent-deep transition-all duration-300"
             >
               Contact me
             </a>
           </motion.div>
         </div>
 
-        {/* Right: Stats */}
         <div ref={statsRef} className="space-y-0">
           {githubStats.map((stat, index) => (
             <motion.div

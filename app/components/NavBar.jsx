@@ -67,18 +67,18 @@ const NavBar = () => {
     <div className="fixed w-full top-0 z-50">
       <div
         className={`h-20 transition-all duration-500 ${
-          scrolled ? "backdrop-blur-md bg-charcoal/80" : ""
+          scrolled
+            ? "backdrop-blur-md bg-charcoal/80 border-b border-rule"
+            : ""
         }`}
       >
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 h-full">
           <div className="flex items-center justify-between h-full">
-            {/* Logo - Name in serif */}
             <Link href="/" className="font-serif text-2xl text-cream tracking-tight">
               Ravjot
               <span className="text-accent">.</span>
             </Link>
 
-            {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-10">
               {links.map((link) => (
                 <Link
@@ -111,7 +111,6 @@ const NavBar = () => {
               ))}
             </nav>
 
-            {/* Mobile Menu Button */}
             <button
               className="md:hidden p-2 relative w-8 h-8 flex flex-col justify-center items-center"
               onClick={() => setOpen(!open)}
@@ -136,7 +135,6 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu - Full Screen Takeover */}
       <AnimatePresence>
         {open && (
           <motion.div

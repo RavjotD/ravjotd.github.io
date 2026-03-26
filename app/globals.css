@@ -3,17 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --bg-primary: #09090b;
-  --bg-secondary: #111114;
-  --bg-elevated: #18181b;
-  --text-primary: #f4f4f5;
-  --text-secondary: #a1a1aa;
-  --text-muted: #52525b;
+  --bg-primary: #101012;
+  --bg-secondary: #161618;
+  --bg-elevated: #1c1c1f;
+  --text-primary: #e4e4e7;
+  --text-secondary: #8b8b94;
+  --text-muted: #5a5a63;
   --accent: #38bdf8;
   --accent-hover: #7dd3fc;
-  --accent-deep: #0284c7;
-  --accent-glow: rgba(56, 189, 248, 0.06);
-  --rule: #27272a;
+  --accent-deep: #0ea5e9;
+  --rule: #2a2a2e;
 }
 
 * {
@@ -35,44 +34,26 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-outfit), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Grain texture overlay */
-body::after {
-  content: '';
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  right: -50%;
-  bottom: -50%;
-  width: 200%;
-  height: 200%;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0.35;
-  animation: grain 8s steps(10) infinite;
-}
-
-/* Selection color */
 ::selection {
   background-color: var(--accent);
-  color: var(--bg-primary);
+  color: #ffffff;
 }
 
 ::-moz-selection {
   background-color: var(--accent);
-  color: var(--bg-primary);
+  color: #ffffff;
 }
 
-/* Editorial rule divider */
 .editorial-rule {
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--rule), transparent);
+  background: var(--rule);
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -82,19 +63,10 @@ body::after {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--rule);
+  background: #333338;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-deep);
-}
-
-/* Section gradient transitions */
-.section-fade-in {
-  background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-primary) 100%);
-}
-
-.section-fade-elevated {
-  background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-elevated) 40%, var(--bg-elevated) 60%, var(--bg-primary) 100%);
+  background: var(--accent);
 }

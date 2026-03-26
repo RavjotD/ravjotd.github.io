@@ -6,47 +6,34 @@ const Projects = () => {
   const items = [
     {
       id: 1,
-      title: "Secure Vault",
-      desc: "Capstone project — a security-focused full-stack application for encrypted password and document storage. AES-256 encryption, MFA authentication, and PIPEDA-aligned design.",
-      img: "projects/Stallion.png",
-      link: "https://github.com/RavjotD",
-      glink: "https://github.com/RavjotD",
-      skills: ["Spring Boot", "Java", "React", "MySQL", "AWS S3", "AWS EFS"],
-    },
-    {
-      id: 2,
       title: "Commercial Website",
       desc: "A user-intuitive commercial website for a security services company. Increased client sales by 50% through TikTok ad integration and targeted digital marketing.",
       img: "projects/Stallion.png",
       link: "https://stalliongroupsecurity.ca/",
-      glink: "https://github.com/RavjotD/StallionWebsite",
       skills: ["ReactJS", "TypeScript", "TailwindCSS", "Express.js"],
     },
     {
-      id: 3,
+      id: 2,
       title: "Epoxy Business Website",
       desc: "Full-Stack webapp with complete quote submission form and automated client communication workflows.",
       img: "projects/labcoat_SS.png",
       link: "https://labcoatings.ca/",
-      glink: "",
       skills: ["ReactJS", "Tailwind CSS"],
     },
     {
-      id: 4,
+      id: 3,
       title: "TicketHub",
       desc: "Full-Stack webapp serving as a TicketMaster alternative, built on their Discovery API with real-time event search.",
       img: "projects/THSS.png",
       link: "https://ticket-hub-pink.vercel.app/",
-      glink: "https://github.com/RavjotD/Ticket-Hub",
       skills: ["Next.js", "Tailwind CSS", "PocketBase", "DiscoveryAPI"],
     },
     {
-      id: 5,
+      id: 4,
       title: "Cleaning Business Website",
       desc: "Full-Stack website with front-end and back-end communication, automated email replies for client booking.",
       img: "projects/WVC_SS.png",
       link: "https://westviewcleaningservices.ca/",
-      glink: "",
       skills: ["ReactJS", "Tailwind CSS"],
     },
   ];
@@ -72,7 +59,7 @@ const Projects = () => {
         Projects
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {items.map((item, index) => (
           <motion.a
             key={item.id}
@@ -82,27 +69,25 @@ const Projects = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            transition={{ duration: 0.5, delay: index * 0.08 }}
             className={`relative overflow-hidden group cursor-pointer block ${
-              index === 0 ? "md:col-span-2 h-[400px] md:h-[500px]" : "h-[350px] md:h-[400px]"
+              index === 0 || index === 3
+                ? "md:col-span-2 h-[400px] md:h-[500px]"
+                : "h-[350px] md:h-[400px]"
             }`}
           >
-            {/* Image */}
             <img
               src={item.img}
               alt={item.title}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
 
-            {/* Overlay - enhanced gray gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-zinc-900/20 opacity-80 group-hover:opacity-95 transition-opacity duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-500" />
 
-            {/* Project number */}
             <span className="absolute top-6 left-6 font-serif text-6xl md:text-7xl text-cream/10 leading-none">
               0{item.id}
             </span>
 
-            {/* Content at bottom */}
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
               <h3 className="font-serif text-2xl md:text-3xl text-cream mb-2">
                 {item.title}
@@ -112,10 +97,7 @@ const Projects = () => {
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {item.skills.map((skill, i) => (
-                  <span
-                    key={i}
-                    className="font-mono text-xs text-text-muted"
-                  >
+                  <span key={i} className="font-mono text-xs text-text-muted">
                     {skill}
                     {i < item.skills.length - 1 && (
                       <span className="text-rule ml-2">/</span>

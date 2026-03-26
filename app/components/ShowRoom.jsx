@@ -41,13 +41,13 @@ const Certificates = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
-            className="relative aspect-[4/3] w-full group cursor-pointer overflow-hidden"
+            className="relative aspect-[4/3] w-full group cursor-pointer overflow-hidden border border-rule"
             onClick={() => setSelectedCert(cert)}
           >
             <img
               src={cert}
               alt={`Certificate ${index + 1}`}
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+              className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <span className="font-sans text-sm text-accent tracking-wider uppercase">
@@ -71,7 +71,7 @@ const Certificates = () => {
             />
             <button
               onClick={() => setSelectedCert(null)}
-              className="absolute top-4 right-4 text-cream bg-charcoal/50 w-10 h-10 flex items-center justify-center hover:bg-accent transition-colors"
+              className="absolute top-4 right-4 text-white bg-charcoal/50 w-10 h-10 flex items-center justify-center hover:bg-accent transition-colors"
             >
               <span className="text-lg">&times;</span>
             </button>
@@ -184,7 +184,6 @@ const ShowRoom = () => {
         Showroom
       </motion.h2>
 
-      {/* Tab bar */}
       <div className="flex gap-6 md:gap-12 mb-12 border-b border-rule overflow-x-auto">
         {tabs.map((tab) => (
           <button
@@ -208,7 +207,6 @@ const ShowRoom = () => {
         ))}
       </div>
 
-      {/* Tab content with animation */}
       <AnimatePresence mode="wait">
         <motion.div
           key={activeTab}

@@ -1,7 +1,6 @@
 "use client";
 import React, { Suspense, useRef, useMemo } from "react";
 import { motion } from "framer-motion";
-import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
@@ -51,9 +50,9 @@ const ParticleField = () => {
       </bufferGeometry>
       <pointsMaterial
         size={0.03}
-        color="#7dd3fc"
+        color="#38bdf8"
         transparent
-        opacity={0.3}
+        opacity={0.25}
         sizeAttenuation
         depthWrite={false}
       />
@@ -67,38 +66,32 @@ const Hero = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.2,
+        staggerChildren: 0.12,
+        delayChildren: 0.3,
       },
     },
   };
 
   const item = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 40 },
     show: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
-    },
-  };
-
-  const nameReveal = {
-    hidden: { opacity: 0, y: 60 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 1, ease: [0.22, 1, 0.36, 1] },
+      transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] },
     },
   };
 
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-charcoal via-zinc-950 to-charcoal">
-      {/* Subtle radial glow behind name */}
+    <div className="relative min-h-screen w-full flex items-center bg-charcoal">
+      {/* Radial glow */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-[600px] h-[600px] rounded-full bg-accent/[0.03] blur-[120px]" />
+        <div className="w-[700px] h-[700px] rounded-full bg-accent/[0.04] blur-[150px]" />
       </div>
 
-      {/* Three.js Particle Background */}
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal via-charcoal-light/50 to-charcoal" />
+
+      {/* Particle field */}
       <div className="absolute inset-0">
         <Suspense fallback={null}>
           <Canvas
@@ -116,85 +109,66 @@ const Hero = () => {
         variants={container}
         initial="hidden"
         animate="show"
-        className="absolute inset-0 flex flex-col items-center justify-center text-center px-6"
+        className="relative w-full max-w-[1400px] mx-auto px-6 md:px-12 py-32"
       >
-        {/* Main name - massive serif */}
-        <motion.h1
-          variants={nameReveal}
-          className="font-serif text-display-xl text-cream leading-none"
-        >
-          RAVJOT
-        </motion.h1>
-
-        {/* Subtitle */}
         <motion.p
           variants={item}
-          className="font-sans text-sm md:text-base tracking-[0.3em] uppercase text-text-secondary mt-6"
+          className="font-mono text-xs tracking-[0.3em] uppercase text-accent mb-8"
         >
           Infrastructure & Systems Engineer
         </motion.p>
 
-        {/* Typewriter */}
-        <motion.div
+        <motion.h1
           variants={item}
-          className="font-sans text-lg md:text-xl text-text-muted mt-4 h-8 italic"
+          className="font-serif text-display-xl text-cream leading-[0.9] mb-8"
         >
-          <TypeAnimation
-            sequence={[
-              "resolves complex technical issues",
-              2000,
-              "ships production-grade systems",
-              2000,
-              "builds reliable infrastructure",
-              2000,
-              "bridges teams and technology",
-              2000,
-            ]}
-            repeat={Infinity}
-            cursor={true}
-            speed={40}
-          />
+          Ravjot
+          <br />
+          <span className="text-text-muted">Duhra</span>
+        </motion.h1>
+
+        <motion.div variants={item} className="max-w-xl mt-12">
+          <p className="font-sans text-lg md:text-xl text-text-secondary leading-relaxed">
+            Building the systems that keep businesses running — from cloud
+            infrastructure and API integrations to the full-stack applications
+            that tie it all together.
+          </p>
         </motion.div>
 
-        {/* Social links */}
         <motion.div
           variants={item}
-          className="flex gap-8 mt-12"
+          className="flex items-center justify-between mt-20 pt-8 border-t border-rule"
         >
-          <Link
-            href="https://github.com/RavjotD"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-mono text-sm text-text-muted hover:text-accent transition-colors duration-300 tracking-wider"
-          >
-            GH
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/ravjot-duhra/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-mono text-sm text-text-muted hover:text-accent transition-colors duration-300 tracking-wider"
-          >
-            LI
-          </Link>
-        </motion.div>
-      </motion.div>
+          <div className="flex gap-4">
+            <Link
+              href="https://github.com/RavjotD"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-xs tracking-wider text-text-muted hover:text-accent hover:border-accent border border-rule px-4 py-2 transition-all duration-300 uppercase"
+            >
+              GitHub
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/ravjot-duhra/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-xs tracking-wider text-text-muted hover:text-accent hover:border-accent border border-rule px-4 py-2 transition-all duration-300 uppercase"
+            >
+              LinkedIn
+            </Link>
+          </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-      >
-        <span className="font-sans text-[10px] tracking-[0.3em] uppercase text-text-muted">
-          Scroll
-        </span>
-        <motion.div
-          className="w-[1px] h-8 bg-text-muted"
-          animate={{ scaleY: [0, 1, 0], originY: 0 }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        />
+          <div className="flex items-center gap-3">
+            <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-text-muted">
+              Scroll
+            </span>
+            <motion.div
+              className="w-[1px] h-8 bg-text-muted"
+              animate={{ scaleY: [0, 1, 0], originY: 0 }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            />
+          </div>
+        </motion.div>
       </motion.div>
     </div>
   );

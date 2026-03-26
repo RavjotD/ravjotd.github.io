@@ -1,75 +1,60 @@
-"use client";
-import React from "react";
-import ShowRoom from "./components/ShowRoom";
+import dynamic from "next/dynamic";
 import Expertise from "./components/Expertise";
 import ContactForm from "./components/ContactForm";
 import Bio from "./components/Bio";
-import CollaborationProcess from "./components/CollaborationProcess";
-import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import ShowRoom from "./components/ShowRoom";
+
+const Hero = dynamic(() => import("./components/Hero"), { ssr: false });
 
 export default function Home() {
   return (
     <div className="min-h-screen w-full overflow-x-hidden">
-      {/* Home Section */}
+      {/* Hero */}
       <section id="home" className="w-full min-h-screen">
         <Hero />
       </section>
 
-      {/* Expertise Section - subtle elevated background */}
-      <section
-        id="expertise"
-        className="w-full"
-        style={{
-          background:
-            "linear-gradient(180deg, #09090b 0%, #111114 30%, #18181b 50%, #111114 70%, #09090b 100%)",
-        }}
-      >
-        <Expertise />
-      </section>
-
-      {/* Collaboration Process Section */}
-      <CollaborationProcess />
-
-      {/* About Section - gray gradient wash */}
+      {/* About */}
       <section
         id="about"
         className="w-full"
         style={{
-          background:
-            "linear-gradient(180deg, #09090b 0%, #0f0f12 20%, #111114 40%, #18181b 60%, #111114 80%, #09090b 100%)",
+          background: "linear-gradient(180deg, #101012 0%, #161618 30%, #1c1c1f 50%, #161618 70%, #101012 100%)",
         }}
       >
         <Bio />
+      </section>
+
+      {/* Services */}
+      <section id="expertise" className="w-full bg-charcoal">
+        <Expertise />
+      </section>
+
+      {/* Showroom */}
+      <section
+        className="w-full"
+        style={{
+          background: "linear-gradient(180deg, #101012 0%, #161618 30%, #1c1c1f 50%, #161618 70%, #101012 100%)",
+        }}
+      >
         <ShowRoom />
       </section>
 
-      {/* Projects Section */}
+      {/* Projects */}
       <section
         id="projects"
         className="w-full"
         style={{
-          background:
-            "linear-gradient(180deg, #09090b 0%, #111114 40%, #111114 60%, #09090b 100%)",
+          background: "linear-gradient(180deg, #101012 0%, #161618 40%, #161618 60%, #101012 100%)",
         }}
       >
         <Projects />
       </section>
 
-      {/* Contact Section - subtle glow */}
-      <section
-        id="contact"
-        className="w-full relative"
-        style={{
-          background:
-            "linear-gradient(180deg, #09090b 0%, #0f0f12 50%, #09090b 100%)",
-        }}
-      >
-        {/* Faint blue radial behind CTA */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[500px] h-[300px] rounded-full bg-accent/[0.03] blur-[100px]" />
-        </div>
+      {/* Contact */}
+      <section id="contact" className="w-full">
         <ContactForm />
       </section>
 
