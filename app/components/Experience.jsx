@@ -82,11 +82,11 @@ const Experience = () => {
       date: "Jan 2024 — Present",
       duties: [
         "Design and deploy full-stack commercial websites for local businesses, focusing on performance, security, and SEO.",
-        "Develop React + TypeScript front-end applications integrated with Express-based backend services.",
+        "Develop full-stack Next.js + TypeScript applications with server-side rendering, API routes, and optimized performance.",
         "Integrate automated client communication workflows and analytics tracking to optimize conversion performance.",
         "Configure DNS records, hosting environments, and production deployment settings.",
       ],
-      skills: ["React", "TypeScript", "Tailwind CSS", "Express.js", "SEO"],
+      skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel", "SEO"],
     },
     {
       title: "AI Software Engineer",
