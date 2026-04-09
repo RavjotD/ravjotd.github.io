@@ -129,7 +129,7 @@ const Hero = () => {
 
         <motion.div variants={item} className="max-w-xl mt-12">
           <p className="font-sans text-lg md:text-xl text-text-secondary leading-relaxed">
-            Building the systems that keep businesses running — from cloud
+            Engineering the systems that keep businesses running — from cloud
             infrastructure and API integrations to the full-stack applications
             that tie it all together.
           </p>

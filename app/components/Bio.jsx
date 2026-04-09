@@ -107,12 +107,8 @@ const Bio = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-sans text-text-secondary text-base md:text-lg leading-[1.8] mb-8"
           >
-            Systems and infrastructure engineer with 3+ years delivering
-            technical solutions across enterprise integrations, cloud
-            deployments, and full-stack application lifecycles. I thrive at
-            the intersection of complex systems — connecting APIs, automating
-            workflows, and building the tools that keep operations running
-            smoothly.
+            Systems and infrastructure engineer with 3+ years delivering technical solutions across enterprise integrations, cloud deployments, and full-stack application lifecycles. I thrive at the intersection of complex systems — connecting APIs, automating workflows, and building the tools that keep operations running smoothly.
+
           </motion.p>
 
           <motion.p
@@ -125,8 +121,9 @@ const Bio = () => {
             My path started in customer-facing roles — selling gym memberships,
             then managing enterprise IT help desks — which hardwired a
             stakeholder-first mindset into everything I build. Today I bring that
-            same energy to API diagnostics, cloud architecture, and shipping
-            full-stack applications that actually serve the people using them.
+            same energy to diagnosing API integrations across platforms like
+            ConnectWise, QuickBooks, and Xero, designing cloud architecture, and
+            shipping full-stack applications that actually serve the people using them.
           </motion.p>
 
           <motion.p

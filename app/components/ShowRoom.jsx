@@ -174,6 +174,15 @@ const ShowRoom = () => {
 
   return (
     <div className="w-full max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24">
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="font-mono text-xs tracking-[0.3em] uppercase text-accent mb-4"
+      >
+        What I Have
+      </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -82,7 +82,7 @@ const Projects = () => {
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/80 to-charcoal/30 opacity-90 md:opacity-80 group-hover:opacity-95 transition-opacity duration-500" />
 
             <span className="absolute top-6 left-6 font-serif text-6xl md:text-7xl text-cream/10 leading-none">
               0{item.id}
@@ -92,7 +92,7 @@ const Projects = () => {
               <h3 className="font-serif text-2xl md:text-3xl text-cream mb-2">
                 {item.title}
               </h3>
-              <p className="font-sans text-sm text-text-secondary mb-4 max-w-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p className="font-sans text-sm text-text-secondary mb-4 max-w-lg opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                 {item.desc}
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
@@ -105,7 +105,7 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-              <span className="font-sans text-sm text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300 inline-flex items-center gap-2">
+              <span className="font-sans text-sm text-accent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 inline-flex items-center gap-2">
                 View Project
                 <svg
                   width="16"

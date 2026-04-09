@@ -67,12 +67,13 @@ const Experience = () => {
       companyUrl: "https://www.kaseya.com/",
       date: "May 2025 — Present",
       duties: [
-        "Delivering expert-level technical support on ConnectBooster, an accounts receivable automation platform, ensuring seamless operations and training for MSPs and MMEs clients.",
-        "Resolve 30+ weekly Zendesk cases involving API integrations, payment gateways, and PSA/accounting platform connectivity issues.",
+        "Delivering expert-level technical support on ConnectBooster, an accounts receivable automation platform, ensuring seamless operations and training for MSP and MME clients.",
+        "Resolve 30+ weekly Zendesk cases involving API integrations across PSA platforms (ConnectWise, Autotask), payment gateways (Bambora, BlueSnap, BNG), and accounting packages (QuickBooks, Microsoft Business Central, Sage, Xero).",
         "Maintain 60%+ First-Day Resolution (FDR), consistently outperforming team baseline. Contribute to improved team-wide FDR performance exceeding 50%.",
-        "Diagnose REST API authentication failures, webhook delivery errors, and transaction reconciliation discrepancies across enterprise client environments.",
+        "Diagnose REST API authentication failures, webhook delivery errors, and transaction reconciliation discrepancies across PSA, payment, and accounting platform integrations.",
+        "Leverage MongoDB read access to query production databases, trace data inconsistencies, and resolve client-reported issues at the source.",
       ],
-      skills: ["REST APIs", "Zendesk", "Payment Gateways", "PSA/CRM Integrations"],
+      skills: ["REST APIs", "Zendesk", "PSA Integrations", "Payment Gateways", "QuickBooks", "Xero", "Business Central", "Sage", "MongoDB"],
     },
     {
       title: "Web Application Engineer",

@@ -17,12 +17,17 @@ const Expertise = () => {
     {
       title: "Full-Stack Development",
       description:
-        "Building end-to-end web applications with React, TypeScript, and Express on the frontend, backed by Spring Boot, Java, and Python services. From concept through deployment — performance, security, and SEO built in.",
+        "Designing and shipping production web applications from frontend to backend. Specializing in Next.js for commercial and business websites, with broader experience across React, TypeScript, Node.js, and Python. Every build ships with performance, security, and SEO as first-class priorities.",
     },
     {
       title: "Automation & DevOps",
       description:
-        "Streamlining workflows through PowerShell and Bash scripting, CI/CD pipelines, and AI-assisted development. Reduced manual onboarding time by 40% through automated user provisioning at enterprise scale.",
+        "Building reliable delivery pipelines with CI/CD, infrastructure as code (Terraform, CloudFormation), and container orchestration. Automating repetitive operations through scripting (PowerShell, Bash, Python) so teams ship faster with fewer manual touchpoints.",
+    },
+    {
+      title: "Agentic Engineering",
+      description:
+        "Building AI-driven agentic workflows that automate systems and operations end-to-end. From lead generation pipelines to client onboarding sequences, leveraging autonomous agents to eliminate manual processes and stay ahead of the AI evolution.",
     },
   ];
 

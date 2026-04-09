@@ -34,6 +34,7 @@ export default function Home() {
 
       {/* Showroom */}
       <section
+        id="showroom"
         className="w-full"
         style={{
           background: "linear-gradient(180deg, #101012 0%, #161618 30%, #1c1c1f 50%, #161618 70%, #101012 100%)",
