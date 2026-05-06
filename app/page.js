@@ -28,7 +28,7 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section id="expertise" className="w-full bg-charcoal">
+      <section id="services" className="w-full bg-charcoal">
         <Expertise />
       </section>
 

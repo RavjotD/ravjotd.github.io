@@ -107,7 +107,7 @@ const Bio = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-sans text-text-secondary text-base md:text-lg leading-[1.8] mb-8"
           >
-            Systems and infrastructure engineer with 3+ years delivering technical solutions across enterprise integrations, cloud deployments, and full-stack application lifecycles. I thrive at the intersection of complex systems — connecting APIs, automating workflows, and building the tools that keep operations running smoothly.
+            I'm a technical engineer. I strive for value, and value, to me, is growth. The kind I chase first is my own.
 
           </motion.p>
 
@@ -118,12 +118,24 @@ const Bio = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="font-sans text-text-secondary text-base md:text-lg leading-[1.8] mb-8"
           >
-            My path started in customer-facing roles — selling gym memberships,
-            then managing enterprise IT help desks — which hardwired a
-            stakeholder-first mindset into everything I build. Today I bring that
-            same energy to diagnosing API integrations across platforms like
-            ConnectWise, QuickBooks, and Xero, designing cloud architecture, and
-            shipping full-stack applications that actually serve the people using them.
+            I think about my career the way I think about systems: it scales
+            two ways. Vertically through depth, horizontally through reach.
+            Selling gym memberships at Club16. Running help desk tickets at
+            Microserve. Doing AI evaluation work at Braintrust. Building
+            full-stack apps on the side. Now supporting an enterprise platform
+            at Kaseya that lives entirely on API integrations, while pushing
+            into Cloud and keeping an open eye on where AI is heading. None of
+            it was a pivot. Same move, different axis.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="font-sans text-text-secondary text-base md:text-lg leading-[1.8] mb-8"
+          >
+            I am driven by curiosity and am always looking to grow. Whether it's learning how new technologies work, building new things, or simply expanding my knowledge, I am always pushing myself to be better.
           </motion.p>
 
           <motion.p
@@ -133,9 +145,9 @@ const Bio = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="font-sans text-text-muted text-sm leading-[1.8] mb-12 border-l-2 border-accent/30 pl-4"
           >
-            Currently pursuing AWS Solutions Architect Associate. Holds three
-            AWS credentials and 15+ professional certifications spanning cloud
-            security, backend development, and database administration.
+            Working toward AWS Solutions Architect Associate. I hold three AWS
+            credentials and 15+ certifications across cloud security, backend
+            development, and database administration.
           </motion.p>
 
           <motion.div

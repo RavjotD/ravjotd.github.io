@@ -1,18 +1,21 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
-  { url: "#home", title: "Home" },
-  { url: "#about", title: "About" },
-  { url: "#expertise", title: "Services" },
-  { url: "#projects", title: "Projects" },
-  { url: "#contact", title: "Contact" },
+  { url: "/#home", title: "Home" },
+  { url: "/#about", title: "About" },
+  { url: "/#services", title: "Services" },
+  { url: "/#projects", title: "Projects" },
+  { url: "/#contact", title: "Contact" },
+  { url: "/blog", title: "Blog" },
 ];
 
 const NavBar = () => {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("#home");
   const [scrolled, setScrolled] = useState(false);
@@ -26,52 +29,82 @@ const NavBar = () => {
   }, []);
 
   useEffect(() => {
+    if (pathname !== "/") return;
+
+    const navHashes = new Set(
+      links
+        .map((l) => l.url)
+        .filter((u) => u.startsWith("/#"))
+        .map((u) => u.slice(1))
+    );
+    const sectionEls = Array.from(
+      document.querySelectorAll("section[id]")
+    ).filter((el) => navHashes.has("#" + el.id));
+    const sectionIds = sectionEls.map((el) => "#" + el.id);
+    const intersecting = new Set();
+
     const observer = new IntersectionObserver(
       (entries) => {
-        let visibleSections = [];
         entries.forEach((entry) => {
+          const id = "#" + entry.target.id;
           if (entry.isIntersecting) {
-            visibleSections.push({
-              id: "#" + entry.target.id,
-              ratio: entry.intersectionRatio,
-              top: entry.boundingClientRect.top,
-            });
+            intersecting.add(id);
+          } else {
+            intersecting.delete(id);
           }
         });
 
-        if (visibleSections.length > 0) {
-          visibleSections.sort((a, b) => {
-            if (Math.abs(b.ratio - a.ratio) < 0.1) {
-              return a.top - b.top;
-            }
-            return b.ratio - a.ratio;
-          });
-          setActiveSection(visibleSections[0].id);
+        let active = null;
+        for (let i = sectionIds.length - 1; i >= 0; i--) {
+          if (intersecting.has(sectionIds[i])) {
+            active = sectionIds[i];
+            break;
+          }
+        }
+
+        if (active) {
+          setActiveSection(active);
         } else if (window.scrollY < 100) {
           setActiveSection("#home");
         }
       },
       {
-        threshold: [0, 0.25, 0.5, 0.75, 1],
-        rootMargin: "-20% 0px -20% 0px",
+        threshold: 0,
+        rootMargin: "0px 0px -10% 0px",
       }
     );
 
-    document.querySelectorAll("section[id]").forEach((section) => {
-      observer.observe(section);
-    });
+    sectionEls.forEach((section) => observer.observe(section));
 
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
+
+  const isActive = (link) => {
+    if (pathname === "/blog") return link.url === "/blog";
+    if (pathname === "/") {
+      if (link.url === "/blog") return false;
+      const linkHash = "#" + link.url.split("#")[1];
+      return linkHash === activeSection;
+    }
+    return false;
+  };
+
+  const handleNavClick = (e, link) => {
+    const [path, hash] = link.url.split("#");
+    if (pathname === path && hash) {
+      e.preventDefault();
+      const element = document.querySelector("#" + hash);
+      element?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="fixed w-full top-0 z-50">
       <div
-        className={`h-20 transition-all duration-500 ${
-          scrolled
+        className={`h-20 transition-all duration-500 ${scrolled
             ? "backdrop-blur-md bg-charcoal/80 border-b border-rule"
             : ""
-        }`}
+          }`}
       >
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 h-full">
           <div className="flex items-center justify-between h-full">
@@ -85,23 +118,18 @@ const NavBar = () => {
                 <Link
                   key={link.title}
                   href={link.url}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const element = document.querySelector(link.url);
-                    element?.scrollIntoView({ behavior: "smooth" });
-                  }}
+                  onClick={(e) => handleNavClick(e, link)}
                   className="relative py-2 font-sans text-sm tracking-wide uppercase"
                 >
                   <span
-                    className={`transition-colors duration-300 ${
-                      activeSection === link.url
+                    className={`transition-colors duration-300 ${isActive(link)
                         ? "text-cream"
                         : "text-text-muted hover:text-cream"
-                    }`}
+                      }`}
                   >
                     {link.title}
                   </span>
-                  {activeSection === link.url && (
+                  {isActive(link) && (
                     <motion.div
                       layoutId="nav-underline"
                       className="absolute bottom-0 left-0 right-0 h-[2px] bg-accent"
@@ -117,19 +145,16 @@ const NavBar = () => {
               onClick={() => setOpen(!open)}
             >
               <span
-                className={`block w-6 h-[1.5px] bg-cream transition-all duration-300 ${
-                  open ? "rotate-45 translate-y-[1.5px]" : "-translate-y-1"
-                }`}
+                className={`block w-6 h-[1.5px] bg-cream transition-all duration-300 ${open ? "rotate-45 translate-y-[1.5px]" : "-translate-y-1"
+                  }`}
               />
               <span
-                className={`block w-6 h-[1.5px] bg-cream transition-all duration-300 ${
-                  open ? "opacity-0" : ""
-                }`}
+                className={`block w-6 h-[1.5px] bg-cream transition-all duration-300 ${open ? "opacity-0" : ""
+                  }`}
               />
               <span
-                className={`block w-6 h-[1.5px] bg-cream transition-all duration-300 ${
-                  open ? "-rotate-45 -translate-y-[1.5px]" : "translate-y-1"
-                }`}
+                className={`block w-6 h-[1.5px] bg-cream transition-all duration-300 ${open ? "-rotate-45 -translate-y-[1.5px]" : "translate-y-1"
+                  }`}
               />
             </button>
           </div>
@@ -163,15 +188,12 @@ const NavBar = () => {
                 >
                   <Link
                     href={link.url}
-                    className={`font-serif text-4xl transition-colors duration-300 ${
-                      activeSection === link.url
+                    className={`font-serif text-4xl transition-colors duration-300 ${isActive(link)
                         ? "text-accent"
                         : "text-cream hover:text-accent"
-                    }`}
+                      }`}
                     onClick={(e) => {
-                      e.preventDefault();
-                      const element = document.querySelector(link.url);
-                      element?.scrollIntoView({ behavior: "smooth" });
+                      handleNavClick(e, link);
                       setOpen(false);
                     }}
                   >

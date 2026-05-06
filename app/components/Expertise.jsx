@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const Expertise = () => {
@@ -7,27 +8,27 @@ const Expertise = () => {
     {
       title: "API Diagnostics & Integration",
       description:
-        "Diagnosing REST API authentication failures, webhook delivery errors, and transaction reconciliation discrepancies across enterprise client environments. Experienced with payment gateways, PSA/CRM platforms, and accounting system connectivity.",
+        "This is my day job. At Kaseya, I support ConnectBooster, an accounts receivable platform that lives entirely on API integrations, given failures in API calls and reconciliation issues across PSA platforms (ConnectWise, Autotask), payment gateways (Bambora, BlueSnap, BNG), and accounting systems (QuickBooks, Xero, Sage, Microsoft Business Central). The work is part forensics, part translation between systems that were never designed to talk to each other.",
     },
     {
       title: "Cloud & Infrastructure",
       description:
-        "Managing and optimizing cloud infrastructure across AWS (S3, EC2, IAM, VPC) and Azure. Active Directory administration, M365 management, and actively pursuing AWS Solutions Architect Associate certification.",
+        "This is the next chapter. I'm working through AWS Solutions Architect Associate, with hands-on experience across S3, EC2, IAM, and VPC, plus Active Directory and M365 administration on the Azure side. The goal is to move from supporting cloud-backed systems to designing them.",
     },
     {
       title: "Full-Stack Development",
       description:
-        "Designing and shipping production web applications from frontend to backend. Specializing in Next.js for commercial and business websites, with broader experience across React, TypeScript, Node.js, and Python. Every build ships with performance, security, and SEO as first-class priorities.",
+        "My freelance lane. I build commercial websites for local businesses, mostly in Next.js and TypeScript, with the same checklist every time: it has to perform, stay secure, and rank. The flashy stuff is fine, but if those three boxes aren't ticked, the site isn't shipping.",
     },
     {
       title: "Automation & DevOps",
       description:
-        "Building reliable delivery pipelines with CI/CD, infrastructure as code (Terraform, CloudFormation), and container orchestration. Automating repetitive operations through scripting (PowerShell, Bash, Python) so teams ship faster with fewer manual touchpoints.",
+        "The stuff that turns repetition into a script. CI/CD, infrastructure as code with Terraform and CloudFormation, and PowerShell, Bash, and Python for whatever needs to stop being done by hand. If I've done it twice, I'm trying to automate the third.",
     },
     {
       title: "Agentic Engineering",
       description:
-        "Building AI-driven agentic workflows that automate systems and operations end-to-end. From lead generation pipelines to client onboarding sequences, leveraging autonomous agents to eliminate manual processes and stay ahead of the AI evolution.",
+        "My open eye on AI. I'm building AI-driven workflows that run end-to-end without me sitting in the loop, from lead generation to client onboarding. The bet is that agentic systems are where most of the leverage will sit in the next few years, and I'd rather be early than catch up.",
     },
   ];
 
@@ -80,6 +81,36 @@ const Expertise = () => {
               </div>
             </motion.div>
           ))}
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="flex justify-end mt-10"
+          >
+            <Link
+              href="/blog"
+              className="group font-sans text-sm text-cream bg-accent px-6 py-3 hover:bg-accent-deep transition-all duration-300 inline-flex items-center gap-3"
+            >
+              Read the field guide
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                className="transform group-hover:translate-x-1 transition-transform"
+              >
+                <path
+                  d="M3 8h10M9 4l4 4-4 4"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -115,7 +115,7 @@ const Hero = () => {
           variants={item}
           className="font-mono text-xs tracking-[0.3em] uppercase text-accent mb-8"
         >
-          Infrastructure & Systems Engineer
+          Technical Engineer
         </motion.p>
 
         <motion.h1
@@ -129,9 +129,9 @@ const Hero = () => {
 
         <motion.div variants={item} className="max-w-xl mt-12">
           <p className="font-sans text-lg md:text-xl text-text-secondary leading-relaxed">
-            Engineering the systems that keep businesses running — from cloud
-            infrastructure and API integrations to the full-stack applications
-            that tie it all together.
+            I'm a technical engineer with a landscape across Support, Software,
+            and Systems, and in pursuit of Cloud and Infrastructure. I optimize
+            for one thing: growth, scaling both vertically and horizontally.
           </p>
         </motion.div>
 
