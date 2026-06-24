@@ -1,0 +1,29 @@
+# DRAFT — place at: ravjotd.github.io/.github/workflows/pr-check.yml
+# Validates that the site builds on every PR to main. No deploy (the existing
+# nextjs.yml still owns the deploy, on push to main = the PR merge). Uploads the
+# static build so you can eyeball the artifact before you merge on mobile.
+name: PR Check
+on:
+  pull_request:
+    branches: ["main"]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Build (static export)
+        run: npx --no-install next build
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-build
+          path: ./out
+          retention-days: 7
